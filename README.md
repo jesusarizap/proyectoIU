@@ -6,9 +6,9 @@ Miembros del grupo
 - Hilaria Romero Bouyahia
 
 Sobre el proyecto
-La idea del proyecto es realizar un gestor de torneos. Algunas de sus funciones básicas serían
-- Creación de equipos.
-- Creación de emparejamientos.
-- Consultar torneos.
+Aplicación web para la gestión y participación en torneos de distinta índole (deportes, juegos
+de mesa, e-sports).
+La idea es que un usuario pueda organizar un torneo y otros usuarios puedan apuntarse
+para participar en él. Para ello deberá registrarse en la página a través de un formulario.
 
 
