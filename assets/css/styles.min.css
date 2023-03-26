@@ -1,0 +1,30 @@
+.nav-item a,h1,p
+{
+	color:#eee
+}
+
+h1
+{
+	font-size:80px
+}
+
+.nav-item a:hover
+{
+	color:#2639ff
+}
+
+div
+{
+	padding:20px
+}
+
+div p
+{
+	padding-top:20px;
+	padding-bottom:20px
+}
+
+html
+{
+	scroll-behavior:smooth
+}
