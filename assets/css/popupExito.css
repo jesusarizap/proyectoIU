@@ -1,0 +1,18 @@
+.popupExito {
+  background-color: #68f9a2;
+  border-radius: 10px;
+  color: rgb(19, 19, 19);
+  font-family: Ubuntu, sans-serif;
+  margin-top: 20px;
+  padding: 10px;
+  position: fixed;
+  top: -50px;
+  left: 42%;
+  text-align: center;
+  transform: translateX(-50%);
+  transition: top 0.5s ease-in-out;
+}
+
+.popupExito.show {
+  top: 0;
+}
