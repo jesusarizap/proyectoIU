@@ -5,10 +5,6 @@
   box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
-.container-fluid{
-  background-color: #2639ff;
-}
-
 #selected-profile{
   text-decoration: underline;
   text-decoration-color: white;
