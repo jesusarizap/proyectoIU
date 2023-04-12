@@ -1,0 +1,50 @@
+.info{
+    color: 031634;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: aliceblue;
+    margin: 1rem;
+    padding: 0rem 2rem;;
+    border-radius: 3rem;
+}
+
+.datos{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.amistoso{
+    background-color: cornflowerblue;
+}
+
+.online{
+    background-color: cornflowerblue;
+}
+
+.primero{
+    background-color: goldenrod;
+}
+
+.segundo{
+    background-color: silver;
+}
+
+.tercero{
+    background-color: rgb(175, 128, 67);
+}
+
+.abierta{
+    background-color: rgb(47, 255, 85);
+}
+
+.row{
+    padding: 0rem 0rem;
+}
+
+.avanzar{
+    background-color: cornflowerblue;
+    padding: 2rem 5rem;
+    color: 031634;
+    font-weight: bold;
+    font-size: 20px;
+}
