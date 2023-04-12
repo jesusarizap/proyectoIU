@@ -14,7 +14,8 @@
 
 <body style="background: rgb(27,68,133);">
     <nav class="navbar navbar-light navbar-expand-md py-3" style="background: #031634;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/Logo_Tournamaster.png" style="width: 128px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/Logo_Tournamaster.png" style="width: 128px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
+            <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-3">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#torneos" style="font-family: Ubuntu, sans-serif;font-size: 24px;">TORNEOS</a></li>
@@ -27,7 +28,7 @@
   <div class="popup-content">
     <span class="close" onclick="document.getElementById('login-popup').style.display='none'">&times;</span>
     <h2>Login</h2>
-    <form id="login-form" method="post" action="logged.html">
+    <form id="login-form" method="get" action="./logged.html">
       <label for="email">Email:</label>
       <input type="text" name="email" id="email">
       <label for="password">Password:</label>
@@ -42,7 +43,7 @@
   <div class="popup-content">
     <span class="close" onclick="document.getElementById('register-popup').style.display='none'">&times;</span>
     <h2>Register</h2>
-    <form id="register-form" method="post" action="logged.html">
+    <form id="register-form" action="./logged.html">
       <label for="name">Name:</label>
       <input type="text" name="name" id="name">
       <label for="email">Email:</label>
