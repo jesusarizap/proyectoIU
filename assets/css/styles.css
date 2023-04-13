@@ -12,9 +12,14 @@ div {
   padding: 20px;
 }
 
+li a {
+  color: aliceblue;
+}
+
 div p {
   padding-top: 20px;
   padding-bottom: 20px;
+  color: aliceblue;
 }
 
 .popupExito p {
