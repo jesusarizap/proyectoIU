@@ -1,7 +1,9 @@
+.nav-item a, h1, p {
+  color: #EEEEEE;
+}
+
 h1 {
   font-size: 80px;
-  color: aliceblue;
-  text-align: center;
 }
 
 .nav-item a:hover {
@@ -12,14 +14,13 @@ div {
   padding: 20px;
 }
 
-li a {
-  color: aliceblue;
-}
-
 div p {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: aliceblue;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .popupExito p {
@@ -28,8 +29,3 @@ div p {
   margin: 0px;
   color: black;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
