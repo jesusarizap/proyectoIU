@@ -87,11 +87,19 @@
         <div class="col">
             <div class="container">
                 <h1 style="padding-top: 20px;font-family: Ubuntu, sans-serif;text-align: right;">CONTACTO</h1>
-                <p style="font-size: 20px;font-family: Ubuntu, sans-serif;">Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros en cualquier momento. Estamos aquí para ayudarte y brindarte la mejor experiencia posible en nuestra plataforma.<br><br>Puedes ponerte en contacto con nosotros a través de nuestro correo electrónico. ¡No hay nada que nos guste más que escuchar a nuestra comunidad!</p><button class="btn btn-primary" type="button" style="margin-right: 30px;">Copiar correo de contacto al portapapeles</button><button class="btn btn-primary" type="button">Abrir correo electrónico</button>
+                <p style="font-size: 20px;font-family: Ubuntu, sans-serif;">Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros en cualquier momento. Estamos aquí para ayudarte y brindarte la mejor experiencia posible en nuestra plataforma.<br><br>Puedes ponerte en contacto con nosotros a través de nuestro correo electrónico. ¡No hay nada que nos guste más que escuchar a nuestra comunidad!</p>
+                
+                <button class="btn btn-primary" onclick="copiarCorreo()">
+                    <span class="tooltiptext" id="copiarCorreo"></span>
+                    Copiar correo de contacto al portapapeles
+                </button>
+                    
+                <button class="btn btn-primary" type="button">Abrir correo electrónico</button>
             </div>
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/copiarCorreo.min.js"></script>
     <script src="assets/js/loginOrRegister.js"></script>
     <script src="assets/js/sidebarCollapse.js"></script>
 </body>
