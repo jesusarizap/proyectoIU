@@ -53,8 +53,7 @@
     <!-- Formulario para la creación del torneo -->
     <form class="content container-fluid">
         <fieldset>
-            <legend class="mt-2">Información</legend>
-            
+            <legend class="mt-2">Información principal</legend>
             <label for="titleForm">Título del torneo</label><br/>
                 <input size="50" id="titleForm" type="text"/><br/>
             
@@ -74,14 +73,17 @@
             <label for="fechaCierreForm">Fecha de cierre</label><br/>
                 <input size="10" maxlength="10" id="cierreForm" type="date"/><br/>
             
+                <legend class="mt-2">Extra?</legend>
+            <!-- Duda: Quitamos personalizado? -->
             <label for="nivelForm" name="nivel" class="mt-2">Nivel</label><br/>
                 <input type="radio" class="m-2" id="amistoso" name="nivel" value="Amistoso">
                     <label for="amistoso">Amistoso</label>
                 <input type="radio" class="m-2" id="profesional" name="nivel" value="Profesional">
                     <label for="profesional">Profesional</label>
-                <input type="radio" class="m-2" id="persoanalizado" name="nivel" value="Personalizado">
+                <input type="radio" class="m-2" id="personalizado" name="nivel" value="Personalizado">
                     <label for="personalizado">Personalizado</label><br/>
             
+            <!-- Falta que de alguna forma al pulsar presencial se abra otro form -->
             <label for="localizacionForm" name="lugar" class="mt-2">Localización</label><br/>
                 <input type="radio" class="m-2" id="presencial" name="lugar" value="Presencial">
                     <label for="presencial">Presencial</label>
@@ -89,7 +91,14 @@
                     <label for="online">Online</label><br/>
             
             <label for="premiosForm">Premio/Recompensa</label><br/>
-                <textarea id="premiosForm" cols="50" rows="5"></textarea>    
+                <textarea id="premiosForm" cols="50" rows="5"></textarea><br/> 
+
+            <!-- Duda: lo quitamos? -->
+            <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
+                <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta">
+                    <label for="abierta">Abierta</label>
+                <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada">
+                    <label for="cerrada">Cerrada</label><br/>
         </fieldset>
       </form>
 </body>
