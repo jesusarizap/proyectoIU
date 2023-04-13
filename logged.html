@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/logged.css">
     <link rel="stylesheet" href="assets/css/loginRegisterWindow.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/popupExito.css">
 </head>
 
 <body style="background: #0c254c;"><div class="topbar">
@@ -22,16 +23,27 @@
   <div class="menu-wrapper">
     <ul class="menu">
       <li><a href="jugar.html">JUGAR</a></li>
-      <li><a  href="organizar.html">ORGANIZAR</a></li>
+      <li><a href="organizar.html">ORGANIZAR</a></li>
     </ul>
     <div class="bottom-item">
     <ul class="menu">
-      <li><a  href="perfil.hmtl">PERFIL</a></li>
+      <li><a href="perfil.html">PERFIL</a></li>
     </ul>
     </div>
   </div>
 </nav>
 
+
+<div class="content popupExito">
+	<p>¡Sesión iniciada!</p>
+	<p>Ya puedes jugar y organizar torneos</p>
+</div>
+
+<script> window.onload = function() {
+	document.querySelector('.popupExito').classList.add('show');
+  };
+  
+</script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/loginOrRegister.js"></script>
     <script src="assets/js/sidebarCollapse.js"></script>
