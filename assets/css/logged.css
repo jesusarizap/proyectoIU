@@ -111,6 +111,7 @@
   .content {
     margin-left: 0; /* Center the content area when the sidebar is collapsed */
     max-width: 100%; /* Set the maximum width to the available space */
+    margin-top: 60px;
   }
 }
 
