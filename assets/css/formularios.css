@@ -46,6 +46,10 @@
     padding: 2rem 5rem;
     color: 031634;
     font-weight: bold;
-    font-size: 20px;
-    
+    font-size: 20px;   
+}
+
+.avanzar:hover{
+    background-color: green;
+    color: white;
 }
