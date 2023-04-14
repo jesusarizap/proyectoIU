@@ -14,6 +14,7 @@
 .navbar {
   overflow-x: auto; /* enable horizontal scrolling */
   white-space: nowrap; /* prevent wrapping */
+
 }
 
 .navbar ul {
