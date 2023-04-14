@@ -1,4 +1,12 @@
 const input = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+
+searchButton.addEventListener("click", buscador, false);
+input.addEventListener("keypress", function (e) {
+    if(e.key == "Enter"){
+        buscador();
+    }
+});
 
 function buscador(){
     juegos = document.getElementsByClassName("card-title");
