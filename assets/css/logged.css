@@ -9,13 +9,11 @@
   text-decoration: underline;
   text-decoration-color: white;
   text-underline-offset: 10px;
-  background-color: #2639ff;
 }
 
 .navbar {
   overflow-x: auto; /* enable horizontal scrolling */
   white-space: nowrap; /* prevent wrapping */
-
 }
 
 .navbar ul {
