@@ -1,13 +1,21 @@
-const input = document.getElementById("search-input").value;
+const input = document.getElementById("search-input");
 
 function buscador(){
-    if(input.value == "") return
-    
     juegos = document.getElementsByClassName("card-title");
     cards = document.getElementsByClassName("col-sm");
-    for(i = 0; i <juegos.length; i++){
-        if(juegos[i].textContent != input){
-            cards[i].style.display = "none";
+    
+    if(input.value == ""){
+        for(i = 0; i < cards.length; i++){
+            cards[i].style.display = "block";
         }
-    }
+    }else{
+    
+    
+    for(i = 0; i <juegos.length; i++){
+        if(juegos[i].textContent != input.value){
+            cards[i].style.display = "none";
+        } else {
+            cards[i].style.display = "block";    
+        }
+    }}
 }
