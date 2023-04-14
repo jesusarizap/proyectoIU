@@ -84,23 +84,26 @@
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #EEEE;
+  color: white;
   text-align: center;
   font-family: Ubuntu, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .menu a:hover, #selected:hover {
-  color: cyan;
+  color: white;
+  border-radius: 30px;
+  background-color: #253d62;
 }
 
 .bottom-item {
-  background-color: #919eb4;
   width: inherit;
 }
 
 .bottom-item a:hover {
-  color: #031634;
+  color: white;
+  border-radius: 30px;
+  background-color: #253d62;
 }
 
 #selected {
