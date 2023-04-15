@@ -48,6 +48,12 @@
   display: none;
 }
 
+
+.btn-primary:hover {
+  transform: scale(1.1);
+}
+
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -189,4 +195,4 @@
     margin-top: 0;
   }
 }
-
+ 
