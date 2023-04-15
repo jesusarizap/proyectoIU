@@ -7,15 +7,14 @@
 
 #selected-profile{
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: #3b96db;
   text-underline-offset: 10px;
-  background-color: #2639ff;
 }
 
 .navbar {
   overflow-x: auto; /* enable horizontal scrolling */
   white-space: nowrap; /* prevent wrapping */
-
+  font-family: Ubuntu, sans-serif;
 }
 
 .navbar ul {
@@ -30,7 +29,7 @@
 }
 
 .nav-item a:hover {
-  color: #2639ff;
+  color: #3b96db;
 }
 
 
@@ -90,27 +89,30 @@
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #EEEE;
+  color: white;
   text-align: center;
   font-family: Ubuntu, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .menu a:hover, #selected:hover {
-  color: cyan;
+  color: white;
+  border-radius: 30px;
+  background-color: #253d62;
 }
 
 .bottom-item {
-  background-color: #919eb4;
   width: inherit;
 }
 
 .bottom-item a:hover {
-  color: #031634;
+  color: white;
+  border-radius: 30px;
+  background-color: #253d62;
 }
 
 #selected {
-  color: #2639ff;
+  color: #3b96db;
 }
 
 @media (max-width: 768px) {
