@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/logged.css">
   <link rel="stylesheet" href="assets/css/loginRegisterWindow.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/formularios.css">
 </head>
 
 <style>
@@ -20,6 +21,44 @@
 
   .card:hover {
     transform: scale(1.1);
+
+  }
+
+  .tag{
+    width: fit-content;
+    padding: 0rem 1rem;
+    height: fit-content;
+    border-radius: 3rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .equipos{
+    background-color: blueviolet;
+    color: aliceblue;
+  }
+
+  .individual{
+    background-color: gold;
+    color:#0c254c;
+  }
+  
+
+  .pendiente{
+    background-color: rgb(229, 229, 229);
+    border-style: solid;
+    border-color: #0c254c8d;
+    border-width: 1px;
+  }
+
+  .liga{
+    background-color: darkblue;
+    color:aliceblue;
+  }
+
+  .amistoso{
+    background-color: #0c254c;
+    color: aliceblue;
   }
 </style>
 
@@ -85,42 +124,55 @@
     <!--Primera fila-->
     <div class="row">
       <div class="col-sm">
-        <section id="game1" class="card" style="width: 16rem; height: 22rem;">
+        <section id="game1" class="card" style="width: 16rem; height: 25rem;">
           <a class="nav-link link-dark" href="terceraVistaJUGARindividual.html">
             <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
             <div class="card-body">
-              <h5 class="card-title">Torneo 1 individual</h5>
+              <h5 class="card-title">Torneo 1</h5>
+              Inscripciones: <label class="tag abierta"><b>Abiertas</b></label><br><br>
+              <label class="tag amistoso">Amistoso</label>
+              <label class="tag individual">Individual</label>
             </div>
           </a>
         </section>       
       </div>
 
       <div class="col-sm">
-        <section id="game2" class="card" style="width: 16rem; height: 22rem;">
+        <section id="game2" class="card" style="width: 16rem; height: 25rem;">
           <a class="nav-link link-dark" href="terceraVistaJUGARequipos.html">
             <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
             <div class="card-body">
-              <h5 class="card-title">Torneo 2 por equipos</h5>
+              <h5 class="card-title">Torneo 2</h5>
+              Inscripciones: <label class="tag abierta"><b>Abiertas</b></label><br><br>
+              
+              <label class="tag liga">Liga</label>
+              <label class="tag equipos">Por equipos</label>
             </div>
           </a>
         </section>
       </div>
 
       <div class="col-sm">
-        <section id="game3" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
+        <section id="game3" class="card" style="width: 16rem; height: 25rem; background-color: rgb(201, 114, 114);">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
           <div class="card-body">
-            <h5 class="card-title">Torneo 3</h5>
+              <h5 class="card-title">Torneo 3</h5>
+            Inscripciones: <label class="tag cerrada"><b>Cerrada</b></label><br><br>
+            <label class="tag amistoso">Amistoso</label>
+            <label class="tag individual">Individual</label>
           </div>
         </section>
       </div>
 
       <div class="col-sm">
-        <section id="game4" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
+        <section id="game4" class="card" style="width: 16rem; height: 25rem; background-color: silver;">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
           <div class="card-body">
-            <h5 class="card-title">Torneo 4</h5>
-          </div>
+                <h5 class="card-title">Torneo 4</h5>
+              Inscripciones: <label class="tag pendiente"><b>Pendiente</b></label><br><br>
+              <label class="tag liga">Liga</label>
+              <label class="tag equipos">Por equipos</label>
+            </div>
         </section>
       </div>
     </div>

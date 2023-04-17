@@ -58,19 +58,27 @@
         
         
         <div class="content container-fluid">
-            <!--Banner-->
-            <img class="card-img-top img-fluid" src="./assets/img/game1.png" style="height: 15rem; object-fit: cover; object-position: 0% 15%;" alt="Image not found">
+            <!-- Banner del juego -->
+            <div class="content container-fluid">
+              <div class="col-sm">
+                  <section id="game1" class="card" style="width: auto; height: auto; margin-right: 20rem; transform: scale(1.6);">
+                    <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Image not found">
+                  </section>
+              </div>    
+            </div>
+
             <!--Título-->
             <div>
               <h1>Torneo 1</h1>
             </div>
 
             <!-- Datos -->
+            <div class="content container-fluid">
             <!-- Primera fila-->
             <div class="row">
                 <div class="col-sm">
                 <label class="datos"> Número de jugadores: </label> 
-                <label class="info"> 32</label>
+                <label class="info">32</label>
                 </div>
 
                 <div class="col-sm">
@@ -134,11 +142,20 @@
                 <div class="col-sm">
                   <label>
                     <a class="nav-link link-dark" href="cuartaVistaJUGAR.html">
-                        <div class="avanzar">INSCRIBIRSE</div>
+                        <div class="avanzar"></div>
+                    </a>
+                  </label>
+                </div>
+
+                <div class="col-sm">
+                  <label>
+                    <a class="nav-link link-dark" href="cuartaVistaJUGAR.html">
+                        <div class="cancelar">Cancelar</div>
                     </a>
                   </label>
                 </div>
             </div>
+          </div>
         </div>
         
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
