@@ -77,27 +77,25 @@
     <!-- Formulario para la creación del torneo -->
     <form class="content container-fluid">
         <fieldset>
-            <legend class="mt-2">Información principal</legend>
-            <label for="titleForm">Título del torneo</label><br/>
+                        <label for="titleForm">Nombre completo</label><br/>
                 <input size="50" id="titleForm" type="text"/><br/>
             
-            <label for="jugadoresForm">Número de participantes</label><br/>
-                <input size="1" maxlength="3" id="titleForm" type="text"/><br/>
+            <label for="jugadoresForm">Nickname</label><br/>
+                <input size="50" id="titleForm" type="text"/><br/>
                 <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
                         
-            <label for="fechaInicioForm">Fecha de inicio</label><br/>
+            <label for="fechaInicioForm">Fecha de nacimiento</label><br/>
                 <input size="10" maxlength="10" id="inicioForm" type="date"/><br/>
             
-            <label for="fechaCierreForm">Fecha de cierre</label><br/>
-                <input size="10" maxlength="10" id="cierreForm" type="date"/><br/>
-            
-            <label for="modalidadForm" name="modalidad" class="mt-2">Modalidad</label><br/>
+            <label for="modalidadForm" name="modalidad" class="mt-2">Género</label><br/>
                 <input type="radio" class="m-2" id="individual" name="modalidad" value="Individual">
-                    <label for="individual">Individual</label>
+                    <label for="individual">Hombre</label>
                 <input type="radio" class="m-2" id="equipo" name="modalidad" value="Equipo">
-                    <label for="individual">Por equipos</label><br/>
-                    <!-- Duda: al pulsar por equipos debería salir un pop-up para que seleccionemos nuestro equipo? -->
-
+                    <label for="individual">Mujer</label><br/>
+                <input type="radio" class="m-2" id="equipo" name="modalidad" value="Equipo">
+                    <label for="individual">Otro</label><br/>
+                <input type="radio" class="m-2" id="equipo" name="modalidad" value="Equipo">
+                    <label for="individual">Prefiero no decirlo</label><br/>
             <label for="nivelForm" name="nivel" class="mt-2">Dificultad</label><br/>
                 <input type="radio" class="m-2" id="amistoso" name="nivel" value="Amistoso">
                     <label for="amistoso">Amistoso</label>
@@ -119,13 +117,6 @@
             
             <label for="descripcionForm">Descripción</label><br/>
                 <textarea id="descripcionForm" cols="50" rows="5"></textarea><br/> 
-
-            <!-- Duda: lo quitamos? Lo dejo comentado por ahora-->
-            <!-- <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
-                <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta">
-                    <label for="abierta">Abierta</label>
-                <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada">
-                    <label for="cerrada">Cerrada</label><br/> -->
 
             <button type="button" class="btn btn-success">
                 <a href="perfil_misorganizados.html">
