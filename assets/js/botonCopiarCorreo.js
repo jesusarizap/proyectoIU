@@ -1,6 +1,4 @@
-
-
 function copiarCorreo() {
     
-    navigator.clipboard.writeText("tournamastercontact@gmail.com");
+    navigator.clipboard.writeText("contact@tournamaster.com");
 }
