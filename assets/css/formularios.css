@@ -53,3 +53,16 @@
     background-color: green;
     color: white;
 }
+
+.cancelar{
+    background-color: cornflowerblue;
+    padding: 2rem 5rem;
+    color: 031634;
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+.cancelar:hover{
+    background-color: red;
+    color: white;
+}
