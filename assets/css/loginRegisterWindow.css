@@ -58,7 +58,7 @@
   right: 30px;
   font-size: 40px;
   font-weight: bold;
-  color: #0c5182;
+  color: #EEE;
   cursor: pointer;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .close:hover, .close:focus {
-  color: #EEE;
+  color: #0c5182;
   text-decoration: none;
   cursor: pointer;
 }
