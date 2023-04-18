@@ -56,6 +56,13 @@
             </div>
           </nav>
         
+          <div id="confirmation-popup" class="popup">
+            <div class="popup-content">
+                <h2>¿Estás seguro?</h2>
+                <button class="avanzar"><a href="./perfil_mistorneos.html">Sí</a></button>
+                <button class="cancelar" onclick="document.getElementById('confirmation-popup').style.display='none'">Volver</button>
+            </div>
+          </div>
         
         <div class="content container-fluid">
             <!--Banner-->
@@ -133,15 +140,14 @@
 
                 <div class="col-sm">
                   <label>
-                    <a class="nav-link link-dark" href="./perfil_mistorneos.html">
-                        <div class="cancelar">CANCELAR INSCRIPCIÓN</div>
-                    </a>
+                        <button class="cancelar" onclick="switchOn()">CANCELAR INSCRIPCIÓN</button>
                   </label>
                 </div>
             </div>
         </div>
         
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/estasSeguro.js"></script>
         <script src="assets/js/loginOrRegister.js"></script>
         <script src="assets/js/sidebarCollapse.js"></script>
     
