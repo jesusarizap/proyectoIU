@@ -32,6 +32,8 @@
 }
 
 .navbar ul {
+  text-align: center;
+  align-items: center;
   display: inline-block; /* display items in a row */
   margin: 0;
   padding: 0;
