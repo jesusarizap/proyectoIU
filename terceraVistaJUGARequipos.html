@@ -152,13 +152,15 @@
 
 --------------->
 
-  <div id="equipo-popup" class="popup">
-    <div class="popup-content">
+  <div id="equipo-popup" class="popup" style="width: max-content;">
+    <div class="popup-content" style="width: inherit;">
       <!--      ESCOGER EQUIPO      -->
       <div id="equipo1">
             <!--<button class="custom-link link-dark" onclick="document.getElementById('participacion-popup').style.display='none'">-->
-            <img class="img-fluid rounded" src="./assets/img/equipo1.png" style="align-items: center; width: 100px;">
-            <div class="card-body">
+            <div style="text-align: center;">
+              <img class="img-fluid rounded" src="./assets/img/equipo1.png" style="align-items: center; width: 150px;">
+            </div>
+              <div class="card-body">
               <h2 class="card-title " style="font-weight: bold; color:black">Inazuma Japón</h2>
               <h4 class="card-text" style="font-style: italic;  color:black">Fútbol</h4>
             </div>
@@ -171,16 +173,19 @@
 
 
       <!------ CANCELAR PARTICIPACION / NUEVO EQUIPO   -->
-      <label class="content">
+      <div class="content">
+      <label >
         <a class="nav-link link-dark" href="nuevoEquipo.html">
           <button class="avanzar">Crear nuevo equipo</button>
         </a>
       </label>
-      <label>
+      <label >
         <a class="nav-link link-dark" href="terceraVistaJUGARequipos.html">
           <button class="cancelar" style="background-color: red;">Cancelar</button>
         </a>
       </label>
+      </div>
+
 
 
     </div>
