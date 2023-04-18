@@ -63,15 +63,9 @@
         
         
         <div class="content container-fluid">
-            <!-- Banner del juego -->
-            <div class="content container-fluid">
-              <div class="col-sm">
-                  <section id="game1" class="card" style="width: auto; height: auto; margin-right: 20rem; transform: scale(1.6);">
-                    <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Image not found">
-                  </section>
-              </div>    
-            </div>
-
+            <!--Banner-->
+            <img class="card-img-top img-fluid" src="./assets/img/game1.png" style="height: 15rem; object-fit: cover; object-position: 0% 15%;" alt="Image not found">
+            
             <!--Título-->
             <div>
               <h1>Torneo 2</h1>
@@ -81,13 +75,13 @@
             <!-- Primera fila-->
             <div class="row">
                 <div class="col-sm">
-                <label class="datos"> Número de jugadores: </label> 
-                <label class="info"> 32</label>
+                <label class="datos"> Número de equipos: </label> 
+                <label class="info"> 8</label>
                 </div>
 
                 <div class="col-sm">
                     <label class="datos"> Modalidad: </label> 
-                    <label class="info"> Por equipos</label>
+                    <label class="info equipos"> Por equipos</label>
                     </div>
             </div>
         
@@ -100,7 +94,8 @@
 
                 <div class="col-sm">
                     <label class="datos"> Nivel: </label> 
-                    <label class="info amistoso"> Amistoso</label>
+                    <label class="info liga"> Liga</label>
+                    <label class="info liga"> Profesional</label>
                     </div>
             </div>
         
@@ -138,31 +133,100 @@
 
             <!-- Sexta fila -->
             <div class="row">
-                <div class="col-sm">
-                    <label class="datos"> Inscripción: </label> 
-                    <label class="info abierta"> ABIERTA</label>
-                </div>
+              <div class="col-sm">
+                  <label class="datos"> Inscripción: </label> 
+                  <label class="info abierta"> ABIERTA</label>
+              </div>
+              
+              <div class="col-sm">
+                 <label>
+                  <a class="nav-link link-dark" href="segundaVistaJUGAR.html">
+                  <div class="cancelar">Atrás</div>
+                 </a>
+                   </label>
+              </div>
 
-                <div class="col-sm">
-                  <label>
-                    <a class="nav-link link-dark" href="cuartaVistaJUGAR.html">
-                        <div class="avanzar">INSCRIBIRSE</div>
-                    </a>
-                  </label>
-                </div>
-
-                <div class="col-sm">
-                  <label>
-                    <a class="nav-link link-dark" href="segundaVistaJUGAR.html">
-                        <div class="cancelar">Cancelar</div>
-                    </a>
-                  </label>
+              <div class="col-sm">
+                <label>
+                  <a class="nav-link link-dark">
+                    <button class="btn btn-primary avanzar" type="button" onclick="document.getElementById('equipo-popup').style.display='block'">INSCRIBIRSE</button>
+                  </a>
+                </label>
+              </div>
             </div>
+          </div>
+          
+
+<!----------------
+
+  popups
+
+--------------->
+
+          <div id="equipo-popup" class="popup">
+            <div class="popup-content">
+              
+              
+              
+              
+              <!--      ESCOGER EQUIPO      -->
+              <div id="equipo1" class="content container">
+
+                <div class="row">
+                <section class="card" style="margin-bottom: 2rem;">
+                    <!--<button class="custom-link link-dark" onclick="document.getElementById('participacion-popup').style.display='none'">-->
+                      <div class="row g-0">
+                        <div class="col-2 mt-3 mb-3">
+                          <img class="img-fluid float-start ms-1 rounded" src="./assets/img/equipo1.png">
+                        </div>
+                        <div class="col-10">
+                          <div class="card-body">
+                            <h2 class="card-title pt-2" style="font-weight: bold;">Inazuma Japón</h2>
+                            <h4 class="card-title" style="font-style: italic;">Fútbol</h4>
+                          </div>
+                          <button class="btn btn-primary avanzar" type="button" onclick="ocultarEquipo()">INSCRIBIRSE</button>
+                        </div>            
+                      </div>
+                    </button>
+                  </section>
+                </div>
+              </div>                                      
+                                      
+                  <!------ CANCELAR PARTICIPACION / NUEVO EQUIPO   -->
+                       <label>
+                        <a class="nav-link link-dark" href="nuevoEquipo.html">
+                        <button class="avanzar">Crear nuevo equipo</button>
+                       </a>
+                         </label>
+                    <label>
+                      <a class="nav-link link-dark" href="terceraVistaJUGARequipos.html">
+                      <button class="cancelar" style="background-color: red;">Cancelar</button>
+                     </a>
+                       </label>
+                
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+                  
+                  <!--     CONFIRMAR PARTICIPACION / VOLVER EQUIPOS -->
+                  <div id="participacion-popup" class="popup">
+                    <div class="popup-content">
+                        <h2>Participar con equipo: Inazuma Japón</h2>
+                        <a href="./cuartaVistaJUGAR.html"><button class="avanzar">Confirmar</button></a>
+                        <button class="cancelar" onclick="mostrarEquipo()">Volver</button>
+                    </div>
+                  </div>
         </div>
-        
+
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/loginOrRegister.js"></script>
         <script src="assets/js/sidebarCollapse.js"></script>
+        <script src="assets/js/popupEquipos.js"></script>
     
     </body>
   
