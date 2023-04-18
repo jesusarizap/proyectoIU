@@ -63,7 +63,7 @@
 }
 
 .cancelar{
-    background-color: cornflowerblue;
+    background-color: silver;
     padding: 2rem 5rem;
     color: 031634;
     font-weight: bold;
@@ -73,4 +73,37 @@
 .cancelar:hover{
     background-color: red;
     color: white;
+}
+
+.equipos{
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
+.individual{
+  background-color: gold;
+  color:#0c254c;
+}
+
+.pendiente{
+  background-color: rgb(229, 229, 229);
+  border-style: solid;
+  border-color: #0c254c8d;
+  border-width: 1px;
+}
+
+.liga{
+  background-color: darkblue;
+  color:aliceblue;
+  border-style: solid;
+  border-color: aliceblue;
+  border-width: 1px;
+}
+
+.amistoso{
+  background-color: #0c254c;
+  color: aliceblue;
+  border-style: solid;
+  border-color: aliceblue;
+  border-width: 1px;
 }

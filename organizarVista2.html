@@ -30,6 +30,20 @@
 
     <nav class="sidebar">
         <div class="menu-wrapper">
+
+          <div class="top-item">
+            <ul class="menu">
+              <li>
+                <a href="./home.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                  </svg>
+                  HOME
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <ul class="menu">
             <li>
               <a href="jugar.html">
@@ -111,6 +125,14 @@
                 <input type="radio" class="m-2" id="online" name="lugar" value="Online">
                     <label for="online">Online</label><br/>
             
+            <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
+                <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta">
+                    <label for="abierta">Abierta</label><br/>
+                <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada">
+                    <label for="cerrada">Cerrada</label><br/>
+                <input type="radio" class="m-2" id="pendiente" name="estado" value="Pendiente">
+                    <label for="cerrada">Pendiente</label><br/>
+            
             <label for="premioForm" name="premio" class="mt-2">Premios</label><br/>
                 <input type="radio" class="m-2" id="si" name="premio" value="Si">
                     <label for="si">Sí</label>
@@ -120,23 +142,8 @@
             <label for="descripcionForm">Descripción</label><br/>
                 <textarea id="descripcionForm" cols="50" rows="5"></textarea><br/> 
 
-            <!-- Duda: lo quitamos? Lo dejo comentado por ahora-->
-            <!-- <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
-                <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta">
-                    <label for="abierta">Abierta</label>
-                <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada">
-                    <label for="cerrada">Cerrada</label><br/> -->
-
-            <button type="button" class="btn btn-success mt-2">
-                <a href="terceraVistaORGANIZAR.html">
-                    Confirmar
-                </a>
-            </button>
-            <button type="button" class="btn btn-danger mt-2">
-                <a href="organizar.html">
-                    Cancelar
-                </a>
-            </button>
+            <a href="terceraVistaORGANIZAR.html" role="button" type="button" class="btn btn-success mt-2">Guardar cambios</a>
+            <a href="organizar.html" role="button" type="button" class="btn btn-danger mt-2">Cancelar</a>
         </fieldset>
       </form>
 

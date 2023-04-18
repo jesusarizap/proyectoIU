@@ -25,7 +25,7 @@
   text-underline-offset: 10px;
 }
 
-.navbar {
+.navbar-perfil {
   overflow-x: auto; /* enable horizontal scrolling */
   white-space: nowrap; /* prevent wrapping */
   font-family: Ubuntu, sans-serif;
