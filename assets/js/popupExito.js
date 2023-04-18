@@ -4,4 +4,4 @@ popupExito.classList.add('show');
 
 setTimeout(() => {
   popupExito.classList.remove('show');
-}, 2000);
+}, 5000);
