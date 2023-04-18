@@ -7,3 +7,5 @@ function mostrarEquipo(){
     var proximo = document.getElementById('equipo-popup').style.display='block';
     var element = document.getElementById("participacion-popup").style.display='none';
 }
+
+function ocultarPopUp(){document.getElementById("equipo-popup").style.display='none';}
