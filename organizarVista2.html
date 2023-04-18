@@ -111,6 +111,14 @@
                 <input type="radio" class="m-2" id="online" name="lugar" value="Online">
                     <label for="online">Online</label><br/>
             
+            <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
+                <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta">
+                    <label for="abierta">Abierta</label><br/>
+                <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada">
+                    <label for="cerrada">Cerrada</label><br/>
+                <input type="radio" class="m-2" id="pendiente" name="estado" value="Pendiente">
+                    <label for="cerrada">Pendiente</label><br/>
+            
             <label for="premioForm" name="premio" class="mt-2">Premios</label><br/>
                 <input type="radio" class="m-2" id="si" name="premio" value="Si">
                     <label for="si">Sí</label>
@@ -120,23 +128,8 @@
             <label for="descripcionForm">Descripción</label><br/>
                 <textarea id="descripcionForm" cols="50" rows="5"></textarea><br/> 
 
-            <!-- Duda: lo quitamos? Lo dejo comentado por ahora-->
-            <!-- <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
-                <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta">
-                    <label for="abierta">Abierta</label>
-                <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada">
-                    <label for="cerrada">Cerrada</label><br/> -->
-
-            <button type="button" class="btn btn-success mt-2">
-                <a href="terceraVistaORGANIZAR.html">
-                    Confirmar
-                </a>
-            </button>
-            <button type="button" class="btn btn-danger mt-2">
-                <a href="organizar.html">
-                    Cancelar
-                </a>
-            </button>
+            <a href="terceraVistaORGANIZAR.html" role="button" type="button" class="btn btn-success mt-2">Guardar cambios</a>
+            <a href="organizar.html" role="button" type="button" class="btn btn-danger mt-2">Cancelar</a>
         </fieldset>
       </form>
 
