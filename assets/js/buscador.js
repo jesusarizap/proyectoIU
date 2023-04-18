@@ -20,10 +20,12 @@ function buscador(){
     
     
     for(i = 0; i <juegos.length; i++){
-        if(juegos[i].textContent != input.value){
-            cards[i].style.display = "none";
+        let text1 = juegos[i].textContent;
+        let text2 = input.value; 
+        if( text1.toLowerCase().includes(text2.toLowerCase())){
+            cards[i].style.display = "block";
         } else {
-            cards[i].style.display = "block";    
+            cards[i].style.display = "none";    
         }
     }}
 }

@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="assets/css/perfil.css">
 </head>
 
+<style>
+  div, form {
+      color: #EEEEEE;
+  }
+
+  a, a:hover {
+      text-decoration: none;
+      color: white;
+  }
+</style>
+
 <body style="background: #0c254c;">
   <div class="topbar">
     <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">☰</button>
@@ -54,57 +65,55 @@
     </div>
   </nav>
 
-  <!-- Logros obtenidos -->
-<div class="content container-fluid">
+  <!-- Editar perfil -->
+    <div class="content container-fluid">
+        <form class="text-light">
+            <fieldset>
+                <legend class="mt-4">Editar perfil</legend>
+                <label for="nameForm">Nombre completo</label><br/>
+                    <input size="50" id="name" type="text"/><br/>
+                
+                <label for="nicknameForm">Nickname</label><br/>
+                    <input size="50" id="nicknameForm" type="text"/><br/>
+                
+                <label for="titleForm">Título del perfil</label><br/>
+                    <input size="50" id="titleForm" type="text"/><br/>
+                
+                <div class="mt-2 mb-4">
+                    Foto de perfil<br/>
+                    <img src="./assets/img/profile_pic.jpg" class="img-fluid img-thumbnail" style="width: 300px; z-index: 1"><br/>  
+                    <input class="mt-2" type="file">
+                </div>
 
-    <h1 class="text-light">Editar perfil</h1>
+                <label for="fechaNacimientoForm">Fecha de nacimiento</label><br/>
+                    <input size="10" maxlength="10" id="nacimientoForm" type="date"/><br/>
+                
+                <label for="generoForm" name="genero" class="mt-2">Género</label><br/>
+                    <input type="radio" class="m-2" id="hombre" name="genero" value="Hombre">
+                        <label for="hombre">Hombre</label>
+                    <input type="radio" class="m-2" id="mujer" name="genero" value="Mujer">
+                        <label for="mujer">Mujer</label><br/>
+                    <input type="radio" class="m-2" id="otro" name="genero" value="Otro">
+                        <label for="otro">Otro</label><br/>
+                    <input type="radio" class="m-2" id="none" name="genero" value="None">
+                        <label for="none">Prefiero no decirlo</label><br/>
+                            
+                <label for="sobreMiForm">Descripción</label><br/>
+                    <textarea id="sobreMiForm" cols="50" rows="5"></textarea><br/> 
 
-    <form class="text-light">
-        <fieldset>
-
-            <label for="nameForm">Nombre completo</label><br/>
-                <input size="50" id="name" type="text"/><br/>
-            
-            <label for="nicknameForm">Nickname</label><br/>
-                <input size="50" id="nameForm" type="text"/><br/>
-            
-            <div class="mt-2 mb-4">
-                Foto de perfil:<br/>
-                <img src="./assets/img/profile_pic.jpg" class="img-fluid img-thumbnail" style="width: 300px; z-index: 1"><br/>  
-                <button type="button" class="btn btn-light mt-2">Editar foto</button>
-            </div>
-
-            <label for="fechaNacimientoForm">Fecha de nacimiento</label><br/>
-                <input size="10" maxlength="10" id="nacimientoForm" type="date"/><br/>
-            
-            <label for="generoForm" name="genero" class="mt-2">Género</label><br/>
-                <input type="radio" class="m-2" id="hombre" name="genero" value="Hombre">
-                    <label for="hombre">Hombre</label>
-                <input type="radio" class="m-2" id="mujer" name="genero" value="Mujer">
-                    <label for="mujer">Mujer</label><br/>
-                <input type="radio" class="m-2" id="otro" name="genero" value="Otro">
-                    <label for="otro">Otro</label><br/>
-                <input type="radio" class="m-2" id="none" name="genero" value="None">
-                    <label for="none">Prefiero no decirlo</label><br/>
-                        
-            <label for="sobreMiForm">Descripción</label><br/>
-                <textarea id="sobreMiForm" cols="50" rows="5"></textarea><br/> 
-
-            <button type="button" class="btn btn-success">
-                <a href="./perfil_mistorneos.html">
-                    Guardar cambios
-                </a>
-            </button>
-            <button type="button" class="btn btn-danger">
-                <a href="./perfil_mistorneos.html">
-                    Cancelar
-                </a>
-            </button>
-        </fieldset>
-      </form>
-
-
-</div>
+                <button type="button" class="btn btn-success mt-2">
+                    <a href="./perfil.html">
+                        Guardar cambios
+                    </a>
+                </button>
+                <button type="button" class="btn btn-danger mt-2">
+                    <a href="./perfil.html">
+                        Cancelar
+                    </a>
+                </button>
+            </fieldset>
+        </form>
+    </div>
 
 
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>

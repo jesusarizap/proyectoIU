@@ -1,8 +1,22 @@
 .content {
-  margin-left: 260px; /* 250px for the sidebar width + 10px for some extra space */
+  margin-left: 260px;
   padding: 20px;
   max-width: calc(100% - 260px); /* Set the maximum width to the available space */
   box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.bienvenida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+.bienvenida h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  color: #EEE;
 }
 
 #selected-profile{
@@ -48,7 +62,7 @@
 }
 
 
-.btn-primary:hover {
+#btn-back-to-top:hover {
   transform: scale(1.1);
 }
 

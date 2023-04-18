@@ -41,6 +41,14 @@
     padding: 0rem 0rem;
 }
 
+.cerrada{
+    border-style: solid;
+    border-color: #0c254c8d;
+    border-width: 1px;
+    background-color: red;
+}
+
+
 .avanzar{
     background-color: cornflowerblue;
     padding: 2rem 5rem;
