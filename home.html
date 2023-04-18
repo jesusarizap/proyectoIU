@@ -10,75 +10,91 @@
     <link rel="stylesheet" href="assets/css/logged.css">
     <link rel="stylesheet" href="assets/css/loginRegisterWindow.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/popupExito.css">
 </head>
 
-<body style="background: #0c254c;"><div class="topbar">
-  <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
-    ☰
-  </button>
-</div>
+<style>
+    #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+    }
+</style>
 
-<nav class="sidebar">
-  <div class="menu-wrapper">
+<body style="background: rgb(27,68,133);">
+    <nav class="navbar navbar-light navbar-expand-xxl py-sm-0" style="background: #031634;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/Logo_Tournamaster.png" style="width: 200px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
+            <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-3">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#torneos" style="font-family: Ubuntu, sans-serif;font-size: 24px;">TORNEOS</a></li>
+                    <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#servicios" style="font-family: Ubuntu, sans-serif;font-size: 24px;">SERVICIOS</a></li>
+                    <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#herramientas" style="font-family: Ubuntu, sans-serif;font-size: 24px;">HERRAMIENTAS</a></li>
+                    <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#contacto" style="font-family: Ubuntu, sans-serif;font-size: 24px;">CONTACTO</a></li>
+                </ul>
+                <div class="iniciaSesionContainer">
+                    <a href="logged.html"> <button class="btn btn-primary">Acceder al portal</button> </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <div class="top-item">
-      <ul class="menu">
-        <li>
-          <a id="selected" href="./home.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-            </svg>
-            HOME
-          </a>
-        </li>
-      </ul>
+    <div class="row" id="torneos" style="margin: 0px;background: #0c254c;">
+        <div class="col">
+            <div class="container">
+                <h1 style="font-family: Ubuntu, sans-serif;text-align: left;">TORNEOS</h1>
+                <p style="font-size: 20px;font-family: Ubuntu, sans-serif; text-align: justify">¿Estás buscando torneos emocionantes en línea? ¡Tenemos justo lo que necesitas! En nuestra plataforma encontrarás una gran variedad de juegos para competir contra jugadores de todo el mundo. Visita nuestra página para descubrir más sobre cada uno de nuestros torneos y cómo puedes participar. No dudes en ponerte en contacto con nosotros si necesitas ayuda. ¡Te esperamos en la competición!</p>
+            </div>
+        </div>
     </div>
 
-    <ul class="menu">
-      <li>
-        <a href="jugar.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
-            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-          </svg> 
-          JUGAR
-        </a>
-      </li>
-      <li>
-        <a href="organizar.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+    <div class="row" id="servicios" style="margin: 0px;background: #11356f;">
+        <div class="col">
+            <div class="container">
+                <h1 style="padding-top: 20px;font-family: Ubuntu, sans-serif;text-align: right;">SERVICIOS</h1>
+                <p style="font-size: 20px;font-family: Ubuntu, sans-serif; text-align: justify">En nuestra página web ofrecemos una plataforma única que te permite crear y participar en todo tipo de torneos. Ya sea que estés interesado en videojuegos, deportes electrónicos, juegos de mesa o cualquier otra cosa, ¡tenemos algo para ti! <br><br>Además, nuestra plataforma está impulsada por la comunidad, lo que significa que los propios usuarios pueden crear y organizar sus propios torneos, personalizarlos a su gusto y compartirlos con otros jugadores. ¡Y lo mejor de todo es que tú también puedes ser parte de esta comunidad! Crea tu cuenta y comienza a explorar las opciones disponibles. ¡Te esperamos en la competición!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="herramientas" style="margin: 0px;background: #0c254c;">
+        <div class="col">
+            <div class="container">
+                <h1 style="padding-top: 20px;font-family: Ubuntu, sans-serif;">HERRAMIENTAS</h1>
+                <p style="font-size: 20px;font-family: Ubuntu, sans-serif; text-align: justify">Ofrecemos una gran variedad de herramientas para que puedas disfrutar al máximo de tu experiencia. Puedes crear y personalizar tus propios torneos ¡o también unirte a torneos existentes y participar en una gran variedad de juegos!<br><br>Si lo que buscas es hacer equipo, ¡también puedes hacerlo! Nuestra plataforma te permite crear un equipo, invitar a otros jugadores y competir juntos en torneos. Si prefieres unirte a un equipo, también puedes hacerlo y comenzar a jugar junto a otros jugadores.<br><br>Y si lo que quieres es llevar un registro de tus logros, ¡nuestra plataforma también te brinda esa opción! Puedes ver tus estadísticas, trofeos y medallas en tu perfil personal y compartirlos con otros jugadores en línea. Todo lo que necesitas para disfrutar de torneos en línea emocionantes lo encontrarás aquí, en nuestra plataforma. ¡Te esperamos en la competición!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row" id="contacto" style="margin: 0px;background: #11356f;">
+        <div class="col">
+            <div class="container">
+                <h1 style="padding-top: 20px;font-family: Ubuntu, sans-serif;text-align: right;">CONTACTO</h1>
+                <p style="font-size: 20px;font-family: Ubuntu, sans-serif; text-align: justify">Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros en cualquier momento. Estamos aquí para ayudarte y brindarte la mejor experiencia posible en nuestra plataforma.<br><br>Puedes ponerte en contacto con nosotros a través de nuestro correo electrónico. ¡No hay nada que nos guste más que escuchar a nuestra comunidad!</p>
+                
+                <button class="btn btn-primary" onclick="copiarCorreo()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="copiarCorreo"></span>
+                    Copiar correo de contacto al portapapeles
+                </button>   
+                    
+                <a href="mailto:contact@tournamaster.com"> <button class="btn btn-primary">Abrir correo electrónico</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón backToTop -->
+    <button type="button"class="btn btn-primary btn-floating btn-lg rounded-circle" id="btn-back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
           </svg>
-          ORGANIZAR
-        </a>
-      </li>
-    </ul>
-
-    <div class="bottom-item">
-      <ul class="menu">
-        <li>
-          <a href="perfil.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-            </svg>
-            Perfil
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<div class="content bienvenida">
-  <h1>Portal de Tournamaster</h1>
-</div>
+    </button>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/botonCopiarCorreo.js"></script>
+    <script src="assets/js/abrirCorreo.js"></script>
     <script src="assets/js/loginOrRegister.js"></script>
     <script src="assets/js/sidebarCollapse.js"></script>
-    <script src="assets/js/popupExito.js"></script>
+    <script src="assets/js/backToTopButton.js"></script>
 </body>
 
 </html>
