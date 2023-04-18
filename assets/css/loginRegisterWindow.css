@@ -10,7 +10,8 @@
 }
 
 .popup-content {
-  background-color: #F8F8F8;
+  background-color: #0C254C;
+  color: #EEE;
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -53,17 +54,21 @@
 }
 
 .close {
-  position: absolute;
   top: 20px;
   right: 30px;
   font-size: 40px;
   font-weight: bold;
-  color: #f1f1f1;
+  color: #0c5182;
   cursor: pointer;
 }
 
+.close-container{
+  text-align: right;
+  padding: 0;
+}
+
 .close:hover, .close:focus {
-  color: #BBB;
+  color: #EEE;
   text-decoration: none;
   cursor: pointer;
 }
