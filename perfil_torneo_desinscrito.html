@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TrabajoIU</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="assets/css/logged.css">
+    <link rel="stylesheet" href="assets/css/loginRegisterWindow.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/popupExito.css">
+</head>
+
+<body style="background: #0c254c;"><div class="topbar">
+  <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
+    ☰
+  </button>
+</div>
+
+<nav class="sidebar">
+  <div class="menu-wrapper">
+    <ul class="menu">
+      <li>
+        <a id="selected" href="jugar.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg> 
+          JUGAR
+        </a>
+      </li>
+      <li>
+        <a href="organizar.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+          ORGANIZAR
+        </a>
+      </li>
+    </ul>
+
+    <div class="bottom-item">
+      <ul class="menu">
+        <li>
+          <a href="perfil.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+            </svg>
+            Perfil
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="content popupExito">
+	<p>¡Ya no estás inscrito en el Torneo!</p>
+</div>
+
+
+<div class="content container-fluid">
+    <div class="row d-flex align-items-center">
+      <div class="col-lg">
+        <div class="card" style="width: 100%; height: 100%;">
+          <div class="rounded-top d-flex flex-row" style="background-color: black; color: white; height:200px;">
+            <div class="ms-4 mt-5 d-flex flex-column">
+              <img src="./assets/img/profile_pic.jpg" alt="Image not found" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 0">
+              <a href="perfil_editar.html" class="btn btn-outline-dark" role="button" data-mdb-ripple-color="dark" style="z-index: 0;">Editar perfil</a>
+              </button>
+            </div>
+            <div class="ms-3" style="margin-top: 130px;">
+              <h4 style="font-weight: bold;">Samus Aran</h4>
+              <p style="font-style: italic; color: gray;">Cazarrecompensas</p>
+            </div>
+          </div>
+          
+          <div class="p-4 text-black" style="background-color: white;">
+            <div class="d-flex justify-content-end text-center py-1">
+              <div>
+                <p class="mb-1 h5">17</p>
+                <p class="small text-muted mb-0">Nivel</p>
+              </div>
+              <div class="px-3">
+                <p class="mb-1 h5">1026</p>
+                <p class="small text-muted mb-0">Experiencia</p>
+              </div>
+              <div>
+                <p class="mb-1 h5">317</p>
+                <p class="small text-muted mb-0">Logros</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar" style="background-color: #031634; margin: 0%;">
+      <ul class="mx-auto">
+        <li class="nav-item"><a class="nav-link" href="./perfil.html">MIS DATOS</a></li>
+        <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html">MIS TORNEOS</a> </li>
+        <li class="nav-item"><a class="nav-link" href="./perfil_misequipos.html">MIS EQUIPOS</a> </li>
+        <li class="nav-item"><a class="nav-link" href="./perfil_mislogros.html">LOGROS</a> </li>
+      </ul>
+    </nav>
+  
+    <nav class="navbar" style="background-color: #031634; margin: 0%;">
+      <ul class="mx-auto">
+        <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html">Inscritos</a></li>
+        <li class="nav-item"><a class="nav-link" href="./perfil_misorganizados.html">Organizados</a> </li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- Torneos inscritos -->
+  <div class="content container">
+    <div class="row">
+      <section class="card" style="margin-bottom: 2rem;">
+        <a class="custom-link link-dark" href="./perfil_torneo_revisar.html">
+          <div class="row g-0">
+            <div class="col-2 mt-3 mb-3">
+              <img class="img-fluid float-start ms-1 rounded" src="./assets/img/game1.png">
+            </div>
+            <div class="col-10">
+              <div class="card-body">
+                <h2 class="card-title pt-2" style="font-weight: bold;">Peaches Peaches Peaches Tournament</h2>
+                <h4 class="card-title" style="font-style: italic;">Super Smash Bros. Ultimate</h4>
+                <p>Torneo de celebración del estreno de Super Mario Bros: La Película</p>
+              </div>
+            </div>            
+          </div>
+        </a>
+      </section>
+    </div>
+  
+    <div class="row">
+      <section class="card" style="margin-bottom: 2rem;">
+        <a class="custom-link link-dark" href="./perfil_mistorneos.html">
+          <div class="row g-0">
+            <div class="col-2 mt-3 mb-3">
+              <img class="img-fluid float-start ms-1 rounded" src="./assets/img/game7.png">
+            </div>
+            <div class="col-10">
+              <div class="card-body">
+                <h2 class="card-title pt-2" style="font-weight: bold;">Torneo Petanca La Residencia Día de la Comunidad 2023</h2>
+                <h4 class="card-title" style="font-style: italic;">Petanca</h4>
+                <p>Competición de petanca para celebrar el Día de la comunidad en la residencia de ancianos La Residencia</p>
+              </div>
+            </div>            
+          </div>
+        </a>
+      </section>
+    </div>
+  </div>
+  
+
+<script> window.onload = function() {
+	document.querySelector('.popupExito').classList.add('show');
+  };
+  
+</script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/loginOrRegister.js"></script>
+    <script src="assets/js/sidebarCollapse.js"></script>
+    <script src="assets/js/popupExito.js"></script>
+</body>
+
+</html>
