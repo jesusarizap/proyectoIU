@@ -22,7 +22,7 @@
 </style>
 
 <body style="background: rgb(27,68,133);">
-    <nav class="navbar navbar-light navbar-expand-md py-sm-0" style="background: #031634;">
+    <nav class="navbar navbar-light navbar-expand-xxl py-sm-0" style="background: #031634;">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/Logo_Tournamaster.png" style="width: 200px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
             <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-3">
@@ -31,7 +31,10 @@
                     <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#servicios" style="font-family: Ubuntu, sans-serif;font-size: 24px;">SERVICIOS</a></li>
                     <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#herramientas" style="font-family: Ubuntu, sans-serif;font-size: 24px;">HERRAMIENTAS</a></li>
                     <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#contacto" style="font-family: Ubuntu, sans-serif;font-size: 24px;">CONTACTO</a></li>
-                </ul><button class="btn btn-primary" type="button" onclick="document.getElementById('login-popup').style.display='block'">Iniciar sesión</button>
+                </ul>
+                <div class="iniciaSesionContainer">
+                    <button class="btn btn-primary" type="button" onclick="document.getElementById('login-popup').style.display='block'">Iniciar sesión</button>
+                </div>
                 
                 <div id="login-popup" class="popup">
                 <div class="popup-content">
@@ -110,7 +113,7 @@
                     Copiar correo de contacto al portapapeles
                 </button>   
                     
-                <button class="btn btn-primary" type="button" onclick="abrirVentana()">Abrir correo electrónico</button>
+                <a href="mailto:contact@tournamaster.com"> <button class="btn btn-primary">Abrir correo electrónico</button></a>
             </div>
         </div>
     </div>
