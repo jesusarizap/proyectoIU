@@ -133,12 +133,13 @@
 
       <label for="premioForm" name="premio" class="mt-2">Premios</label><br />
       <label for="no">No</label><br /><br /><br>
-      
+
+
+      <a href="segundaVistaJUGAR.html" role="button" type="button" class="btn btn-danger mt-2">Atrás</a>
       <a role="button" type="button" class="btn btn-success mt-2"
         onclick="document.getElementById('equipo-popup').style.display='block'">
-        Inscribirse
+        INSCRIBIRSE
       </a>
-      <a href="segundaVistaJUGAR.html" role="button" type="button" class="btn btn-danger mt-2">Cancelar</a>
 
 
     </fieldset>
@@ -151,19 +152,19 @@
 
 --------------->
 
-  <div id="equipo-popup" class="popup content" style="width:100%;">
-    <div class="popup-content" style="width: 50%;">
+  <div id="equipo-popup" class="popup content" style="width: max-content;">
+    <div class="popup-content" style="width: inherit;">
       <!--      ESCOGER EQUIPO      -->
       <div id="equipo1">
         <table>
           <tr><td>
             <!--<button class="custom-link link-dark" onclick="document.getElementById('participacion-popup').style.display='none'">-->
             <div style="text-align: center;">
-              <img class="img-fluid rounded" src="./assets/img/equipo1.png" style="align-items: center; width: 250px;">
+              <img class="img-fluid rounded" src="./assets/img/equipo1.png" style="align-items: center; width: 150px;">
             </div></td><td>
               <div class="card-body">
-              <h2 class="card-title " style="font-weight: bold; color:white">Inazuma Japón</h2>
-              <h4 class="card-text" style="font-style: italic; text-align: center;  color:white">Fútbol</h4>
+              <h2 class="card-title " style="font-weight: bold; color:black">Inazuma Japón</h2>
+              <h4 class="card-text" style="font-style: italic;  color:black">Fútbol</h4>
             </div>
             <button class="btn btn-primary avanzar" type="button" onclick="ocultarEquipo()">INSCRIBIRSE</button>
             <button class="btn btn-primary avanzar" type="button" onclick="ocultarPopUp()">VOLVER</button>  
@@ -189,7 +190,7 @@
   <!--     CONFIRMAR PARTICIPACION / VOLVER EQUIPOS -->
   <div id="participacion-popup" class="popup">
     <div class="popup-content">
-      <h2 style=" color:white">Participar con equipo: Inazuma Japón</h2>
+      <h2 style=" color:black">Participar con equipo: Inazuma Japón</h2>
       <a href="./cuartaVistaJUGAR.html"><button class="avanzar">Confirmar</button></a>
       <button class="cancelar" onclick="mostrarEquipo()">Volver</button>
     </div>
