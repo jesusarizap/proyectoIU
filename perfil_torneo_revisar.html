@@ -8,8 +8,18 @@
         <link rel="stylesheet" href="assets/css/logged.css">
         <link rel="stylesheet" href="assets/css/loginRegisterWindow.css">
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/formularios.css">
     </head>
+
+    <style>
+      div, form {
+          color: #EEEEEE;
+      }
+    
+      a, a:hover {
+          text-decoration: none;
+          color: white;
+      }
+    </style>
 
 
     <body style="background: #0c254c;">
@@ -78,86 +88,46 @@
             </div>
           </div>
         
-        <div class="content container-fluid">
-            <!--Banner-->
-            <img class="card-img-top img-fluid" src="./assets/img/game1.png" style="height: 15rem; object-fit: cover; object-position: 0% 15%;" alt="Image not found">
-            <!--Título-->
-            <div>
-              <h1>Torneo 1</h1>
-            </div>
+           <!-- Banner del juego -->
+           <div class="content container-fluid">
+            <div class="col-sm">
+                <section id="game1" class="card" style="width: 100%; height: auto;">
+                  <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Image not found">
+                </section>
+            </div>    
 
-            <!-- Datos -->
-            <!-- Primera fila-->
-            <div class="row">
-                <div class="col-sm">
-                <label class="datos"> Número de jugadores: </label> 
-                <label class="info"> 32</label>
-                </div>
-
-                <div class="col-sm">
-                    <label class="datos"> Modalidad: </label> 
-                    <label class="info"> Individual</label>
-                    </div>
-            </div>
-        
-            <!-- Segunda fila -->
-            <div class="row">
-                <div class="col-sm">
-                <label class="datos"> Fecha de inicio: </label> 
-                <label class="info"> 09/05/2023</label>
-                </div>
-
-                <div class="col-sm">
-                    <label class="datos"> Nivel: </label> 
-                    <label class="info amistoso"> Amistoso</label>
-                    </div>
-            </div>
-        
-            <!-- Tercera fila -->
-            <div class="row">
-                <div class="col-sm">
-                <label class="datos"> Fecha de inicio: </label> 
-                <label class="info"> 16/05/2023</label>
-                </div>
-            </div>
-        
-            <!-- Cuarta fila -->
-            <div class="row">
-                <div class="col-sm">
-                <label class="datos"> Lugar: </label> 
-                <label class="info online"> Online</label>
-                </div>
-            </div>
-
-            <!-- Quinta fila -->
-            <div class="row">
-                <div class="col-sm">
-                <label class="datos"> Premios: </label> 
-                <label class="info primero"> 1º: 50€</label>
-                </div>
-
-                <div class="col-sm">
-                    <label class="info segundo"> 2º: 25€</label>
-                    </div>
-
-                <div class="col-sm">
-                    <label class="info tercero"> 3º: Vale KFC</label>
-                    </div>
-            </div>
-
-            <!-- Sexta fila -->
-            <div class="row">
-                <div class="col-sm">
-                    <label class="datos"> Inscripción: </label> 
-                    <label class="info abierta"> ABIERTA</label>
-                </div>
-
-                <div class="col-sm">
-                  <label>
-                        <button class="cancelar" onclick="switchOn()">CANCELAR INSCRIPCIÓN</button>
-                  </label>
-                </div>
-            </div>
+            <legend class="mt-2">Torneo 1</legend>
+            <br><br/>
+            
+            <label for="jugadoresForm">Número de equipos:</label><br>
+            <label size="1" maxlength="3" id="titleForm" type="text">32</label><br/><br>
+                        
+            <label for="fechaInicioForm">Fecha de inicio</label><br/>
+            <label size="1" maxlength="3" id="titleForm" type="text">20/03/2023</label><br/><br>
+            
+            <label for="fechaCierreForm">Fecha de cierre</label><br/>
+            <label size="1" maxlength="3" id="titleForm" type="text">30/04/2023</label><br/><br>
+            
+            <label for="modalidadForm" name="modalidad" class="mt-2">Modalidad</label><br/>
+            <label size="1" maxlength="3" id="titleForm" type="text">Individual</label><br/><br>
+          
+            <label for="nivelForm" name="nivel" class="mt-2">Dificultad</label><br/>
+            <label size="1" maxlength="3" id="titleForm" type="text">Amistoso</label><br/><br>
+            
+            <label for="localizacionForm" name="lugar" class="mt-2">Localización</label><br/>
+            <label for="online">Sala de estudiantes ETSI Informática</label><br/><br>
+            
+            <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
+            <label for="abierta">Abierta</label><br/><br>
+            
+            <label for="premioForm" name="premio" class="mt-2">Premios</label><br/>
+                <label for="no">1º puesto - 50€</label><br/>
+                <label for="no">2º puesto - 25€</label><br/>
+                <label for="no">3º puesto - Vale KFC</label><br/><br>
+            
+            
+              <a role="button" type="button"  class="btn btn-danger mt-2 cancelar" onclick="switchOn()">Cancelar inscripción</a>
+            
         </div>
         
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
