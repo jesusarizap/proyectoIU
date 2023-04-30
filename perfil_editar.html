@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TrabajoIU</title>
+    <title>Editar información de mi perfil</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
@@ -77,29 +77,30 @@
       </div>
     </div>
   </nav>
-
+<h1></h1>
   <!-- Editar perfil -->
     <div class="content container-fluid">
-        <form class="text-light">
+        <form class="text-light" action="./perfil.html" method="get">
             <fieldset>
                 <legend class="mt-4">Editar perfil</legend>
                 <label for="nameForm">Nombre completo</label><br/>
-                    <input size="50" id="name" type="text"/><br/>
+                    <input size="50" id="name" type="text" title="Nombre completo de usuario"/><br/>
                 
                 <label for="nicknameForm">Nickname</label><br/>
-                    <input size="50" id="nicknameForm" type="text"/><br/>
+                    <input size="50" id="nicknameForm" type="text" title="Nickname de usuario"/><br/>
                 
                 <label for="titleForm">Título</label><br/>
-                    <input size="50" id="titleForm" type="text"/><br/>
+                    <input size="50" id="titleForm" type="text" title="Título de usuario"/><br/>
                 
                 <div class="mt-2 mb-4">
                     Foto de perfil<br/>
-                    <img src="./assets/img/profile_pic.jpg" class="img-fluid img-thumbnail" style="width: 300px; z-index: 1"><br/>  
-                    <input class="mt-2" type="file">
+                    <img src="./assets/img/profile_pic.jpg" class="img-fluid img-thumbnail" style="width: 25em;" alt="Foto de perfil del usuario"><br/>  
+                    <input class="mt-2" type="file" title="Foto de perfil">
                 </div>
 
                 <label for="fechaNacimientoForm">Fecha de nacimiento</label><br/>
-                    <input size="10" maxlength="10" id="nacimientoForm" type="date"/><br/>
+                    <input size="10" maxlength="10" id="nacimientoForm" type="date" title="Fecha de nacimiento" onchange="if(isNaN(Date.parse(this.value))) 
+                    alert('This control is not a valid date. Please re-enter the value.');" />/><br/>
                 
                 <label for="generoForm" name="genero" class="mt-2">Género</label><br/>
                     <input type="radio" class="m-2" id="hombre" name="genero" value="Hombre">
@@ -115,16 +116,17 @@
                     <input size="50" id="ubicacionForm" type="text"/><br/>  
                     
                 <label for="nivelForm" name="nivel" class="mt-2">Nivel preferido</label><br/>
-                    <input type="radio" class="m-2" id="amistoso" name="genero" value="Amistoso">
+                    <input type="radio" class="m-2" id="amistoso" name="genero" value="Amistoso" title="Nivel amistoso">
                         <label for="hombre">Amistoso</label>
-                    <input type="radio" class="m-2" id="profesional" name="genero" value="Profesional">
+                    <input type="radio" class="m-2" id="profesional" name="genero" value="Profesional" title="Nivel profesional">
                         <label for="mujer">Profesional</label><br/>
                         
                 <label for="sobreMiForm">Descripción</label><br/>
                     <textarea id="sobreMiForm" cols="50" rows="5"></textarea><br/> 
 
-                <a href="./perfil.html" role="button" type="button" class="btn btn-success mt-2">Guardar cambios</a>
-                <a href="./perfil.html" role="button" type="button" class="btn btn-danger mt-2">Cancelar</a>
+                <input type="submit" value="Guardar cambios" class="btn btn-success mt-2"/>
+                <input type="submit" value="Cancelar" class="btn btn-danger mt-2"/><br/>
+                
             </fieldset>
         </form>
     </div>
