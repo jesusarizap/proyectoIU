@@ -1,9 +1,9 @@
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>TrabajoIU</title>
+  <title>Torneo 2</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="stylesheet" href="assets/css/logged.css">
@@ -99,41 +99,44 @@
   <div class="content container-fluid">
     <div class="col-sm">
       <section id="game1" class="card" style="width: 100%; height: auto;">
-        <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Image not found">
+        <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Image not found" longdesc="Banner del torneo">
       </section>
     </div>
   </div>
 
-  <!-- Formulario para la creación del torneo -->
-  <form class="content container-fluid">
+  <!-- Información del torneo -->
+  <div class="content container-fluid">
     <fieldset>
       <legend class="mt-2">Torneo 2</legend>
-      <br><br />
+      <br/><br/>
 
-      <label for="jugadoresForm">Número de equipos:</label><br>
-      <label size="1" maxlength="3" id="titleForm" type="text">8</label><br /><br>
+      <p>
+        <div class="mt-2">
+          Número de equipos:<br/>
+          8<br/><br/>
 
-      <label for="fechaInicioForm">Fecha de inicio</label><br />
-      <label size="1" maxlength="3" id="titleForm" type="text">12/03/2023</label><br /><br>
+          Fecha de inicio<br/>
+          12/03/2023<br/><br/>
 
-      <label for="fechaCierreForm">Fecha de cierre</label><br />
-      <label size="1" maxlength="3" id="titleForm" type="text">23/03/2023</label><br /><br>
+          Fecha de cierre<br/>
+          23/03/2023<br/><br/>
 
-      <label for="modalidadForm" name="modalidad" class="mt-2">Modalidad</label><br />
-      <label size="1" maxlength="3" id="titleForm" type="text">Por equipos</label><br /><br>
+          Modalidad<br/>
+          Por equipos<br/><br/>
 
-      <label for="nivelForm" name="nivel" class="mt-2">Dificultad</label><br />
-      <label size="1" maxlength="3" id="titleForm" type="text">Liga - Profesional</label><br /><br>
+          Dificultad<br/>
+          Liga - Profesional<br/><br/>
 
-      <label for="localizacionForm" name="lugar" class="mt-2">Localización</label><br />
-      <label for="online">Online</label><br /><br>
+          Localización<br/>
+          Online<br/><br>
 
-      <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br />
-      <label for="abierta">Abierta</label><br /><br>
+          Inscripción<br/>
+          Abierta<br/><br/>
 
-      <label for="premioForm" name="premio" class="mt-2">Premios</label><br />
-      <label for="no">No</label><br /><br /><br>
-
+          Premios<br/>
+          No<br/><br/><br/>
+        </div>
+      </p>
 
       <a href="segundaVistaJUGAR.html" role="button" type="button" class="btn btn-danger mt-2">Atrás</a>
       <a role="button" type="button" class="btn btn-success mt-2"
@@ -143,7 +146,7 @@
 
 
     </fieldset>
-  </form>
+  </div>
 
 
   <!----------------
@@ -160,11 +163,11 @@
           <tr><td>
             <!--<button class="custom-link link-dark" onclick="document.getElementById('participacion-popup').style.display='none'">-->
             <div style="text-align: center;">
-              <img class="img-fluid rounded" src="./assets/img/equipo1.png" style="align-items: center; width: 150px;">
+              <img class="img-fluid rounded" src="./assets/img/equipo1.png" alt="image not fount" longdesc="Imagen del equipo" style="align-items: center; width: 150px;">
             </div></td><td>
               <div class="card-body">
               <h2 class="card-title " style="font-weight: bold; color:black">Inazuma Japón</h2>
-              <h4 class="card-text" style="font-style: italic;  color:black">Fútbol</h4>
+              <h3 class="card-text" style="font-style: italic;  color:black">Fútbol</h4>
             </div>
             <button class="btn btn-primary avanzar" type="button" onclick="ocultarEquipo()">INSCRIBIRSE</button>
             <button class="btn btn-primary avanzar" type="button" onclick="ocultarPopUp()">VOLVER</button>  
