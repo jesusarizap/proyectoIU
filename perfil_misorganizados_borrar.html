@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TrabajoIU</title>
+    <title>Pestaña Borrar torneos organizados</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
@@ -67,7 +67,7 @@
     </div>
   </div>
 </nav>
-
+<h1></h1>
 <div class="content container-fluid">
   <div class="row d-flex align-items-center">
     <div class="col-lg">
@@ -75,7 +75,7 @@
         <div class="rounded-top d-flex flex-row" style="background-color: black; color: white; height:200px;">
           <!-- Botón logout -->
           <div class="position-absolute top-0 end-0 p-3">
-            <a href="index.html">
+            <a href="index.html" title="Cerrar sesión">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
                 <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
@@ -84,12 +84,12 @@
           </div>
           
           <div class="ms-4 mt-5 d-flex flex-column">
-            <img src="./assets/img/profile_pic.jpg" alt="Image not found" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 0">
-            <a href="perfil_editar.html" class="btn btn-outline-dark" role="button" data-mdb-ripple-color="dark" style="z-index: 0;">Editar perfil</a>
+            <img src="./assets/img/profile_pic.jpg" title="Foto de Perfil" alt="Image not found" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 9.375em; z-index: 0">
+            <a href="perfil_editar.html" class="btn btn-outline-dark" role="button" data-mdb-ripple-color="dark" style="z-index: 0;" title="Editar tus datos">Editar perfil</a>
           </div>
-          <div class="ms-3" style="margin-top: 130px;">
-            <h4 style="font-weight: bold;">Samus Aran</h4>
-            <p style="font-style: italic; color: gray;">Cazarrecompensas</p>
+          <div class="ms-3" style="margin-top: 8.125em;">
+            <div id="headerCuatro" style="font-weight: bold;" title="Nickname">Samus Aran</div>
+            <p style="font-style: italic; color: gray;" title="Titulo de usuario">Cazarrecompensas</p>
           </div>
         </div>
         
@@ -114,17 +114,17 @@
   </div>
   <nav class="navbar navbar-perfil" style="background-color: #031634; margin: 0%;">
     <ul class="mx-auto">
-      <li class="nav-item"><a class="nav-link" href="./perfil.html">MIS DATOS</a></li>
-      <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html">MIS TORNEOS</a> </li>
-      <li class="nav-item"><a class="nav-link" href="./perfil_misequipos.html">MIS EQUIPOS</a> </li>
-      <li class="nav-item"><a class="nav-link" href="./perfil_mislogros.html">LOGROS</a> </li>
+      <li class="nav-item"><a class="nav-link" href="./perfil.html" title="Mis datos">MIS DATOS</a></li>
+      <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html" title="Mis torneos">MIS TORNEOS</a> </li>
+      <li class="nav-item"><a class="nav-link" href="./perfil_misequipos.html" title="Mis equipos">MIS EQUIPOS</a> </li>
+      <li class="nav-item"><a class="nav-link" href="./perfil_mislogros.html" title="Mis logros">LOGROS</a> </li>
     </ul>
   </nav>
 
   <nav class="navbar navbar-perfil" style="background-color: #031634; margin: 0%;">
     <ul class="mx-auto">
-      <li class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html">Inscritos</a></li>
-      <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_misorganizados.html">Organizados</a> </li>
+      <li class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html" title="Torneos a los que estás inscritos">Inscritos</a></li>
+      <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_misorganizados.html" title="Torneos que has organizado">Organizados</a> </li>
     </ul>
   </nav>
 </div>
