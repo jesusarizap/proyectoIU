@@ -7,3 +7,10 @@ function switchToLogin() {
   document.getElementById("register-popup").style.display = "none";
   document.getElementById("login-popup").style.display = "block";
 }
+
+const closeButton = document.querySelector('.close');
+closeButton.addEventListener('click', cerrarPopUp);
+
+function cerrarPopUp() {
+  document.getElementById('login-popup').style.display = 'none';
+}
