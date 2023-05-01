@@ -58,6 +58,17 @@ html {
     line-height: 1.2;
     color: black;
 }
+#headerCuatro{
+  display: block;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
 .card{
   --bs-card-spacer-y: 1rem;
 --bs-card-spacer-x: 1rem;
