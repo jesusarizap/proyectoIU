@@ -98,17 +98,17 @@
             <label for="titleForm">Título del torneo</label><br/>
                 <input size="50" id="titleForm" type="text"/><br/>
             
-            <label for="jugadoresForm" title="Numero de participantes del torneo">Número de participantes</label><br/>
-                <input size="1" maxlength="3" id="titleForm" type="text"/><br/>
+            <label for="jugadoresForm" >Número de participantes</label><br/>
+                <input size="1" maxlength="3" id="titleForm" type="text" title="Numero de participantes del torneo"/><br/>
                 <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
                         
-            <label for="fechaInicioForm" title="Fecha de inicio del torneo">Fecha de inicio</label><br/>
+            <label for="fechaInicioForm" >Fecha de inicio</label><br/>
                 <input size="10" maxlength="10" id="inicioForm" type="date" onchange="if(isNaN(Date.parse(this.value))) 
                 alert('This control is not a valid date. Please re-enter the value.');"/><br/>
             
-            <label for="fechaCierreForm" title="Fecha de cierre del torneo" onchange="if(isNaN(Date.parse(this.value))) 
-            alert('This control is not a valid date. Please re-enter the value.');">Fecha de cierre</label><br/>
-                <input size="10" maxlength="10" id="cierreForm" type="date"/><br/>
+            <label for="fechaCierreForm">Fecha de cierre</label><br/>
+                <input size="10" maxlength="10" id="cierreForm" type="date"title="Fecha de cierre del torneo" onchange="if(isNaN(Date.parse(this.value))) 
+                alert('This control is not a valid date. Please re-enter the value.');"/><br/>
             
             <label for="modalidadForm" name="modalidad" class="mt-2" title="Modalidad del torneo">Modalidad</label><br/>
                 <input type="radio" class="m-2" id="individual" name="modalidad" value="Individual" title="Individual">
@@ -144,8 +144,9 @@
                 <input type="radio" class="m-2" id="no" name="premio" value="No" title="No">
                     <label for="no">No</label><br/>
             
-            <label for="descripcionForm" title="Descripcion del torneo">Descripción</label><br/>
-                <textarea id="descripcionForm" cols="50" rows="5"></textarea><br/> 
+            <label for="descripcionForm" >Descripción</label><br/>
+                <textarea id="descripcionForm" cols="50" rows="5" title="Descripcion del torneo"></textarea><br/> 
+            
             <input type="submit" value="Guardar Cambios" class="btn btn-success mt-2"/>
             <input type="submit" value="Cancelar" class="btn btn-danger mt-2"/>
         </fieldset>
