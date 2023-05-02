@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TrabajoIU</title>
+    <title>TournaMaster - Editar equipo</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
@@ -24,14 +24,15 @@
 
 <body style="background: #0c254c;">
   <div class="topbar">
-    <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">☰</button>
+    <button class="expand-btn" aria-expanded="false" title="Botón para expandir el menú lateral">
+      ☰
+    </button>
   </div>
 
   <nav class="sidebar">
     <div class="menu-wrapper">
-
       <div class="top-item">
-        <ul class="menu">
+        <ul class="menu" title="Botón Home">
           <li>
             <a href="./home.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -45,7 +46,7 @@
 
       <ul class="menu">
         <li>
-          <a href="jugar.html">
+          <a href="jugar.html" title="Botón Jugar">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
               <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
             </svg> 
@@ -53,7 +54,7 @@
           </a>
         </li>
         <li>
-          <a href="organizar.html">
+          <a href="organizar.html" title="Botón Organizar">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
@@ -64,7 +65,7 @@
       </ul>
 
       <div class="bottom-item">
-        <ul class="menu">
+        <ul class="menu" title="Botón Perfil">
           <li>
             <a id="selected" href="perfil.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -79,35 +80,38 @@
   </nav>
 
   <!-- Editar perfil -->
-    <div class="content container-fluid">
-        <form class="text-light">
-            <fieldset>
-                <legend class="mt-4">Editar equipo</legend>
-                <label for="nameForm">Nombre del equipo</label><br/>
-                    <input size="50" id="name" type="text"/><br/>
-                
-                <label for="nickJugador">Jugador 1</label><br/>
-                    <input size="50" id="nickJugador1" type="text"/><br/>
-                
-                <label for="nickJugador">Jugador 2</label><br/>
-                    <input size="50" id="nickJugador2" type="text"/>
-                <button>+</button>
-                <br>
-                <div class="mt-2 mb-4">
-                    Foto del equipo<br/>
-                    <img src="./assets/img/equipo1.png" class="img-fluid img-thumbnail" style="width: 300px; z-index: 1"><br/>  
-                    <input class="mt-2" type="file">
-                </div>
+  <form action="./perfil_misequipos.html" method="post" class="content container-fluid">
+    <h1 id="headerDos">Formulario para editar el equipo: Inazuma Japón</h1>
+    <fieldset>
+      <legend class="mt-2">Información principal</legend>
+        <label for="nameForm">Nombre del equipo</label><br/>
+        <input size="50" id="nameForm" type="text" value="Inazuma Japón" title="Campo para editar el nombre del equipo"/><br/>
+      
+      <div class="mt-2 mb-4">
+          Foto de perfil<br/>
+          <img src="./assets/img/equipo1.png" class="img-fluid img-thumbnail" style="width: 25em;" alt="Imagen no encontrada" title="Foto de perfil seleccionada para el equipo"><br/>  
+          <input class="mt-2" type="file" title="Botón para elegir una imagen de perfil para el equipo de tu ordenador">
+      </div>
 
-                <label for="sobreMiForm">Descripción</label><br/>
-                    <textarea id="sobreMiForm" cols="50" rows="5"></textarea><br/> 
-                
-                <a href="./perfil_misequipos.html" role="button" type="button" class="btn btn-success mt-2">Guardar cambios</a>
-                <a href="./perfil_misequipos.html" role="button"type="button" class="btn btn-danger mt-2">Cancelar</a>
-            </fieldset>
-        </form>
-    </div>
+      <legend class="mt-2">Miembros del equipo</legend>
+      <label for="jugador1Form">Jugador 1</label><br/>
+        <input size="50" id="jugador1Form" type="text" value="Mark Evans" title="Campo para editar el nombre del jugador 1"/><br/>
+      
+      <label for="jugador2Form">Jugador 2</label><br/>
+        <input size="50" id="jugador2Form" type="text" value="Axel Blaze" title="Campo para editar el nombre del jugador 2"/><br/>
+      
+      <label for="jugador3Form">Jugador 3</label><br/>
+        <input size="50" id="jugador3Form" type="text" value="Shawn Froste" title="Campo para editar el nombre del jugador 3"/><br/>
+      
+      <input class="btn btn-primary mt-2" value="+" type="button" title="Botón para añadir un jugador"></button><br/>
 
+      <label for="descripcionForm">Descripción</label><br/>
+        <textarea id="descripcionForm" cols="50" rows="5" title="Campo para escribir la información del torneo"></textarea><br/> 
+    </fieldset>
+
+    <input class="btn btn-success mt-2" value="Guardar cambios" type="submit" title="Botón para confirmar los cambios"></button>
+    <button class="btn btn-danger mt-2" title="Botón para cancelar los cambios"><a href="./perfil_misequipos.html" type="button" >Cancelar</a></button>
+  </form>
 
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/loginOrRegister.js"></script>

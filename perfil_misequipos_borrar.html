@@ -1,133 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TrabajoIU</title>
+    <title>TournaMaster - Mis equipos</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
     <link rel="stylesheet" href="assets/css/perfil.css">
 </head>
 
-<body style="background: #0c254c;"><div class="topbar">
-  <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
-    ☰
-  </button>
-</div>
+<style>
+  a, a:hover {
+      text-decoration: none;
+      color: white;
+  }
+  
+  #headerDos {
+    display: block;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    color: white;
+}
+</style>
 
-<nav class="sidebar">
-  <div class="menu-wrapper">
-
-    <div class="top-item">
-      <ul class="menu">
-        <li>
-          <a href="./home.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-              <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-            </svg>
-            HOME
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <ul class="menu">
-      <li>
-        <a href="jugar.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
-            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-          </svg> 
-          JUGAR
-        </a>
-      </li>
-      <li>
-        <a href="organizar.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-          </svg>
-          ORGANIZAR
-        </a>
-      </li>
-    </ul>
-
-    <div class="bottom-item">
-      <ul class="menu">
-        <li>
-          <a id="selected" href="perfil.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-            </svg>
-            Perfil
-          </a>
-        </li>
-      </ul>
-    </div>
+<body style="background: #0c254c;">
+  <div class="topbar">
+    <button class="expand-btn" aria-expanded="false" title="Botón para expandir el menú lateral">
+      ☰
+    </button>
   </div>
-</nav>
 
-<div class="content container-fluid">
-  <div class="row d-flex align-items-center">
-    <div class="col-lg">
-      <div class="card" style="width: 100%; height: 100%;">
-        <div class="rounded-top d-flex flex-row" style="background-color: black; color: white; height:200px;">
-          <!-- Botón logout -->
-          <div class="position-absolute top-0 end-0 p-3">
-            <a href="index.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+  <nav class="sidebar">
+    <div class="menu-wrapper">
+      <div class="top-item">
+        <ul class="menu" title="Botón Home">
+          <li>
+            <a href="./home.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
               </svg>
+              HOME
             </a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="menu">
+        <li>
+          <a href="jugar.html" title="Botón Jugar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg> 
+            JUGAR
+          </a>
+        </li>
+        <li>
+          <a href="organizar.html" title="Botón Organizar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+            ORGANIZAR
+          </a>
+        </li>
+      </ul>
+
+      <div class="bottom-item">
+        <ul class="menu" title="Botón Perfil">
+          <li>
+            <a id="selected" href="perfil.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+              Perfil
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner del perfil -->
+  <div class="content container-fluid">
+    <div class="row d-flex align-items-center">
+      <div class="col-lg">
+        <div class="card" style="width: 100%; height: 100%;">
+          <div class="rounded-top d-flex flex-row" style="background-color: black; color: white; height:200px;">
+            <!-- Botón logout -->
+            <div class="position-absolute top-0 end-0 p-3" onclick="location.href='index.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg>
+            </div>
+            
+            <div class="ms-4 mt-5 d-flex flex-column">
+              <img src="./assets/img/profile_pic.jpg" alt="Image not found" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 0" title="Foto de perfil">
+              <button type="button" onclick="location.href='./perfil_editar.html'" title="Botón para editar el perfil" class="btn btn-outline-dark" data-mdb-ripple-color="dark" style="z-index: 0;">Editar perfil</button>
+            </div>
+            <div class="ms-3" style="margin-top: 130px;">
+              <h4 style="font-weight: bold;">Samus Aran</h4>
+              <p style="font-style: italic; color: gray;">Cazarrecompensas</p>
+            </div>
           </div>
           
-          <div class="ms-4 mt-5 d-flex flex-column">
-            <img src="./assets/img/profile_pic.jpg" alt="Image not found" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 0">
-            <a href="perfil_editar.html" class="btn btn-outline-dark" role="button" data-mdb-ripple-color="dark" style="z-index: 0;">Editar perfil</a>
-          </div>
-          <div class="ms-3" style="margin-top: 130px;">
-            <h4 style="font-weight: bold;">Samus Aran</h4>
-            <p style="font-style: italic; color: gray;">Cazarrecompensas</p>
-          </div>
-        </div>
-        
-        <div class="p-4 text-black" style="background-color: white;">
-          <div class="d-flex justify-content-end text-center py-1">
-            <div>
-              <p class="mb-1 h5">17</p>
-              <p class="small text-muted mb-0">Nivel</p>
-            </div>
-            <div class="px-3">
-              <p class="mb-1 h5">1026</p>
-              <p class="small text-muted mb-0">Experiencia</p>
-            </div>
-            <div>
-              <p class="mb-1 h5">317</p>
-              <p class="small text-muted mb-0">Logros</p>
+          <div class="p-4 text-black" style="background-color: white;">
+            <div class="d-flex justify-content-end text-center py-1">
+              <div>
+                <p class="mb-1 h5">17</p>
+                <p class="small text-muted mb-0">Nivel</p>
+              </div>
+              <div class="px-3">
+                <p class="mb-1 h5">1026</p>
+                <p class="small text-muted mb-0">Experiencia</p>
+              </div>
+              <div>
+                <p class="mb-1 h5">317</p>
+                <p class="small text-muted mb-0">Logros</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <nav class="navbar navbar-perfil" style="background-color: #031634; margin: 0%;">
+  <nav class="navbar navbar-perfil" title="Barra de navegación" style="background-color: #031634; margin: 0%;">
     <ul class="mx-auto">
-      <li class="nav-item"><a class="nav-link" href="./perfil.html">MIS DATOS</a></li>
-      <li class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html">MIS TORNEOS</a> </li>
-      <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_misequipos.html">MIS EQUIPOS</a> </li>
-      <li class="nav-item"><a class="nav-link" href="./perfil_mislogros.html">LOGROS</a> </li>
+      <li class="nav-item"><a class="nav-link" href="./perfil.html" title="Botón para navegar a Mis datos">MIS DATOS</a></li>
+      <li class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html" title="Botón para navegar a Mis torneos">MIS TORNEOS</a> </li>
+      <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_misequipos.html" title="Botón para navegar a Mis equipos">MIS EQUIPOS</a> </li>
+      <li class="nav-item"><a class="nav-link" href="./perfil_mislogros.html" title="Botón para navegar a Mis logros">LOGROS</a> </li>
     </ul>
   </nav>
 </div>
 
 <!-- Mis equipos -->
-<div class="content container">
+<div class="content container-fluid">
+  <h1 id="headerDos">Listado de equipos</h1>
   <div class="row">
-    <div class="col-2 mb-3">
-        <a href="./nuevoEquipo.html" role="button" type="button" class="btn btn-success mt-2">Crear equipo</a>
-      </div>
+    <div class="mb-3">
+      <button class="btn btn-primary mt-2" type="button" onclick="location.href='./nuevoEquipo.html'" title="Botón para crear un nuevo equipo">Crear equipo</button>
+    </div>
   </div>
 </div>
 
