@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>TrabajoIU</title>
+  <title>Torneos Smash Bros</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="stylesheet" href="assets/css/logged.css">
@@ -97,9 +97,9 @@
   
   <!-- Buscador -->
   <div class="content input-group" id="barraBusqueda">
-    <input id="search-input" type="search" class="form-control" title="Type search term here" value="Type search term here"/>
+    <input id="search-input" type="search" class="form-control" title="Barra de búsqueda" placeholder="Escribe el término de búsqueda aquí"/>
     <label class="form-label" for="form1"></label>
-    <button id="search-button" type="button" class="btn btn-primary" >
+    <button id="search-button" type="button" class="btn btn-primary" title="Botón de búsqueda">
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 18 18">
         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
       </svg>
@@ -107,18 +107,18 @@
   </div>
 
   <div class="content container-fluid">
-    <h2 style="font-style: italic; color:white">Torneos: Super Smash Bros. Ultimate</h2>
+    <h1 id="headerDos" style="font-style: italic; color:white">Torneos: Super Smash Bros. Ultimate</h1>
     <!--Primera fila-->
     <div class="row">
       <div class="col-sm">
         <section id="tourney1" class="card" style="width: 16rem; height: 25rem;">
           <a class="nav-link link-dark" href="terceraVistaJUGARindividual.html">
-            <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
+            <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
             <div class="card-body">
-              <h5 class="card-title">Torneo 1</h5>
-              Inscripciones: <label class="tag abierta"><b>Abiertas</b></label><br><br>
-              <label class="tag amistoso">Amistoso</label>
-              <label class="tag individual">Individual</label>
+              <h2 id="headerCinco" class="card-title">Torneo 1</h2>
+              Inscripciones: <span class="tag abierta" title="Inscripciones abiertas">Abiertas</span><br><br>
+              <span class="tag amistoso" title="Nivel amistoso">Amistoso</span>
+              <span class="tag individual" title="Individual">Individual</span>
             </div>
           </a>
         </section>       
@@ -127,12 +127,12 @@
       <div class="col-sm">
         <section id="tourney2" class="card" style="width: 16rem; height: 25rem;">
           <a class="nav-link link-dark" href="terceraVistaJUGARequipos.html">
-            <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
+            <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
             <div class="card-body">
-              <h5 class="card-title">Torneo 2</h5>
-              Inscripciones: <label class="tag abierta"><b>Abiertas</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag equipos">Por equipos</label>
+              <h2 id="headerCinco"  class="card-title">Torneo 2</h2>
+              Inscripciones: <span class="tag abierta" title="Inscripciones abiertas">Abiertas</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
           </a>
         </section>
@@ -140,168 +140,168 @@
 
       <div class="col-sm">
         <section id="tourney3" class="card" style="width: 16rem; height: 25rem; background-color: rgb(201, 114, 114);">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-              <h5 class="card-title">Torneo 3</h5>
-            Inscripciones: <label class="tag cerrada"><b>Cerradas</b></label><br><br>
-            <label class="tag amistoso">Amistoso</label>
-            <label class="tag individual">Individual</label>
+              <h2 id="headerCinco"  class="card-title">Torneo 3</h2>
+            Inscripciones: <span class="tag cerrada" title="Inscripciones cerradas">Cerradas</span><br><br>
+            <span class="tag amistoso" title="Nivel amistoso">Amistoso</span>
+            <span class="tag individual" title="Individual">Individual</span>
           </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney4" class="card" style="width: 16rem; height: 25rem; background-color: silver;">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 4</h5>
-              Inscripciones: <label class="tag pendiente"><b>Pendientes</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag equipos">Por equipos</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 4</h2>
+              Inscripciones: <span class="tag pendiente" title="Inscripciones pendientes">Pendientes</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney5" class="card" style="width: 16rem; height: 25rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 5</h5>
-              Inscripciones: <label class="tag abierta"><b>Abiertas</b></label><br><br>
-              <label class="tag amistoso">Amistoso</label>
-              <label class="tag equipos">Por equipos</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 5</h2>
+              Inscripciones: <span class="tag abierta" title="Inscripciones abiertas">Abiertas</span><br><br>
+              <span class="tag amistoso" title="Nivel amistoso">Amistoso</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney6" class="card" style="width: 16rem; height: 25rem; background-color: rgb(201, 114, 114);">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 6</h5>
-              Inscripciones: <label class="tag cerrada"><b>Cerradas</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag equipos">Por equipos</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 6</h2>
+              Inscripciones: <span class="tag cerrada" title="Inscripciones cerradas">Cerradas</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney7" class="card" style="width: 16rem; height: 25rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 7</h5>
-              Inscripciones: <label class="tag abierta"><b>Abiertas</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag individual">Individual</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 7</h2>
+              Inscripciones: <span class="tag abierta" title="Inscripciones abiertas">Abiertas</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag individual" title="Individual">Individual</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney8" class="card" style="width: 16rem; height: 25rem; background-color: silver;">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 8</h5>
-              Inscripciones: <label class="tag pendiente"><b>Pendientes</b></label><br><br>
-              <label class="tag amistoso">Amistoso</label>
-              <label class="tag individual">Individual</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 8</h2>
+              Inscripciones: <span class="tag pendiente" title="Inscripciones pendientes">Pendientes</span><br><br>
+              <span class="tag amistoso" title="Nivel amistoso">Amistoso</span>
+              <span class="tag individual" title="Individual">Individual</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney9" class="card" style="width: 16rem; height: 25rem; background-color: silver;">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 9</h5>
-              Inscripciones: <label class="tag pendiente"><b>Pendientes</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag equipos">Por equipos</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 9</h2>
+              Inscripciones: <span class="tag pendiente" title="Inscripciones pendientes">Pendientes</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney10" class="card" style="width: 16rem; height: 25rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 10</h5>
-              Inscripciones: <label class="tag abierta"><b>Abiertas</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag individual">Individual</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 10</h2>
+              Inscripciones: <span class="tag abierta" title="Inscripciones abiertas">Abiertas</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag individual" title="Individual">Individual</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney11" class="card" style="width: 16rem; height: 25rem; background-color: rgb(201, 114, 114);">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 11</h5>
-              Inscripciones: <label class="tag cerrada"><b>Cerradas</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag equipos">Por equipos</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 11</h2>
+              Inscripciones: <span class="tag cerrada" title="Inscripciones cerradas">Cerradas</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney12" class="card" style="width: 16rem; height: 25rem; background-color: rgb(201, 114, 114);">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 12</h5>
-              Inscripciones: <label class="tag cerrada"><b>Cerradas</b></label><br><br>
-              <label class="tag amistoso">Amistoso</label>
-              <label class="tag individual">Individual</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 12</h2>
+              Inscripciones: <span class="tag cerrada" title="Inscripciones cerradas">Cerradas</span><br><br>
+              <span class="tag amistoso" title="Nivel amistoso">Amistoso</span>
+              <span class="tag individual" title="Individual">Individual</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney13" class="card" style="width: 16rem; height: 25rem; background-color: silver;">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 13</h5>
-              Inscripciones: <label class="tag pendiente"><b>Pendientes</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag equipos">Por equipos</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 13</h2>
+              Inscripciones: <span class="tag pendiente" title="Inscripciones pendientes">Pendientes</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney14" class="card" style="width: 16rem; height: 25rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 14</h5>
-              Inscripciones: <label class="tag abierta"><b>Abiertas</b></label><br><br>
-              <label class="tag amistoso">Amistoso</label>
-              <label class="tag individual">Individual</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 14</h2>
+              Inscripciones: <span class="tag abierta" title="Inscripciones abiertas">Abiertas</span><br><br>
+              <span class="tag amistoso" title="Nivel amistoso">Amistoso</span>
+              <span class="tag individual" title="Individual">Individual</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney15" class="card" style="width: 16rem; height: 25rem; background-color: silver;">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 15</h5>
-              Inscripciones: <label class="tag pendiente"><b>Pendientes</b></label><br><br>
-              <label class="tag amistoso">Amistoso</label>
-              <label class="tag equipos">Por equipos</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 15</h2>
+              Inscripciones: <span class="tag pendiente" title="Inscripciones pendientes">Pendientes</span><br><br>
+              <span class="tag amistoso" title="Nivel amistoso">Amistoso</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
         </section>
       </div>
 
       <div class="col-sm">
         <section id="tourney16" class="card" style="width: 16rem; height: 25rem; background-color: rgb(201, 114, 114);">
-          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Image not found">
+          <img class="card-img-top img-fluid" style="opacity: 0.40;" src="./assets/img/game1.png" alt="Smash Bros Ultimate">
           <div class="card-body">
-                <h5 class="card-title">Torneo 16</h5>
-              Inscripciones: <label class="tag cerrada"><b>Cerradas</b></label><br><br>
-              <label class="tag liga">Liga</label>
-              <label class="tag equipos">Por equipos</label>
+                <h2 id="headerCinco"  class="card-title">Torneo 16</h2>
+              Inscripciones: <span class="tag cerrada" title="Inscripciones cerradas">Cerradas</span><br><br>
+              <span class="tag liga" title="Nivel liga">Liga</span>
+              <span class="tag equipos" title="Por equipos">Por equipos</span>
             </div>
         </section>
       </div>

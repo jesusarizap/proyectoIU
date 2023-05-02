@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TrabajoIU</title>
+    <title>Nuevo equipo</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
@@ -80,32 +80,32 @@
 
   <!-- Editar perfil -->
     <div class="content container-fluid">
-        <form class="text-light">
+        <form class="text-light" action="./cuartaVistaJUGAR.html" method="get">
             <fieldset>
-                <legend class="mt-4">Nuevo equipo</legend>
+                <legend class="mt-4"><h1 id="headerDos">Nuevo equipo</h1></legend>
                 <label for="nameForm">Nombre del equipo</label><br/>
-                    <input size="50" id="name" type="text"/><br/>
+                    <input size="50" id="name" title="Nombre del equipo" type="text"/><br/>
                 
                 <label for="nickJugador">Jugador 1</label><br/>
-                    <input size="50" id="nickJugador1" type="text"/><br/>
+                    <input size="50" id="nickJugador1" title="Nombre del jugador" type="text"/><br/>
                 
                 <label for="nickJugador">Jugador 2</label><br/>
-                    <input size="50" id="nickJugador2" type="text"/>
-                <button>+</button>
+                    <input size="50" id="nickJugador2" title="Nombre del jugador" type="text"/>
+                <!--<button action="">+</button>-->
                 <br>
                 <div class="mt-2 mb-4">
                     Foto del equipo<br/>
-                    <img src="./assets/img/equipo1.png" class="img-fluid img-thumbnail" style="width: 300px; z-index: 1"><br/>  
-                    <input class="mt-2" type="file">
+                    <img src="./assets/img/equipo1.png" class="img-fluid img-thumbnail" style="width: 300px; z-index: 1" alt="Image not found"><br/>  
+                    <input class="mt-2" type="file" title="Foto del equipo">
                 </div>
 
                 <label for="sobreMiForm">Descripción</label><br/>
-                    <textarea id="sobreMiForm" cols="50" rows="5"></textarea><br/> 
+                    <textarea id="sobreMiForm" title="Descripcion del equipo" cols="50" rows="5"></textarea><br/> 
                 
-                <a href="./cuartaVistaJUGAR.html" role="button" type="button" class="btn btn-success mt-2">Confirmar</a>
-                <a href="./terceraVistaJUGARequipos.html" role="button"type="button" class="btn btn-danger mt-2">Cancelar</a>
-            </fieldset>
-        </form>
+                <input type="submit" class="btn btn-success mt-2" value="Confirmar"/>
+                <a href="./terceraVistaJUGARequipos.html" type="button" class="btn btn-danger mt-2">Cancelar</a>
+              </fieldset>
+            </form>
     </div>
 
 

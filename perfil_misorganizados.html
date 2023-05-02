@@ -11,6 +11,30 @@
     <link rel="stylesheet" href="assets/css/perfil.css">
 </head>
 
+<style>
+  #headerDos{
+  display: block;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#headerCuatro{
+  display: block;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+</style>
+
 <body style="background: #0c254c;"><div class="topbar">
   <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
     ☰
@@ -73,7 +97,7 @@
     <div class="col-lg">
       <div class="card" style="width: 100%; height: 100%;">
         <div class="rounded-top d-flex flex-row" style="background-color: black; color: white; height:200px;">
-          <!-- Botón logout -->          
+          <!-- Botón logout -->
           <div class="ms-4 mt-5 d-flex flex-column">
             <img src="./assets/img/profile_pic.jpg" alt="Foto de perfil" longdesc="Foto de perfil de Samus Aran" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 0">
             <div class="d-flex flex-row">
@@ -82,7 +106,7 @@
             </div>
           </div>
           <div class="ms-3" style="margin-top: 130px;">
-            <h4 style="font-weight: bold;">Samus Aran</h4>
+            <div class="headerCuatro" style="font-weight: bold;">Samus Aran</div>
             <p style="font-style: italic; color: gray;">Cazarrecompensas</p>
           </div>
         </div>
@@ -134,8 +158,8 @@
           </div>
           <div class="col-10">
             <div class="card-body">
-              <h2 class="card-title pt-2" style="font-weight: bold;">¿Me cambias madera?</h2>
-              <h4 class="card-title" style="font-style: italic;">Catán</h4>
+              <div id="headerDos" class="card-title pt-2" style="font-weight: bold;">¿Me cambias madera?</div>
+              <p class="card-title" style="font-style: italic;">Catán</p>
               <p>¡Enséñales quién manda!</p>
             </div>
           </div>    
