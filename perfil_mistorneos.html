@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="assets/css/logged.css">
     <link rel="stylesheet" href="assets/css/perfil.css">
 </head>
+
+<style>
+  #headerDos{
+  display: block;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#headerCuatro{
+  display: block;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+</style>
 
 <body style="background: #0c254c;"><div class="topbar">
   <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
@@ -82,7 +106,7 @@
             </div>
           </div>
           <div class="" style="margin-top: 130px;">
-            <h4 style="font-weight: bold;">Samus Aran</h4>
+            <div id="headerCuatro" style="font-weight: bold;">Samus Aran</div>
             <p style="font-style: italic; color: gray;">Cazarrecompensas</p>
           </div>
         </div>
@@ -134,8 +158,8 @@
           </div>
           <div class="col-10">
             <div class="card-body">
-              <h2 class="card-title pt-2" style="font-weight: bold;">Peaches Peaches Peaches Tournament</h2>
-              <h4 class="card-title" style="font-style: italic;">Super Smash Bros. Ultimate</h4>
+              <div id="headerDos" class="card-title pt-2" style="font-weight: bold;">Peaches Peaches Peaches Tournament</div>
+              <div id="headerCuatro" class="card-title" style="font-style: italic;">Super Smash Bros. Ultimate</div>
               <p>Torneo de celebración del estreno de Super Mario Bros: La Película</p>
             </div>
           </div>            
@@ -153,8 +177,8 @@
           </div>
           <div class="col-10">
             <div class="card-body">
-              <h2 class="card-title pt-2" style="font-weight: bold;">Torneo Petanca La Residencia Día de la Comunidad 2023</h2>
-              <h4 class="card-title" style="font-style: italic;">Petanca</h4>
+              <div id="headerDos" class="card-title pt-2" style="font-weight: bold;">Torneo Petanca La Residencia Día de la Comunidad 2023</div>
+              <div id="headerCuatro" class="card-title" style="font-style: italic;">Petanca</div>
               <p>Competición de petanca para celebrar el Día de la comunidad en la residencia de ancianos La Residencia</p>
             </div>
           </div>            
@@ -163,8 +187,6 @@
     </section>
   </div>
 </div>
-
-<h1></h1>
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/loginOrRegister.js"></script>
