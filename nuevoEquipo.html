@@ -83,13 +83,13 @@
         <form class="text-light" action="./cuartaVistaJUGAR.html" method="get">
             <fieldset>
                 <legend class="mt-4"><h1 id="headerDos">Nuevo equipo</h1></legend>
-                <label for="nameForm">Nombre del equipo</label><br/>
+                <label for="nameForm" name="name">Nombre del equipo</label><br/>
                     <input size="50" id="name" type="text"/><br/>
                 
-                <label for="nickJugador">Jugador 1</label><br/>
+                <label for="nickJugador" name="jugador1">Jugador 1</label><br/>
                     <input size="50" id="nickJugador1" type="text"/><br/>
                 
-                <label for="nickJugador">Jugador 2</label><br/>
+                <label for="nickJugador" name="jugador2">Jugador 2</label><br/>
                     <input size="50" id="nickJugador2" type="text"/>
                 <!--<button action="">+</button>-->
                 <br>
@@ -99,7 +99,7 @@
                     <input class="mt-2" type="file" title="Foto del equipo">
                 </div>
 
-                <label for="sobreMiForm">Descripción</label><br/>
+                <label for="sobreMiForm" name="sobreMi">Descripción</label><br/>
                     <textarea id="sobreMiForm" cols="50" rows="5"></textarea><br/> 
                 
                 <input type="submit" class="btn btn-success mt-2" value="Confirmar"/>
