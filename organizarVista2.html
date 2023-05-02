@@ -89,65 +89,65 @@
       </div>    
   </div>
 
-    <!-- Formulario para la creación del torneo -->
-    <form action="./terceraVistaORGANIZAR.html" method="get" class="content container-fluid">
-        <h1 id="headerDos">Formulario para organizar el torneo de: Super Smash Bros. Ultimate</h1>
-        <fieldset>
-            <legend class="mt-2">Información principal</legend>
-            <label for="titleForm">Título del torneo</label><br/>
-                <input size="50" id="titleForm" type="text" title="Título del torneo"/><br/>
-            
-            <label for="jugadoresForm">Número de participantes</label><br/>
-                <input size="1" maxlength="3" id="titleForm" type="text" title="Número de participantes"/><br/>
-                <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
-                        
-            <label for="fechaInicioForm">Fecha de inicio</label><br/>
-                <input size="10" maxlength="10" id="inicioForm" type="date" title="Fecha de inicio"/><br/>
-            
-            <label for="fechaCierreForm">Fecha de cierre</label><br/>
-                <input size="10" maxlength="10" id="cierreForm" type="date" title="Fecha de cierre"/><br/>
-            
-            <label for="modalidadForm" name="modalidad" class="mt-2">Modalidad</label><br/>
-                <input type="radio" class="m-2" id="individual" name="modalidad" value="Individual" title="Opción Modalidad individual">
-                    <label for="individual">Individual</label>
-                <input type="radio" class="m-2" id="equipo" name="modalidad" value="Equipo" title="Opción Modalidad por equipos">
-                    <label for="individual">Por equipos</label><br/>
-                    <!-- Duda: al pulsar por equipos debería salir un pop-up para que seleccionemos nuestro equipo? -->
+  <!-- Formulario para la creación del torneo -->
+  <form action="./terceraVistaORGANIZAR.html" method="get" class="content container-fluid">
+      <h1 id="headerDos">Formulario para organizar el torneo de: Super Smash Bros. Ultimate</h1>
+      <fieldset>
+          <legend class="mt-2">Información principal</legend>
+          <label for="titleForm">Título del torneo</label><br/>
+              <input size="50" id="titleForm" type="text" title="Título del torneo"/><br/>
+          
+          <label for="jugadoresForm">Número de participantes</label><br/>
+              <input size="1" maxlength="3" id="titleForm" type="text" title="Número de participantes"/><br/>
+              <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
+                      
+          <label for="fechaInicioForm">Fecha de inicio</label><br/>
+              <input size="10" maxlength="10" id="inicioForm" type="date" title="Fecha de inicio"/><br/>
+          
+          <label for="fechaCierreForm">Fecha de cierre</label><br/>
+              <input size="10" maxlength="10" id="cierreForm" type="date" title="Fecha de cierre"/><br/>
+          
+          <label for="modalidadForm" name="modalidad" class="mt-2">Modalidad</label><br/>
+              <input type="radio" class="m-2" id="individual" name="modalidad" value="Individual" title="Opción Modalidad individual">
+                  <label for="individual">Individual</label>
+              <input type="radio" class="m-2" id="equipo" name="modalidad" value="Equipo" title="Opción Modalidad por equipos">
+                  <label for="individual">Por equipos</label><br/>
+                  <!-- Duda: al pulsar por equipos debería salir un pop-up para que seleccionemos nuestro equipo? -->
 
-            <label for="nivelForm" name="nivel" class="mt-2">Dificultad</label><br/>
-                <input type="radio" class="m-2" id="amistoso" name="nivel" value="Amistoso" title="Opción Dificultad amistosa">
-                    <label for="amistoso">Amistoso</label>
-                <input type="radio" class="m-2" id="profesional" name="nivel" value="Profesional" title="Opción Dificultad profesional">
-                    <label for="profesional">Profesional</label><br/>
-            
-            <!-- Falta que de alguna forma al pulsar presencial se abra otro form -->
-            <label for="localizacionForm" name="lugar" class="mt-2">Localización</label><br/>
-                <input type="radio" class="m-2" id="presencial" name="lugar" value="Presencial" title="Opción Localización presencial">
-                    <label for="presencial">Presencial</label>
-                <input type="radio" class="m-2" id="online" name="lugar" value="Online" title="Opción Localización online">
-                    <label for="online">Online</label><br/>
-            
-            <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
-                <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta" title="Opción Inscripción abierta">
-                    <label for="abierta">Abierta</label><br/>
-                <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada" title="Opción Inscripción cerrada">
-                    <label for="cerrada">Cerrada</label><br/>
-                <input type="radio" class="m-2" id="pendiente" name="estado" value="Pendiente" title="Opción Inscripción pendiente">
-                    <label for="cerrada">Pendiente</label><br/>
-            
-            <label for="premioForm" name="premio" class="mt-2">Premios</label><br/>
-                <input type="radio" class="m-2" id="si" name="premio" value="Si" title="Opción para afirmar que hay premios">
-                    <label for="si">Sí</label>
-                <input type="radio" class="m-2" id="no" name="premio" value="No" title="Opción para negar que hay premios">
-                    <label for="no">No</label><br/>
-            
-            <label for="descripcionForm">Descripción</label><br/>
-                <textarea id="descripcionForm" cols="50" rows="5" title="Campo para escribir la información del torneo"></textarea><br/> 
-        </fieldset>
-        
-        <input class="btn btn-success mt-2" value="Guardar cambios" type="submit" title="Botón para confirmar los cambios"></button>
-        <button class="btn btn-danger mt-2" title="Botón para cancelar los cambios"><a href="./organizar.html" type="button" >Cancelar</a></button>
-      </form>
+          <label for="nivelForm" name="nivel" class="mt-2">Dificultad</label><br/>
+              <input type="radio" class="m-2" id="amistoso" name="nivel" value="Amistoso" title="Opción Dificultad amistosa">
+                  <label for="amistoso">Amistoso</label>
+              <input type="radio" class="m-2" id="profesional" name="nivel" value="Profesional" title="Opción Dificultad profesional">
+                  <label for="profesional">Profesional</label><br/>
+          
+          <!-- Falta que de alguna forma al pulsar presencial se abra otro form -->
+          <label for="localizacionForm" name="lugar" class="mt-2">Localización</label><br/>
+              <input type="radio" class="m-2" id="presencial" name="lugar" value="Presencial" title="Opción Localización presencial">
+                  <label for="presencial">Presencial</label>
+              <input type="radio" class="m-2" id="online" name="lugar" value="Online" title="Opción Localización online">
+                  <label for="online">Online</label><br/>
+          
+          <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
+              <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta" title="Opción Inscripción abierta">
+                  <label for="abierta">Abierta</label><br/>
+              <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada" title="Opción Inscripción cerrada">
+                  <label for="cerrada">Cerrada</label><br/>
+              <input type="radio" class="m-2" id="pendiente" name="estado" value="Pendiente" title="Opción Inscripción pendiente">
+                  <label for="cerrada">Pendiente</label><br/>
+          
+          <label for="premioForm" name="premio" class="mt-2">Premios</label><br/>
+              <input type="radio" class="m-2" id="si" name="premio" value="Si" title="Opción para afirmar que hay premios">
+                  <label for="si">Sí</label>
+              <input type="radio" class="m-2" id="no" name="premio" value="No" title="Opción para negar que hay premios">
+                  <label for="no">No</label><br/>
+          
+          <label for="descripcionForm">Descripción</label><br/>
+              <textarea id="descripcionForm" cols="50" rows="5" title="Campo para escribir la información del torneo"></textarea><br/> 
+      </fieldset>
+      
+      <input class="btn btn-success mt-2" value="Guardar cambios" type="submit" title="Botón para confirmar los cambios"></button>
+      <button class="btn btn-danger mt-2" title="Botón para cancelar los cambios"><a href="./organizar.html" type="button" >Cancelar</a></button>
+    </form>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/loginOrRegister.js"></script>
