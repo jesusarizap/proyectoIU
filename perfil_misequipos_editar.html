@@ -80,7 +80,7 @@
   </nav>
 
   <!-- Editar perfil -->
-  <form action="./perfil_misequipos.html" method="post" class="content container-fluid">
+  <form action="./perfil_misequipos.html" method="get" class="content container-fluid">
     <h1 id="headerDos">Formulario para editar el equipo: Inazuma Japón</h1>
     <fieldset>
       <legend class="mt-2">Información principal</legend>
@@ -109,8 +109,8 @@
         <textarea id="descripcionForm" cols="50" rows="5" title="Campo para escribir la información del torneo"></textarea><br/> 
     </fieldset>
 
-    <input class="btn btn-success mt-2" value="Guardar cambios" type="submit" title="Botón para confirmar los cambios"></button>
-    <button class="btn btn-danger mt-2" title="Botón para cancelar los cambios"><a href="./perfil_misequipos.html" type="button" >Cancelar</a></button>
+    <input class="btn btn-success mt-2" value="Guardar cambios" type="submit" title="Botón para confirmar los cambios"></input>
+    <input class="btn btn-danger mt-2" value="Cancelar" type="button" onclick="location.href='./perfil_misequipos.html'" title="Botón para cancelar los cambios"></input>
   </form>
 
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
