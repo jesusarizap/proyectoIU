@@ -14,3 +14,7 @@ closeButton.addEventListener('click', cerrarPopUp);
 function cerrarPopUp() {
   document.getElementById('login-popup').style.display = 'none';
 }
+
+function cerrarPopupRegister() {
+  document.getElementById('register-popup').style.display = 'none';
+}
