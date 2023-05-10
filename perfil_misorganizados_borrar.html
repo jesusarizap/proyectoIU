@@ -7,6 +7,7 @@
     <title>TournaMaster - Borrar torneos organizados</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="assets/css/popupExito.css">
     <link rel="stylesheet" href="assets/css/logged.css">
     <link rel="stylesheet" href="assets/css/perfil.css">
 </head>
@@ -44,10 +45,14 @@ a, a:hover {
 </style>
 
 <body style="background: #0c254c;">
+
+  <div class="content popupExito">
+    <p>¡El Torneo ha sido borrado!</p>
+  </div>
 <div class="content container-fluid">
   <div class="row d-flex align-items-center">
     <div class="col-lg">
-      <h1 class="text-light">Perfil</h1>
+      <h1 class="text-light" id="headerDos">Perfil</h1>
       <div class="card" style="width: 100%; height: 100%;">
         <div class="rounded-top d-flex flex-row" style="background-color: black; color: white; height:200px;">
           <!-- Botón logout -->
@@ -105,6 +110,10 @@ a, a:hover {
     </ul>
   </nav>
 </div>
+<div class="content">
+  <h1 style="font-style: italic;" id="headerDos" >Parece que aún no has creado ningún torneo, ¿por qué no lo pruebas?   <input type="button" value="¡Claro que sí!" onclick="location.href='./organizar.html'" class="btn btn-success mt-2"/></input></h1>
+            
+</div>
 <div class="topbar">
   <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
     ☰
@@ -161,6 +170,12 @@ a, a:hover {
   </div>
 </nav>
 
+
+<script> window.onload = function() {
+  document.querySelector('.popupExito').classList.add('show');
+  };
+</script>
+<script src="assets/js/popupExito.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/loginOrRegister.js"></script>
 <script src="assets/js/sidebarCollapse.js"></script>

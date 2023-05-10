@@ -75,10 +75,10 @@
         </div>
       </p>
 
-      <a href="segundaVistaJUGAR.html" role="button" type="button" class="btn btn-danger mt-2">Atrás</a>
+      <a href="javascript:history.back(-1);" role="button" type="button" class="btn btn-danger mt-2">Cancelar</a>
       <a role="button" type="button" class="btn btn-success mt-2"
         onclick="document.getElementById('equipo-popup').style.display='block'">
-        INSCRIBIRSE
+        Inscribirse
       </a>
 
 
@@ -106,8 +106,8 @@
               <h2 class="card-title " style="font-weight: bold; color:black">Inazuma Japón</h2>
               <h3 class="card-text" style="font-style: italic;  color:black">Fútbol</h4>
             </div>
-            <button class="btn btn-primary avanzar" type="button" onclick="ocultarEquipo()">INSCRIBIRSE</button>
-            <button class="btn btn-primary avanzar" type="button" onclick="ocultarPopUp()">VOLVER</button>  
+            <button class="btn btn-primary avanzar" type="button" onclick="ocultarEquipo()">Inscribirse</button>
+            <button class="btn btn-primary avanzar" type="button" onclick="ocultarPopUp()">Cancelar</button>  
             <a class="nav-link link-dark" href="nuevoEquipo.html">
                 <button class="avanzar">Crear nuevo equipo</button>
               </a>
@@ -130,7 +130,7 @@
     <div class="popup-content">
       <h2 style=" color:black">Participar con equipo: Inazuma Japón</h2>
       <a href="./cuartaVistaJUGAR.html"><button class="avanzar">Confirmar</button></a>
-      <button class="cancelar" onclick="mostrarEquipo()">Volver</button>
+      <button class="cancelar" onclick="mostrarEquipo()">Cancelar</button>
     </div>
   </div>
   </div>
@@ -158,7 +158,7 @@
   
       <ul class="menu">
         <li>
-          <a href="jugar.html" title="Participar">
+          <a id="selected" href="jugar.html" title="Participar">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
               <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
             </svg> 
@@ -179,7 +179,7 @@
       <div class="bottom-item">
         <ul class="menu" title="Perfil">
           <li>
-            <a id="selected" href="perfil.html">
+            <a href="perfil.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                 <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
               </svg>

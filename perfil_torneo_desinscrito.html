@@ -75,43 +75,33 @@
   
     <nav class="navbar navbar-perfil" style="background-color: #031634; margin: 0%;">
       <ul class="mx-auto">
-        <li class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html" title="Torneos a los que estás inscritos">Inscritos</a></li>
-        <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_misorganizados.html" title="Torneos que has organizado">Organizados</a> </li>
+        <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html" title="Torneos a los que estás inscritos">Inscritos</a></li>
+        <li  class="nav-item"><a class="nav-link" href="./perfil_misorganizados.html" title="Torneos que has organizado">Organizados</a> </li>
       </ul>
     </nav>
   </div>
-  
-  <!-- Torneos inscritos -->
-  <div class="content container">
-  
-    <div class="row">
-      <section class="card" style="margin-bottom: 2rem;">
-          <div class="row g-0">
-            <div class="col-2 mt-3 mb-3">
-              <img class="img-fluid float-start ms-1 rounded" alt="Imagen no encontrada" src="./assets/img/game7.png">
-            </div>
-            <div class="col-10">
-              <div class="card-body">
-                <h1 id="headerDos" class="card-title pt-2" style="font-weight: bold; color: black;">Torneo Petanca La Residencia Día de la Comunidad 2023</h1>
-                <div id="headerCuatro" class="card-title" style="font-style: italic; color: black;">Petanca</div>
-                <p style=" color: black;">Competición de petanca para celebrar el Día de la comunidad en la residencia de ancianos La Residencia</p>
-              </div>
-            </div>            
+  <!--He comentado el de petanca por si acaso lo queremos volver a usar en algún momento-->
+ <!-- <div class="row">
+    <section class="card" style="margin-bottom: 2rem;" title="Torneo Petanca La Residencia Día de la Comunidad 2023">
+      <a class="custom-link link-dark" href="./perfil_mistorneos.html" >
+        <div class="row g-0">
+          <div class="col-2 mt-3 mb-3">
+            <img class="img-fluid float-start ms-1 rounded" src="./assets/img/game7.png" alt="Petanca">
           </div>
-        </section>
-    </div>
-  </div>
+          <div class="col-10">
+            <div class="card-body">
+              <div id="headerDos" class="card-title pt-2" style="font-weight: bold;">Torneo Petanca La Residencia Día de la Comunidad 2023</div>
+              <div id="headerCuatro" class="card-title" style="font-style: italic;">Petanca</div>
+              <p>Competición de petanca para celebrar el Día de la comunidad en la residencia de ancianos La Residencia</p>
+            </div>
+          </div>            
+        </div>
+      </a>
+    </section>
+  </div>-->
   
 
-<script> window.onload = function() {
-	document.querySelector('.popupExito').classList.add('show');
-  };
-  
-</script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/loginOrRegister.js"></script>
-    <script src="assets/js/sidebarCollapse.js"></script>
-    <script src="assets/js/popupExito.js"></script>
+
 
 
 <div class="topbar">
@@ -169,5 +159,14 @@
     </div>
   </div>
 </nav>
+<script> window.onload = function() {
+	document.querySelector('.popupExito').classList.add('show');
+  };
+  
+</script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/loginOrRegister.js"></script>
+    <script src="assets/js/sidebarCollapse.js"></script>
+    <script src="assets/js/popupExito.js"></script>
 </body>
 </html>
