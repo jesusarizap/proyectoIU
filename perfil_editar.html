@@ -29,23 +29,23 @@
         <fieldset>
           <h1 class="mt-4" tabindex="1">Editar perfil</h1>
           <label for="nameForm">Nombre completo</label><br/>
-              <input size="50" id="name" type="text" title="Nombre completo de usuario" value="Juanjo García García"/><br/>
+              <input size="50" id="name" type="text" title="Nombre completo de usuario" value="Juanjo García García" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
           
           <label for="nicknameForm">Nickname</label><br/>
-              <input size="50" id="nicknameForm" type="text" title="Nickname de usuario" value="Samus Aran"/><br/>
+              <input size="50" id="nicknameForm" type="text" title="Nickname de usuario" value="Samus Aran" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
           
           <label for="titleForm">Título</label><br/>
-              <input size="50" id="titleForm" type="text" title="Título de usuario" value="Cazarrecompensas"/><br/>
+              <input size="50" id="titleForm" type="text" title="Título de usuario" value="Cazarrecompensas" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
           
           <div class="mt-2 mb-4">
               Foto de perfil<br/>
               <img src="./assets/img/profile_pic.jpg" class="img-fluid img-thumbnail" style="width: 25em;" alt="Foto de perfil del usuario"><br/>  
-              <input class="mt-2" type="file" title="Foto de perfil">
+              <input class="mt-2" type="file" title="Elegir una imagen de perfil para el equipo de tu ordenador">
           </div>
 
           <label for="fechaNacimientoForm">Fecha de nacimiento</label><br/>
-              <input size="10" maxlength="10" id="nacimientoForm" type="date" title="Fecha de nacimiento"  onchange="if(isNaN(Date.parse(this.value))) 
-              alert('This control is not a valid date. Please re-enter the value.');" /><br/>
+              <input size="10" maxlength="10" id="nacimientoForm" type="date" title="Fecha de nacimiento" onchange="if(isNaN(Date.parse(this.value))) 
+              alert('Fecha inválida. Por favor, vuelva a introducir el valor');" /><br/>
           
           <label for="generoForm" name="genero" class="mt-2">Género</label><br/>
               <input type="radio" class="m-2" id="hombre" name="genero" value="Hombre" >
@@ -58,7 +58,7 @@
                   <label for="none">Prefiero no decirlo</label><br/>
                     
           <label for="ubicacionForm">Ubicación</label><br/>
-              <input size="50" id="ubicacionForm" type="text" value="Málaga"/><br/>  
+              <input size="50" id="ubicacionForm" type="text" value="Málaga" title="Ubicación" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>  
               
           <label for="nivelForm" name="nivel" class="mt-2">Nivel preferido</label><br/>
               <input type="radio" class="m-2" id="amistoso" name="nivel" value="Amistoso" checked="checked" title="Nivel amistoso">
@@ -66,7 +66,7 @@
               <input type="radio"   class="m-2" id="profesional" name="nivel" value="Profesional" title="Nivel profesional">
                   <label for="profesional">Profesional</label><br/>
                   
-          <label for="sobreMiForm">Descripción</label><br/>
+          <label for="sobreMiForm">Sobre mi</label><br/>
               <textarea id="sobreMiForm" cols="50" rows="5">Samus Aran (サムス・アラン Samusu Aran), es un personaje de videojuegos creado por Nintendo, protagonista de la saga de Metroid, siendo introducida en el primer videojuego de 1986. Samus se presenta como una exsoldado de la Federación Galáctica que se convirtió en una cazarrecompensas. Generalmente equipada con un exoesqueleto de potencia, —denominado “Traje de Poder” (Power Suit en inglés)—, el cual está equipado con diferentes armas de energía, misiles u otro material de apoyo. A lo largo de la serie, realiza diversas misiones que la Federación Galáctica le encomienda mientras caza a los Piratas Espaciales y su líder Ridley, junto con los organismos parásitos que drenan la energía de los seres vivos llamados Metroids. </textarea><br/> 
 
           <input type="submit" value="Guardar cambios" class="btn btn-success mt-2"/>
