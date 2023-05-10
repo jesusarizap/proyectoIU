@@ -16,6 +16,11 @@
 }
 
 svg:hover {
-    fill: #dc3545; /*warning red*/
+    fill: white; /*warning red*/
     transition: ease-in 0.3s;
   }
+/* PARA EL BOTÓN DE CERRAR SESIÓN
+  svg:hover {
+    fill:#dc3545; warning red
+    transition: ease-in 0.3s;
+  }*/
