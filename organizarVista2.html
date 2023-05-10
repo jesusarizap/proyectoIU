@@ -41,10 +41,10 @@
       <fieldset>
           <legend class="mt-2">Información principal</legend>
           <label for="titleForm">Título del torneo</label><br/>
-              <input size="50" id="titleForm" type="text" title="Título del torneo"/><br/>
+              <input size="50" id="titleForm" type="text" title="Título del torneo" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
           
           <label for="jugadoresForm">Número de participantes</label><br/>
-              <input size="1" maxlength="3" id="titleForm" type="text" title="Número de participantes"/><br/>
+              <input size="1" maxlength="3" id="titleForm" type="text" title="Número de participantes" pattern=".{,3}"/><br/>
               <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
                       
           <label for="fechaInicioForm">Fecha de inicio</label><br/>
