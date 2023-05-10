@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TournaMaster - Borrar torneos organizados</title>
+    <title>TournaMaster - Mis torneos organizados</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/popupExito.css">
@@ -114,8 +114,10 @@ a, a:hover {
   <h1 style="font-style: italic;" id="headerDos" >Parece que aún no has creado ningún torneo, ¿por qué no lo pruebas?   <input type="button" value="¡Claro que sí!" onclick="location.href='./organizar.html'" class="btn btn-success mt-2"/></input></h1>
             
 </div>
+
+<!-- Barra lateral  -->
 <div class="topbar">
-  <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
+  <button class="expand-btn" aria-expanded="false" aria-label="Expandir el menú lateral">
     ☰
   </button>
 </div>
@@ -123,7 +125,7 @@ a, a:hover {
 <nav class="sidebar">
   <div class="menu-wrapper">
     <div class="top-item">
-      <ul class="menu" title="Botón Home">
+      <ul class="menu" title="Home">
         <li>
           <a href="./home.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -170,10 +172,10 @@ a, a:hover {
   </div>
 </nav>
 
-
 <script> window.onload = function() {
   document.querySelector('.popupExito').classList.add('show');
-  };
+};
+
 </script>
 <script src="assets/js/popupExito.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>

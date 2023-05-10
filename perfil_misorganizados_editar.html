@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TournaMaster - Editar la información de un torneo</title>
+    <title>TournaMaster - Editar torneo</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
@@ -26,138 +26,136 @@
 
 
 <body style="background: #0c254c;">
+  <!-- Banner del juego -->
+  <div class="content container-fluid">
+    <div class="col-sm">
+      <section id="game1" class="card" style="width: 100%; height: 100%;">
+        <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Imagen no encontrada">
+      </section>
+    </div>    
+    <h1 id="headerDos">Editar información del Torneo</h1>
+  </div>
+
+<!-- Formulario para la creación del torneo -->
+<form class="content container-fluid" method="get" action="perfil_misorganizados.html">
+    <fieldset>
+      <legend class="mt-2">Información principal</legend>
+      <label for="titleForm">Título del torneo</label><br/>
+        <input size="50" id="titleForm" type="text" value="¿Me cambias madera?"/><br/>
+        
+      <label for="jugadoresForm" >Número de participantes</label><br/>
+        <input size="1" maxlength="3" id="titleForm" type="text" title="Numero de participantes del torneo" value="30"/><br/>
+        <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
+                    
+      <label for="fechaInicioForm" >Fecha de inicio</label><br/>
+        <input size="10" maxlength="10" id="inicioForm" type="date" value="23-05-2023" onchange="if(isNaN(Date.parse(this.value))) 
+        alert('This control is not a valid date. Please re-enter the value.');"/><br/>
+      
+      <label for="fechaCierreForm">Fecha de cierre</label><br/>
+        <input size="10" maxlength="10" id="cierreForm" type="date"title="Fecha de cierre del torneo" value="06-06-2023" onchange="if(isNaN(Date.parse(this.value))) 
+        alert('This control is not a valid date. Please re-enter the value.');"/><br/>
+      
+      <label for="modalidadForm" name="modalidad" class="mt-2" title="Modalidad del torneo">Modalidad</label><br/>
+        <input type="radio" class="m-2" id="individual" name="modalidad" value="Individual" checked title="Individual">
+          <label for="individual">Individual</label>
+        <input type="radio" class="m-2" id="equipo" name="modalidad" value="Equipo" title="Por equipos">
+          <label for="individual">Por equipos</label><br/>
+            <!-- Duda: al pulsar por equipos debería salir un pop-up para que seleccionemos nuestro equipo? -->
+
+      <label for="nivelForm" name="nivel" class="mt-2" title="Dificultad del torneo">Dificultad</label><br/>
+        <input type="radio" class="m-2" id="amistoso" name="nivel" value="Amistoso" checked title="Amistoso">
+          <label for="amistoso">Amistoso</label>
+        <input type="radio" class="m-2" id="profesional" name="nivel" value="Profesional" title="Profesional">
+          <label for="profesional">Profesional</label><br/>
+      
+      <!-- Falta que de alguna forma al pulsar presencial se abra otro form -->
+      <label for="localizacionForm" name="lugar" class="mt-2" title="Localización del torneo">Localización</label><br/>
+        <input type="radio" class="m-2" id="presencial" name="lugar" value="Presencial" checked title="Presencial">
+          <label for="presencial">Presencial</label>
+        <input type="radio" class="m-2" id="online" name="lugar" value="Online" title="Online">
+          <label for="online">Online</label><br/>
     
-    <!-- Banner del juego -->
-    <div class="content container-fluid">
+      <label for="estadoForm" name="estado" class="mt-2" title="Tipo de inscripción del torneo">Inscripción</label><br/>
+        <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta" checked title="Inscrpición abierta">
+          <label for="abierta">Abierta</label><br/>
+        <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada" title="Inscripción cerrada">
+          <label for="cerrada">Cerrada</label><br/>
+        <input type="radio" class="m-2" id="pendiente" name="estado" value="Pendiente" title="No determinada todavia">
+          <label for="cerrada">Pendiente</label><br/>
       
-        <div class="col-sm">
-            <section id="game1" class="card" style="width: 100%; height: 100%;">
-              <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Imagen no encontrada">
-            </section>
-        </div>    
-        <h1 id="headerDos">Editar información del Torneo</h1>
+      <label for="premioForm" name="premio" class="mt-2" title="Premios del Torneo">Premios</label><br/>
+        <input type="radio" class="m-2" id="si" name="premio" value="Si" checked title="Si">
+          <label for="si">Sí</label>
+        <input type="radio" class="m-2" id="no" name="premio" value="No" title="No">
+          <label for="no">No</label><br/>
+      
+      <label for="descripcionForm" >Descripción</label><br/>
+        <textarea id="descripcionForm" cols="50" rows="5" title="Descripcion del torneo" >Torneo multitudinario de Catan, ¡a construir puentes y perder amistades!</textarea><br/> 
+        
+        <input type="submit" value="Guardar Cambios" class="btn btn-success mt-2"/>
+        <input type="submit" value="Cancelar" onclick="javascript:history.back(-1);" class="btn btn-danger mt-2"/>
+    </fieldset>
+  </form>
+
+  <!-- Barra lateral  -->
+  <div class="topbar">
+    <button class="expand-btn" aria-expanded="false" aria-label="Expandir el menú lateral">
+      ☰
+    </button>
+  </div>
+  
+  <nav class="sidebar">
+    <div class="menu-wrapper">
+      <div class="top-item">
+        <ul class="menu" title="Home">
+          <li>
+            <a href="./home.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+              </svg>
+              HOME
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <ul class="menu">
+        <li>
+          <a href="jugar.html" title="Participar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg> 
+            PARTICIPAR
+          </a>
+        </li>
+        <li>
+          <a href="organizar.html" title="Organizar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+            ORGANIZAR
+          </a>
+        </li>
+      </ul>
+  
+      <div class="bottom-item">
+        <ul class="menu" title="Perfil">
+          <li>
+            <a id="selected" href="perfil.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+              Perfil
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Formulario para la creación del torneo -->
-    <form class="content container-fluid" method="get" action="perfil_misorganizados.html">
-        <fieldset>
-            <legend class="mt-2">Información principal</legend>
-            <label for="titleForm">Título del torneo</label><br/>
-                <input size="50" id="titleForm" type="text" value="¿Me cambias madera?"/><br/>
-            
-            <label for="jugadoresForm" >Número de participantes</label><br/>
-                <input size="1" maxlength="3" id="titleForm" type="text" title="Numero de participantes del torneo" value="30"/><br/>
-                <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
-                        
-            <label for="fechaInicioForm" >Fecha de inicio</label><br/>
-                <input size="10" maxlength="10" id="inicioForm" type="date" value="23-05-2023" onchange="if(isNaN(Date.parse(this.value))) 
-                alert('This control is not a valid date. Please re-enter the value.');"/><br/>
-            
-            <label for="fechaCierreForm">Fecha de cierre</label><br/>
-                <input size="10" maxlength="10" id="cierreForm" type="date"title="Fecha de cierre del torneo" value="06-06-2023" onchange="if(isNaN(Date.parse(this.value))) 
-                alert('This control is not a valid date. Please re-enter the value.');"/><br/>
-            
-            <label for="modalidadForm" name="modalidad" class="mt-2" title="Modalidad del torneo">Modalidad</label><br/>
-                <input type="radio" class="m-2" id="individual" name="modalidad" value="Individual" checked title="Individual">
-                    <label for="individual">Individual</label>
-                <input type="radio" class="m-2" id="equipo" name="modalidad" value="Equipo" title="Por equipos">
-                    <label for="individual">Por equipos</label><br/>
-                    <!-- Duda: al pulsar por equipos debería salir un pop-up para que seleccionemos nuestro equipo? -->
-
-            <label for="nivelForm" name="nivel" class="mt-2" title="Dificultad del torneo">Dificultad</label><br/>
-                <input type="radio" class="m-2" id="amistoso" name="nivel" value="Amistoso" checked title="Amistoso">
-                    <label for="amistoso">Amistoso</label>
-                <input type="radio" class="m-2" id="profesional" name="nivel" value="Profesional" title="Profesional">
-                    <label for="profesional">Profesional</label><br/>
-            
-            <!-- Falta que de alguna forma al pulsar presencial se abra otro form -->
-            <label for="localizacionForm" name="lugar" class="mt-2" title="Localización del torneo">Localización</label><br/>
-                <input type="radio" class="m-2" id="presencial" name="lugar" value="Presencial" checked title="Presencial">
-                    <label for="presencial">Presencial</label>
-                <input type="radio" class="m-2" id="online" name="lugar" value="Online" title="Online">
-                    <label for="online">Online</label><br/>
-            
-            <label for="estadoForm" name="estado" class="mt-2" title="Tipo de inscripción del torneo">Inscripción</label><br/>
-                <input type="radio" class="m-2" id="abierta" name="estado" value="Abierta" checked title="Inscrpición abierta">
-                    <label for="abierta">Abierta</label><br/>
-                <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada" title="Inscripción cerrada">
-                    <label for="cerrada">Cerrada</label><br/>
-                <input type="radio" class="m-2" id="pendiente" name="estado" value="Pendiente" title="No determinada todavia">
-                    <label for="cerrada">Pendiente</label><br/>
-            
-            <label for="premioForm" name="premio" class="mt-2" title="Premios del Torneo">Premios</label><br/>
-                <input type="radio" class="m-2" id="si" name="premio" value="Si" checked title="Si">
-                    <label for="si">Sí</label>
-                <input type="radio" class="m-2" id="no" name="premio" value="No" title="No">
-                    <label for="no">No</label><br/>
-            
-            <label for="descripcionForm" >Descripción</label><br/>
-                <textarea id="descripcionForm" cols="50" rows="5" title="Descripcion del torneo" >Torneo multitudinario de Catan, ¡a construir puentes y perder amistades!</textarea><br/> 
-            
-            <input type="submit" value="Guardar Cambios" class="btn btn-success mt-2"/>
-            <input type="submit" value="Cancelar" onclick="javascript:history.back(-1);" class="btn btn-danger mt-2"/>
-        </fieldset>
-      </form>
-
-      
-        <div class="topbar">
-          <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
-            ☰
-          </button>
-        </div>
-        
-        <nav class="sidebar">
-          <div class="menu-wrapper">
-            <div class="top-item">
-              <ul class="menu" title="Botón Home">
-                <li>
-                  <a href="./home.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                      <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-                    </svg>
-                    HOME
-                  </a>
-                </li>
-              </ul>
-            </div>
-        
-            <ul class="menu">
-              <li>
-                <a href="jugar.html" title="Participar">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
-                    <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-                  </svg> 
-                  PARTICIPAR
-                </a>
-              </li>
-              <li>
-                <a href="organizar.html" title="Organizar">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                  </svg>
-                  ORGANIZAR
-                </a>
-              </li>
-            </ul>
-        
-            <div class="bottom-item">
-              <ul class="menu" title="Perfil">
-                <li>
-                  <a id="selected" href="perfil.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                    </svg>
-                    Perfil
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/loginOrRegister.js"></script>
-    <script src="assets/js/sidebarCollapse.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/loginOrRegister.js"></script>
+  <script src="assets/js/sidebarCollapse.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TournaMaster</title>
+    <title>TournaMaster - Portal</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
@@ -17,14 +17,16 @@
 
 <div class="content popupExito">
 	<p>¡Inscripción realizada con éxito!</p>
-	<p>Puedes ir a PERFIL > Mis Torneos para verlo</p>
+	<p>Puedes ir a Perfil > Mis Torneos para verlo</p>
 </div>
 
 <div class="content bienvenida">
-  <p tabindex="1">Portal de Tournamaster</p>
+  <h1 style="text-align: center;">Portal de Tournamaster</h1>
 </div>
+
+<!-- Barra lateral  -->
 <div class="topbar">
-  <button class="expand-btn" aria-expanded="false" title="Botón para expandir el menú lateral">
+  <button class="expand-btn" aria-expanded="false" title="Expandir el menú lateral">
     ☰
   </button>
 </div>
@@ -32,7 +34,7 @@
 <nav class="sidebar">
   <div class="menu-wrapper">
     <div class="top-item">
-      <ul class="menu" title="Botón Home">
+      <ul class="menu" title="Home">
         <li>
           <a href="./home.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -78,9 +80,10 @@
     </div>
   </div>
 </nav>
+
 <script> window.onload = function() {
 	document.querySelector('.popupExito').classList.add('show');
-  };
+};
     
 </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -88,5 +91,4 @@
     <script src="assets/js/sidebarCollapse.js"></script>
     <script src="assets/js/popupExito.js"></script>
 </body>
-
 </html>
