@@ -24,34 +24,38 @@
 
 <body style="background: #0c254c;">
   <!-- Crear equipo -->
-    <div class="content container-fluid">
-      <form class="text-light" action="./cuartaVistaJUGAR.html" method="get">
-        <fieldset>
-          <legend class="mt-4"><h1 id="headerDos">Nuevo equipo</h1></legend>
-          <label for="nameForm">Nombre del equipo</label><br/>
-              <input size="50" id="name" title="Nombre del equipo" type="text"/><br/>
-          
-          <label for="nickJugador">Jugador 1</label><br/>
-              <input size="50" id="nickJugador1" title="Nombre del jugador" type="text"/><br/>
-          
-          <label for="nickJugador">Jugador 2</label><br/>
-              <input size="50" id="nickJugador2" title="Nombre del jugador" type="text"/>
-          <!--<button action="">+</button>-->
-          <br>
-          <div class="mt-2 mb-4">
-              Foto del equipo<br/>
-              <img src="./assets/img/equipo1.png" class="img-fluid img-thumbnail" style="width: 300px; z-index: 1" alt="Foto del equipo"><br/>  
-              <input class="mt-2" type="file" title="Foto del equipo">
-          </div>
-
-          <label for="sobreMiForm">Descripción</label><br/>
-              <textarea id="sobreMiForm" title="Descripcion del equipo" cols="50" rows="5"></textarea><br/> 
-          
-          <input type="submit" class="btn btn-success mt-2" value="Confirmar"/>
-          <a href="javascript:history.back(-1);" type="button" class="btn btn-danger mt-2">Cancelar</a>
-        </fieldset>
-      </form>
-    </div>
+    <form action="./cuartaVistaJUGAR.html" method="get" class="content container-fluid">
+      <h1 id="headerDos">Formulario para crear un nuevo equipo</h1>
+      <fieldset>
+        <legend class="mt-2">Información principal</legend>
+        <label for="nameForm">Nombre del equipo</label><br/>
+          <input size="50" id="nameForm" type="text" title="Nombre del equipo" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
+      
+        <div class="mt-2 mb-4">
+            Foto de perfil<br/>
+            <img src="./assets/img/equipo1.png" class="img-fluid img-thumbnail" style="width: 25em;" alt="Foto de perfil" title="Foto de perfil seleccionada para el equipo"><br/>  
+            <input class="mt-2" type="file" title="Elegir una imagen de perfil para el equipo de tu ordenador">
+        </div>
+  
+        <legend class="mt-2">Miembros del equipo</legend>
+        <label for="jugador1Form">Jugador 1</label><br/>
+          <input size="50" id="jugador1Form" type="text" title="Nombre del jugador 1" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
+        
+        <label for="jugador2Form">Jugador 2</label><br/>
+          <input size="50" id="jugador2Form" type="text" title="Nombre del jugador 2" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
+        
+        <label for="jugador3Form">Jugador 3</label><br/>
+        <input size="50" id="jugador3Form" type="text" title="Nombre del jugador 3" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
+        
+        <input class="btn btn-primary mt-2" value="+" type="button" title="Añadir un nuevo jugador al equipo"></button><br/>
+  
+        <label for="descripcionForm">Descripción</label><br/>
+          <textarea id="descripcionForm" cols="50" rows="5" title="Descripción del torneo"></textarea><br/> 
+      </fieldset>
+      
+      <input class="btn btn-success mt-2" value="Confirmar" type="submit" title="Confirmar la creación del equipo"></input>
+      <input class="btn btn-danger mt-2" value="Cancelar" type="button" onclick="javascript:history.back(-1);" title="Cancelar la creación del torneo"></input>
+    </form>
 
     <!-- Barra lateral  -->
     <div class="topbar">
