@@ -1,3 +1,10 @@
+function openPopUp(){
+  document.getElementById('login-popup').style.display='block'; 
+  var sound = new Audio('assets/sound/success.mp3'); 
+  sound.play();
+}
+
+
 function switchToRegister() {
   document.getElementById("login-popup").style.display = "none";
   document.getElementById("register-popup").style.display = "block";
