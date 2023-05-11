@@ -47,11 +47,11 @@
         <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
                     
       <label for="fechaInicioForm" >Fecha de inicio</label><br/>
-        <input size="10" maxlength="10" id="inicioForm" type="date" title="Fecha de inicio" value="23-05-2023" onchange="if(isNaN(Date.parse(this.value))) 
+        <input id="inicioForm" type="date" title="Fecha de inicio" value="2023-05-23" onchange="if(isNaN(Date.parse(this.value))) 
         alert('Fecha inválida. Por favor, vuelva a introducir el valor.');"/><br/>
       
       <label for="fechaCierreForm">Fecha de cierre</label><br/>
-        <input size="10" maxlength="10" id="cierreForm" type="date" title="Fecha de cierre" value="06-06-2023" onchange="if(isNaN(Date.parse(this.value))) 
+        <input id="cierreForm" type="date" title="Fecha de cierre" value="2023-06-06" onchange="if(isNaN(Date.parse(this.value))) 
         alert('Fecha inválida. Por favor, vuelva a introducir el valor.');"/><br/>
       
       <label for="modalidadForm" name="modalidad" class="mt-2" title="Modalidad del torneo">Modalidad</label><br/>
