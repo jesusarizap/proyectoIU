@@ -13,15 +13,14 @@
 </head>
 
 <style>
-    div, form {
-        color: #EEEEEE;
-    }
+  div, form {
+    color: #EEEEEE;
+  }
 
-    a, a:hover {
-        text-decoration: none;
-        color: white;
-    }
-    
+  a, a:hover {
+    text-decoration: none;
+    color: white;
+  }
 </style>
 
 
@@ -33,27 +32,27 @@
         <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Imagen no encontrada">
       </section>
     </div>    
-    <h1 id="headerDos">Editar información del Torneo</h1>
   </div>
 
 <!-- Formulario para la creación del torneo -->
 <form class="content container-fluid" method="get" action="perfil_misorganizados.html">
-    <fieldset>
+  <h1 id="headerDos">Formulario para editar la información del torneo</h1>  
+  <fieldset>
       <legend class="mt-2">Información principal</legend>
       <label for="titleForm">Título del torneo</label><br/>
-        <input size="50" id="titleForm" type="text" value="¿Me cambias madera?"/><br/>
+        <input size="50" id="titleForm" type="text" value="¿Me cambias madera?" title="Título del torneo"/><br/>
         
       <label for="jugadoresForm" >Número de participantes</label><br/>
-        <input size="1" maxlength="3" id="titleForm" type="text" title="Numero de participantes del torneo" value="30"/><br/>
+        <input size="1" maxlength="3" id="titleForm" type="text" title="Número de participantes del torneo" value="30" title="Número de participantes" pattern=".{,3}"/><br/>
         <p class="form-text">El número de participantes que se pueden inscribir tiene que estar entre 0-100</p>
                     
       <label for="fechaInicioForm" >Fecha de inicio</label><br/>
-        <input size="10" maxlength="10" id="inicioForm" type="date" value="23-05-2023" onchange="if(isNaN(Date.parse(this.value))) 
-        alert('This control is not a valid date. Please re-enter the value.');"/><br/>
+        <input size="10" maxlength="10" id="inicioForm" type="date" title="Fecha de inicio" value="23-05-2023" onchange="if(isNaN(Date.parse(this.value))) 
+        alert('Fecha inválida. Por favor, vuelva a introducir el valor.');"/><br/>
       
       <label for="fechaCierreForm">Fecha de cierre</label><br/>
-        <input size="10" maxlength="10" id="cierreForm" type="date"title="Fecha de cierre del torneo" value="06-06-2023" onchange="if(isNaN(Date.parse(this.value))) 
-        alert('This control is not a valid date. Please re-enter the value.');"/><br/>
+        <input size="10" maxlength="10" id="cierreForm" type="date" title="Fecha de cierre" value="06-06-2023" onchange="if(isNaN(Date.parse(this.value))) 
+        alert('Fecha inválida. Por favor, vuelva a introducir el valor.');"/><br/>
       
       <label for="modalidadForm" name="modalidad" class="mt-2" title="Modalidad del torneo">Modalidad</label><br/>
         <input type="radio" class="m-2" id="individual" name="modalidad" value="Individual" checked title="Individual">
@@ -80,7 +79,7 @@
           <label for="abierta">Abierta</label><br/>
         <input type="radio" class="m-2" id="cerrada" name="estado" value="Cerrada" title="Inscripción cerrada">
           <label for="cerrada">Cerrada</label><br/>
-        <input type="radio" class="m-2" id="pendiente" name="estado" value="Pendiente" title="No determinada todavia">
+        <input type="radio" class="m-2" id="pendiente" name="estado" value="Pendiente" title="No determinada todavía">
           <label for="cerrada">Pendiente</label><br/>
       
       <label for="premioForm" name="premio" class="mt-2" title="Premios del Torneo">Premios</label><br/>
@@ -90,10 +89,10 @@
           <label for="no">No</label><br/>
       
       <label for="descripcionForm" >Descripción</label><br/>
-        <textarea id="descripcionForm" cols="50" rows="5" title="Descripcion del torneo" >Torneo multitudinario de Catan, ¡a construir puentes y perder amistades!</textarea><br/> 
+        <textarea id="descripcionForm" cols="50" rows="5" title="Descripcion del torneo" >Torneo multitudinario de Catán, ¡a construir puentes y perder amistades!</textarea><br/> 
         
-        <input type="submit" value="Guardar Cambios" class="btn btn-success mt-2"/>
-        <input type="submit" value="Cancelar" onclick="javascript:history.back(-1);" class="btn btn-danger mt-2"/>
+        <input type="submit" value="Guardar cambios" class="btn btn-success mt-2" title="Guardar cambios"/>
+        <input type="submit" value="Cancelar" onclick="javascript:history.back(-1);" class="btn btn-danger mt-2" title="Cancelar cambios"/>
     </fieldset>
   </form>
 
