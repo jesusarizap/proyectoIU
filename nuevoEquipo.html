@@ -29,7 +29,7 @@
       <fieldset>
         <legend class="mt-2">Información principal</legend>
         <label for="nameForm">Nombre del equipo</label><br/>
-          <input size="50" id="nameForm" type="text" title="Nombre del equipo" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
+          <input size="50" id="nameForm" type="text" required pattern="^[a-zA-Z0-9.]*$" title="nombre que puede contener letras, números y símbolos"><br/>
       
         <div class="mt-2 mb-4">
             Foto de perfil<br/>
@@ -39,13 +39,13 @@
   
         <legend class="mt-2">Miembros del equipo</legend>
         <label for="jugador1Form">Jugador 1</label><br/>
-          <input size="50" id="jugador1Form" type="text" title="Nombre del jugador 1" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
+          <input size="50" id="jugador1Form" type="text" required pattern="^[a-zA-Z0-9.]*$" title="nombre que puede contener letras, números y símbolos"><br/>
         
         <label for="jugador2Form">Jugador 2</label><br/>
-          <input size="50" id="jugador2Form" type="text" title="Nombre del jugador 2" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
+          <input size="50" id="jugador2Form" type="text" required pattern="^[a-zA-Z0-9.]*$" title="nombre que puede contener letras, números y símbolos"><br/>
         
         <label for="jugador3Form">Jugador 3</label><br/>
-        <input size="50" id="jugador3Form" type="text" title="Nombre del jugador 3" pattern="[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]"/><br/>
+          <input size="50" id="jugador3Form" type="text" required pattern="^[a-zA-Z0-9.]*$" title="nombre que puede contener letras, números y símbolos"><br/>
         
         <input class="btn btn-primary mt-2" value="+" type="button" title="Añadir un nuevo jugador al equipo"></button><br/>
   
