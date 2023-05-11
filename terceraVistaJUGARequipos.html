@@ -14,24 +14,17 @@
 </head>
 
 <style>
-  .amistoso {
-    background-color: cornflowerblue;
-  }
-
-  div,
-  form {
+  div,form {
     color: #EEEEEE;
   }
 
-  a,
-  a:hover {
+  a,a:hover {
     text-decoration: none;
     color: white;
   }
 </style>
 
 <body style="background: #0c254c;">
-
   <!-- Banner del juego -->
   <div class="content container-fluid">
     <div class="col-sm">
@@ -43,94 +36,41 @@
 
   <!-- Información del torneo -->
   <div class="content container-fluid">
-    <fieldset>
-      <legend class="mt-2"><h1 id="headerDos">Torneo 2</h1></legend>
-      <br/><br/>
-
-      <p>
-        <div class="mt-2">
-          <span>Número de equipos:</span><br/>
-          <span>8</span><br/><br/>
-
-          <span>Fecha de inicio</span><br/>
-          <span>12/03/2023</span><br/><br/>
-
-          <span>Fecha de cierre</span><br/>
-          <span>23/03/2023</span><br/><br/>
-
-          <span>Modalidad</span><br/>
-          <span>Por equipos</span><br/><br/>
-
-          <span>Dificultad</span><br/>
-          <span>Liga - Profesional</span><br/><br/>
-
-          <span>Localización</span><br/>
-          Online</span><br/><br>
-
-          <span>Inscripción</span><br/>
-          <span>Abierta</span><br/><br/>
-
-          <span>Premios</span><br/>
-          <span>No</span><br/><br/><br/>
-        </div>
-      </p>
-
-      <a href="javascript:history.back(-1);" role="button" type="button" class="btn btn-danger mt-2">Cancelar</a>
-      <a role="button" type="button" class="btn btn-success mt-2"
-        onclick="document.getElementById('equipo-popup').style.display='block'">
-        Inscribirse
-      </a>
-
-
-    </fieldset>
+    <h1 id="headerDos" class="mt-4">Información del torneo: Torneo 2</h1><br/>
+    
+    <p>Número de equipos inscritos: 8</p>
+    <p>Fecha de inicio: 12/05/2023</p>
+    <p>Fecha de cierre: 02/05/2023</p>
+    <p>Modalidad: Por equipos</p>
+    <p>Dificultad: Profesional</p>
+    <p>Localización: Online</p>
+    <p>Inscripción: Abierta</p>
+    <p>Premios: No</p>
+    <p>Descripción: Torneo de Super Smash Bros. Ultimate Competitivo</p>
+    
+    <button class="btn btn-success mt-2" type="button" onclick="document.getElementById('equipo-popup').style.display='block'" title="Confirmar la inscripción al torneo">Confirmar inscripción</button>
+    <button class="btn btn-danger mt-2" type="button" onclick="javascript:history.back(-1);" title="Volver atrás">Volver</button>
   </div>
 
-
-  <!----------------
-
-  popups
-
---------------->
-
-  <div id="equipo-popup" class="popup content" style="width: max-content;">
-    <div class="popup-content" style="width: inherit;">
-      <!--      ESCOGER EQUIPO      -->
+  <!-- Pop-ups  -->
+  <div id="equipo-popup" class="popup content">
+    <!-- Escoger equipo-->
+    <div class="popup-content" style="width: fit-content;">
       <div id="equipo1">
-        <table>
-          <tr><td>
-            <!--<button class="custom-link link-dark" onclick="document.getElementById('participacion-popup').style.display='none'">-->
-            <div style="text-align: center;">
-              <img class="img-fluid rounded" src="./assets/img/equipo1.png" alt="Imagen del equipo" longdesc="Imagen del equipo" style="align-items: center; width: 150px;">
-            </div></td><td>
-              <div class="card-body">
-              <h2 class="card-title " style="font-weight: bold; color:black">Inazuma Japón</h2>
-              <h3 class="card-text" style="font-style: italic;  color:black">Fútbol</h4>
-            </div>
-            <button class="btn btn-primary avanzar" type="button" onclick="ocultarEquipo()">Inscribirse</button>
-            <button class="btn btn-primary avanzar" type="button" onclick="ocultarPopUp()">Cancelar</button>  
-            <a class="nav-link link-dark" href="nuevoEquipo.html">
-                <button class="avanzar">Crear nuevo equipo</button>
-              </a>
-          </td>
-          </tr>
-          </table>
+        <h2 style="font-weight: bold;">Elige un equipo con el que participar</h2>
+        <button class="avanzar" type="button" onclick="ocultarEquipo()" title="Inscribirse con Inazuma Japón">Inscribirse con Inazuma Japón</button>
+        <button class="avanzar" type="button" onclick="location.href='./nuevoEquipo.html'" title="Crear nuevo equipo">Crear nuevo equipo</button>
+        <button class="avanzar" type="button" onclick="ocultarPopUp()" title="Cancelar">Cancelar</button>  
       </div>
     </div>
   </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
 
-
-
-  <!--     CONFIRMAR PARTICIPACION / VOLVER EQUIPOS -->
-  <div id="participacion-popup" class="popup">
-    <div class="popup-content">
-      <h2 style=" color:black">Participar con equipo: Inazuma Japón</h2>
-      <a href="./cuartaVistaJUGAR.html"><button class="avanzar">Confirmar</button></a>
-      <button class="cancelar" onclick="mostrarEquipo()">Cancelar</button>
+  <!-- Confirmar equipo / Volver al menú anterior -->
+  <div id="participacion-popup" class="popup content">
+    <div class="popup-content" style="width: fit-content;">
+      <h2 style="font-weight: bold;">Participar con el equipo: Inazuma Japón</h2>
+      <button class="avanzar" type="button" onclick="location.href='./cuartaVistaJUGAR.html'" title="Confirmar">Confirmar</button>  
+      <button class="cancelar" type="button" onclick="mostrarEquipo()" title="Cancelar">Cancelar</button>  
     </div>
   </div>
   </div>
