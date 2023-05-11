@@ -25,57 +25,37 @@
 </style>
 
 <body style="background: #0c254c;">
-        <!-- Banner del juego -->
-        <div class="content container-fluid">
-          <div class="col-sm">
-              <section id="game1" class="card" style="width: 100%; height: auto;">
-                <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Banner del torneo Super Smash Bros Ultimate longdesc="Banner del torneo">
-              </section>
-          </div>    
-      </div>
-    
-    
-    <!-- Información del torneo -->
-      <div class="content container-fluid">
-        <fieldset>
-          <legend class="mt-2"><h1 id="headerDos">Torneo 1</h1></legend>
-          <br><br/>
-      
-      <p>
-        <div class="mt-2">
-              <span>Número de equipos:</span><br/>
-              <span>32</span><br/><br/>
-      
-              <span>Fecha de inicio</span><br/>
-              <span>20/03/2023</span><br/><br/>
-      
-              <span>Fecha de cierre</span><br/>
-              <span>30/04/2023</span><br/><br/>
-      
-              <span>Modalidad</span><br/>
-              <span>Individual</span><br/><br/>
-
-              <span>Dificultad</span><br/>
-              <span>Amistoso</span><br/><br/>
-
-              <span>Localización</span><br/>
-              <span>Sala de estudiantes ETSI Informática</span><br/><br/>
-
-              <span>Inscripción</span><br/>
-              <span>Abierta<br/><br/>
-
-                <span>Premios</span><br/>
-                <span>1º puesto - 50€</span><br/>
-                <span>2º puesto - 25€</span><br/>
-                <span>3º puesto - Vale KF</span><br/><br/>
-        </div>
-      </p>
-
-      <a href="cuartaVistaJUGAR.html" role="button" type="button" class="btn btn-success mt-2">Inscribirse</a>
-      <a href="javascript:history.back(-1);" role="button" type="button" class="btn btn-danger mt-2">Cancelar</a>
-
-    </fieldset>
+  <!-- Banner del juego -->
+  <div class="content container-fluid">
+    <div class="col-sm">
+        <section id="game1" class="card" style="width: 100%; height: auto;">
+          <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Banner del torneo Super Smash Bros Ultimate longdesc="Banner del torneo">
+        </section>
+    </div>    
   </div>
+    
+<!-- Información del torneo -->
+<div class="content container-fluid">
+  <h1 id="headerDos" class="mt-4">Información del torneo: Torneo 1</h1><br/>
+  
+  <p>Número de participantes: 32</p>
+  <p>Fecha de inicio: 20/03/2023</p>
+  <p>Fecha de cierre: 30/04/2023</p>
+  <p>Modalidad: Individual</p>
+  <p>Dificultad: Amistoso</p>
+  <p>Localización: Presencial - Sala de Estudiantes de la ETSI Informática</p>
+  <p>Inscripción: Abierta</p>
+  <p>Premios: </p>
+  <ul>
+    <li>Primer puesto - 50€</li>
+    <li>Segundo puesto - 25€</li>
+    <li>Tercer puesto - Vale KFC</li>
+  </ul>
+  <p>Descripción: Torneo de Super Smash Bros. Ultimate Amistoso</p>
+  
+  <button class="btn btn-success mt-2" type="button" onclick="location.href='./cuartaVistaJUGAR.html'" title="Confirmar la inscripción al torneo">Confirmar inscripción</button>
+  <button class="btn btn-danger mt-2" type="button" onclick="javascript:history.back(-1);" title="Volver atrás">Volver</button>
+</div>
     
 <!-- Barra lateral  -->
 <div class="topbar">
