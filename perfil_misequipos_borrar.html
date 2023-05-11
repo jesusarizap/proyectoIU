@@ -17,6 +17,18 @@
       text-decoration: none;
       color: white;
   }
+
+  #headerCuatro{
+  display: block;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
 </style>
 
 <body style="background: #0c254c;">
@@ -80,14 +92,9 @@
     </nav>
   </div>
 
-  <!-- Mis equipos -->
   <div class="content container-fluid">
-    <h2 style="color: white;">Listado de equipos</h2>
-    <div class="row">
-      <div class="mb-3">
-        <button class="btn btn-success mt-2" type="button" onclick="location.href='./nuevoEquipo.html'" title="Crear un nuevo equipo">Crear equipo</button>
-      </div>
-    </div>
+    <h4 id="headerCuatro" style="font-style: italic;">Parece que aún no has creado ningún equipo, ¿por qué no lo pruebas?</h4>   
+    <input type="button" value="¡Claro que sí!" onclick="location.href='./nuevoEquipo.html'" class="btn btn-success mt-2" title="Organizar un torneo"/>         
   </div>
 
   <!-- Barra lateral -->
