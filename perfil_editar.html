@@ -44,7 +44,7 @@
           </div>
 
           <label for="fechaNacimientoForm">Fecha de nacimiento</label><br/>
-              <input size="10" maxlength="10" id="nacimientoForm" type="date" title="Fecha de nacimiento" onchange="if(isNaN(Date.parse(this.value))) 
+              <input id="nacimientoForm" type="date" value="2000-01-01" title="Fecha de nacimiento" onchange="if(isNaN(Date.parse(this.value))) 
               alert('Fecha inválida. Por favor, vuelva a introducir el valor');" /><br/>
           
           <label for="generoForm" name="genero" class="mt-2">Género</label><br/>
