@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TrabajoIU</title>
+    <title>TournaMaster - Tu web de torneos</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
@@ -23,52 +23,62 @@
 
 <body style="background: rgb(27,68,133);">
     <nav class="navbar navbar-light navbar-expand-xxl py-sm-0" style="background: #031634;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/Logo_Tournamaster.png" style="width: 200px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="./index.html"><img src="assets/img/Logo_Tournamaster.png" alt="Logo de la página web" style="width: 12vw;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3">
             <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-3">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#torneos" style="font-family: Ubuntu, sans-serif;font-size: 24px;">TORNEOS</a></li>
-                    <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#servicios" style="font-family: Ubuntu, sans-serif;font-size: 24px;">SERVICIOS</a></li>
-                    <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#herramientas" style="font-family: Ubuntu, sans-serif;font-size: 24px;">HERRAMIENTAS</a></li>
-                    <li class="nav-item" style="font-family: Ubuntu, sans-serif;font-size: 24px;"><a class="nav-link" href="#contacto" style="font-family: Ubuntu, sans-serif;font-size: 24px;">CONTACTO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#torneos" style="font-family: Ubuntu, sans-serif;font-size: 2.8vh;">TORNEOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios" style="font-family: Ubuntu, sans-serif;font-size: 2.8vh;">SERVICIOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#herramientas" style="font-family: Ubuntu, sans-serif;font-size: 2.8vh;">HERRAMIENTAS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto" style="font-family: Ubuntu, sans-serif;font-size: 2.8vh;">CONTACTO</a></li>
                 </ul>
                 <div class="iniciaSesionContainer">
-                    <button class="btn btn-primary" type="button" onclick="document.getElementById('login-popup').style.display='block'">Iniciar sesión</button>
+                    <button class="btn btn-primary" type="button" onclick="openPopUp()">Iniciar sesión</button>
                 </div>
                 
                 <div id="login-popup" class="popup">
                 <div class="popup-content">
                     <div class="close-container">
-                        <span class="close" onclick="document.getElementById('login-popup').style.display='none'">&times;</span>
+                        <span class="close" aria-label="Cerrar ventana emergente de inicio de sesión">&times;</span>
                     </div>
-                    <h2>Login</h2>
-                    <form id="login-form" method="get" action="./logged.html">
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email">
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password"><br/>
-                        <button type="submit">Login</button>
-                    </form>
-                    <button onclick="switchToRegister()">Register</button>
+                    <h2>Iniciar sesión</h2>
+                <form id="login-form" method="get" action="./logged.html" 
+                onsubmit="return validateForm()" aria-label="Formulario de inicio de sesión">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required 
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                    title="Introduzca su correo electrónico. Debe ser una dirección de correo electrónico válida.">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Introduzca su contraseña. Debe tener al menos 8 caracteres y contener al menos un número, una letra minúscula y una letra mayúscula.">
+                <button type="submit">Iniciar sesión</button>
+                </form>
+
+                    <button onclick="switchToRegister()">Registrarse</button>
                 </div>
                 </div>
 
                 <div id="register-popup" class="popup" style="display: none;">
                 <div class="popup-content">
                     <div class="close-container">
-                        <span class="close" onclick="document.getElementById('register-popup').style.display='none'">&times;</span>
+                        <span class="close" onclick="cerrarPopupRegister()" aria-label="Cerrar ventana emergente de registro"></span>>&times;</span>
                     </div>
-                    <h2>Register</h2>
-                    <form id="register-form" action="./logged.html">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email">
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="password"><br/>
-                    <button type="submit">Register</button>
+                    <h2>Registro</h2>
+                    <form id="register-form" method="get" action="./logged.html" 
+                    onsubmit="return validateForm()" aria-label="Formulario de registro">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" id="email" required 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                        title="Introduzca su correo electrónico. Debe ser una dirección de correo electrónico válida.">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" required 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Introduzca su contraseña.">
+                    <button type="submit">Registrarse</button>
                     </form>
-                    <button onclick="switchToLogin()">Login</button>
+                    <button onclick="switchToLogin()">Iniciar Sesión</button>
                 </div>
                 </div>
             </div>
@@ -79,16 +89,16 @@
         <div class="col">
             <div class="container">
                 <h1 style="font-family: Ubuntu, sans-serif;text-align: left;">TORNEOS</h1>
-                <p style="font-size: 20px;font-family: Ubuntu, sans-serif; text-align: justify">¿Estás buscando torneos emocionantes en línea? ¡Tenemos justo lo que necesitas! En nuestra plataforma encontrarás una gran variedad de juegos para competir contra jugadores de todo el mundo. Visita nuestra página para descubrir más sobre cada uno de nuestros torneos y cómo puedes participar. No dudes en ponerte en contacto con nosotros si necesitas ayuda. ¡Te esperamos en la competición!</p>
+                <p style="font-size: 2.2vh;font-family: Ubuntu, sans-serif; text-align: justify">¿Estás buscando torneos emocionantes en línea? ¡Tenemos justo lo que necesitas! En nuestra plataforma encontrarás una gran variedad de juegos para competir contra jugadores de todo el mundo. Visita nuestra página para descubrir más sobre cada uno de nuestros torneos y cómo puedes participar. No dudes en ponerte en contacto con nosotros si necesitas ayuda. ¡Te esperamos en la competición!</p>
             </div>
         </div>
     </div>
 
-    <div class="row" id="servicios" style="margin: 0px;background: #11356f;">
+    <div class="row" id="servicios" style="margin: 0px;background: #22628f;">
         <div class="col">
             <div class="container">
                 <h1 style="padding-top: 20px;font-family: Ubuntu, sans-serif;text-align: right;">SERVICIOS</h1>
-                <p style="font-size: 20px;font-family: Ubuntu, sans-serif; text-align: justify">En nuestra página web ofrecemos una plataforma única que te permite crear y participar en todo tipo de torneos. Ya sea que estés interesado en videojuegos, deportes electrónicos, juegos de mesa o cualquier otra cosa, ¡tenemos algo para ti! <br><br>Además, nuestra plataforma está impulsada por la comunidad, lo que significa que los propios usuarios pueden crear y organizar sus propios torneos, personalizarlos a su gusto y compartirlos con otros jugadores. ¡Y lo mejor de todo es que tú también puedes ser parte de esta comunidad! Crea tu cuenta y comienza a explorar las opciones disponibles. ¡Te esperamos en la competición!</p>
+                <p style="font-size: 2.2vh;font-family: Ubuntu, sans-serif; text-align: justify">En nuestra página web ofrecemos una plataforma única que te permite crear y participar en todo tipo de torneos. Ya sea que estés interesado en videojuegos, deportes electrónicos, juegos de mesa o cualquier otra cosa, ¡tenemos algo para ti! <br><br>Además, nuestra plataforma está impulsada por la comunidad, lo que significa que los propios usuarios pueden crear y organizar sus propios torneos, personalizarlos a su gusto y compartirlos con otros jugadores. ¡Y lo mejor de todo es que tú también puedes ser parte de esta comunidad! Crea tu cuenta y comienza a explorar las opciones disponibles. ¡Te esperamos en la competición!</p>
             </div>
         </div>
     </div>
@@ -97,20 +107,19 @@
         <div class="col">
             <div class="container">
                 <h1 style="padding-top: 20px;font-family: Ubuntu, sans-serif;">HERRAMIENTAS</h1>
-                <p style="font-size: 20px;font-family: Ubuntu, sans-serif; text-align: justify">Ofrecemos una gran variedad de herramientas para que puedas disfrutar al máximo de tu experiencia. Puedes crear y personalizar tus propios torneos ¡o también unirte a torneos existentes y participar en una gran variedad de juegos!<br><br>Si lo que buscas es hacer equipo, ¡también puedes hacerlo! Nuestra plataforma te permite crear un equipo, invitar a otros jugadores y competir juntos en torneos. Si prefieres unirte a un equipo, también puedes hacerlo y comenzar a jugar junto a otros jugadores.<br><br>Y si lo que quieres es llevar un registro de tus logros, ¡nuestra plataforma también te brinda esa opción! Puedes ver tus estadísticas, trofeos y medallas en tu perfil personal y compartirlos con otros jugadores en línea. Todo lo que necesitas para disfrutar de torneos en línea emocionantes lo encontrarás aquí, en nuestra plataforma. ¡Te esperamos en la competición!</p>
+                <p style="font-size: 2.2vh;font-family: Ubuntu, sans-serif; text-align: justify">Ofrecemos una gran variedad de herramientas para que puedas disfrutar al máximo de tu experiencia. Puedes crear y personalizar tus propios torneos ¡o también unirte a torneos existentes y participar en una gran variedad de juegos!<br><br>Si lo que buscas es hacer equipo, ¡también puedes hacerlo! Nuestra plataforma te permite crear un equipo, invitar a otros jugadores y competir juntos en torneos. Si prefieres unirte a un equipo, también puedes hacerlo y comenzar a jugar junto a otros jugadores.<br><br>Y si lo que quieres es llevar un registro de tus logros, ¡nuestra plataforma también te brinda esa opción! Puedes ver tus estadísticas, trofeos y medallas en tu perfil personal y compartirlos con otros jugadores en línea. Todo lo que necesitas para disfrutar de torneos en línea emocionantes lo encontrarás aquí, en nuestra plataforma. ¡Te esperamos en la competición!</p>
             </div>
         </div>
     </div>
     
-    <div class="row" id="contacto" style="margin: 0px;background: #11356f;">
+    <div class="row" id="contacto" style="margin: 0px;background: #22628f;">
         <div class="col">
             <div class="container">
                 <h1 style="padding-top: 20px;font-family: Ubuntu, sans-serif;text-align: right;">CONTACTO</h1>
-                <p style="font-size: 20px;font-family: Ubuntu, sans-serif; text-align: justify">Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros en cualquier momento. Estamos aquí para ayudarte y brindarte la mejor experiencia posible en nuestra plataforma.<br><br>Puedes ponerte en contacto con nosotros a través de nuestro correo electrónico. ¡No hay nada que nos guste más que escuchar a nuestra comunidad!</p>
+                <p style="font-size: 2.2vh;font-family: Ubuntu, sans-serif; text-align: justify">Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros en cualquier momento. Estamos aquí para ayudarte y brindarte la mejor experiencia posible en nuestra plataforma.<br><br>Puedes ponerte en contacto con nosotros a través de nuestro correo electrónico. ¡No hay nada que nos guste más que escuchar a nuestra comunidad!</p>
                 
-                <button class="btn btn-primary" onclick="copiarCorreo()" onmouseout="outFunc()">
+                <button id="copy-btn" class="btn btn-primary">Copiar correo</button>
                     <span class="tooltiptext" id="copiarCorreo"></span>
-                    Copiar correo de contacto al portapapeles
                 </button>   
                     
                 <a href="mailto:contact@tournamaster.com"> <button class="btn btn-primary">Abrir correo electrónico</button></a>

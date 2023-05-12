@@ -15,7 +15,7 @@
     color: #3b96db;
 }
 
-svg:hover {
-    fill: #dc3545; /*warning red*/
-    transition: ease-in 0.3s;
-  }
+#logout svg:hover {
+  fill:#dc3545; /*warning red*/
+  transition: ease-in 0.3s;
+}

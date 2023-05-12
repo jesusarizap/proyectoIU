@@ -12,7 +12,7 @@
   height: calc(100vh - 100px);
 }
 
-.bienvenida h1 {
+.bienvenida p {
   font-size: 3em;
   font-weight: bold;
   text-align: center;

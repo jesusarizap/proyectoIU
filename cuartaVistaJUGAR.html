@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TrabajoIU</title>
+    <title>TournaMaster - Portal</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
@@ -13,17 +13,29 @@
     <link rel="stylesheet" href="assets/css/popupExito.css">
 </head>
 
-<body style="background: #0c254c;"><div class="topbar">
-  <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
+<body style="background: #0c254c;">
+  <div class="content bienvenida">
+    <h1 style="text-align: center;">Portal de TournaMaster</h1>
+  </div>
+  
+<div class="content popupExito">
+	<p>¡Inscripción realizada con éxito!</p>
+	<p>Puedes ir a Perfil > Mis Torneos para verlo</p>
+</div>
+
+
+
+<!-- Barra lateral  -->
+<div class="topbar">
+  <button class="expand-btn" aria-expanded="false" title="Expandir el menú lateral">
     ☰
   </button>
 </div>
 
 <nav class="sidebar">
   <div class="menu-wrapper">
-
     <div class="top-item">
-      <ul class="menu">
+      <ul class="menu" title="Home">
         <li>
           <a href="./home.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -37,15 +49,15 @@
 
     <ul class="menu">
       <li>
-        <a href="jugar.html">
+        <a href="jugar.html" title="Participar">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
             <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
           </svg> 
-          JUGAR
+          PARTICIPAR
         </a>
       </li>
       <li>
-        <a href="organizar.html">
+        <a href="organizar.html" title="Organizar">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
@@ -56,7 +68,7 @@
     </ul>
 
     <div class="bottom-item">
-      <ul class="menu">
+      <ul class="menu" title="Perfil">
         <li>
           <a href="perfil.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -70,26 +82,14 @@
   </div>
 </nav>
 
-
-
-<div class="content popupExito">
-	<p>¡Inscripción realizada con éxito!</p>
-	<p>Puedes ir a PERFIL > Mis Torneos para verlo</p>
-</div>
-
-<div class="content bienvenida">
-  <h1>Portal de Tournamaster</h1>
-</div>
-
 <script> window.onload = function() {
 	document.querySelector('.popupExito').classList.add('show');
-  };
-  
+};
+    
 </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/loginOrRegister.js"></script>
     <script src="assets/js/sidebarCollapse.js"></script>
     <script src="assets/js/popupExito.js"></script>
 </body>
-
 </html>

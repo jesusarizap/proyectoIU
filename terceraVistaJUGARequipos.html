@@ -1,9 +1,10 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>TrabajoIU</title>
+  <title>TournaMaster - Detalles inscripción</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="stylesheet" href="assets/css/logged.css">
@@ -13,79 +14,116 @@
 </head>
 
 <style>
-  .amistoso {
-    background-color: cornflowerblue;
-  }
-
-  div,
-  form {
+  div,form {
     color: #EEEEEE;
   }
 
-  a,
-  a:hover {
+  a,a:hover {
     text-decoration: none;
     color: white;
   }
 </style>
 
 <body style="background: #0c254c;">
+  <!-- Banner del juego -->
+  <div class="content container-fluid">
+    <div class="col-sm">
+      <section id="game1" class="card" style="width: 100%; height: auto;">
+        <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Banner del torneo Super Smash Bros Ultimate" longdesc="Banner del torneo">
+      </section>
+    </div>
+  </div>
+
+  <!-- Información del torneo -->
+  <div class="content container-fluid">
+    <h1 id="headerDos" class="mt-4">Información del torneo: Torneo 2</h1><br/>
+    
+    <p>Número de equipos inscritos: 8</p>
+    <p>Fecha de inicio: 12/05/2023</p>
+    <p>Fecha de cierre: 02/05/2023</p>
+    <p>Modalidad: Por equipos</p>
+    <p>Dificultad: Profesional</p>
+    <p>Localización: Online</p>
+    <p>Inscripción: Abierta</p>
+    <p>Premios: No</p>
+    <p>Descripción: Torneo de Super Smash Bros. Ultimate Competitivo</p>
+    
+    <button class="btn btn-success mt-2" type="button" onclick="document.getElementById('equipo-popup').style.display='block'" title="Confirmar la inscripción al torneo">Confirmar inscripción</button>
+    <button class="btn btn-danger mt-2" type="button" onclick="javascript:history.back(-1);" title="Volver atrás">Volver</button>
+  </div>
+
+  <!-- Pop-ups  -->
+  <div id="equipo-popup" class="popup content">
+    <!-- Escoger equipo-->
+    <div class="popup-content" style="width: fit-content;">
+      <div id="equipo1">
+        <h2 style="font-weight: bold;">Elige un equipo con el que participar</h2>
+        <button class="avanzar" type="button" onclick="ocultarEquipo()" title="Inscribirse con Inazuma Japón">Inscribirse con Inazuma Japón</button>
+        <button class="avanzar" type="button" onclick="location.href='./nuevoEquipo.html'" title="Crear nuevo equipo">Crear nuevo equipo</button>
+        <button class="avanzar" type="button" onclick="ocultarPopUp()" title="Cancelar">Cancelar</button>  
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmar equipo / Volver al menú anterior -->
+  <div id="participacion-popup" class="popup content">
+    <div class="popup-content" style="width: fit-content;">
+      <h2 style="font-weight: bold;">Participar con el equipo: Inazuma Japón</h2>
+      <button class="avanzar" type="button" onclick="location.href='./cuartaVistaJUGAR.html'" title="Confirmar">Confirmar</button>  
+      <button class="cancelar" type="button" onclick="mostrarEquipo()" title="Cancelar">Cancelar</button>  
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Barra lateral  -->
   <div class="topbar">
-    <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
+    <button class="expand-btn" aria-expanded="false" title="Expandir el menú lateral">
       ☰
     </button>
   </div>
 
   <nav class="sidebar">
     <div class="menu-wrapper">
-
       <div class="top-item">
-        <ul class="menu">
+        <ul class="menu" title="Home">
           <li>
             <a href="./home.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
               </svg>
               HOME
             </a>
           </li>
         </ul>
       </div>
-
+  
       <ul class="menu">
         <li>
-          <a id="selected" href="jugar.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play"
-              viewBox="0 0 16 16">
-              <path
-                d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
-            </svg>
-            JUGAR
+          <a id="selected" href="jugar.html" title="Participar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg> 
+            PARTICIPAR
           </a>
         </li>
         <li>
-          <a href="organizar.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle"
-              viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-              <path
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+          <a href="organizar.html" title="Organizar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
             </svg>
             ORGANIZAR
           </a>
         </li>
       </ul>
-
+  
       <div class="bottom-item">
-        <ul class="menu">
+        <ul class="menu" title="Perfil">
           <li>
             <a href="perfil.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
               </svg>
               Perfil
             </a>
@@ -95,112 +133,10 @@
     </div>
   </nav>
 
-  <!-- Banner del juego -->
-  <div class="content container-fluid">
-    <div class="col-sm">
-      <section id="game1" class="card" style="width: 100%; height: auto;">
-        <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Image not found">
-      </section>
-    </div>
-  </div>
-
-  <!-- Formulario para la creación del torneo -->
-  <form class="content container-fluid">
-    <fieldset>
-      <legend class="mt-2">Torneo 2</legend>
-      <br><br />
-
-      <label for="jugadoresForm">Número de equipos:</label><br>
-      <label size="1" maxlength="3" id="titleForm" type="text">8</label><br /><br>
-
-      <label for="fechaInicioForm">Fecha de inicio</label><br />
-      <label size="1" maxlength="3" id="titleForm" type="text">12/03/2023</label><br /><br>
-
-      <label for="fechaCierreForm">Fecha de cierre</label><br />
-      <label size="1" maxlength="3" id="titleForm" type="text">23/03/2023</label><br /><br>
-
-      <label for="modalidadForm" name="modalidad" class="mt-2">Modalidad</label><br />
-      <label size="1" maxlength="3" id="titleForm" type="text">Por equipos</label><br /><br>
-
-      <label for="nivelForm" name="nivel" class="mt-2">Dificultad</label><br />
-      <label size="1" maxlength="3" id="titleForm" type="text">Liga - Profesional</label><br /><br>
-
-      <label for="localizacionForm" name="lugar" class="mt-2">Localización</label><br />
-      <label for="online">Online</label><br /><br>
-
-      <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br />
-      <label for="abierta">Abierta</label><br /><br>
-
-      <label for="premioForm" name="premio" class="mt-2">Premios</label><br />
-      <label for="no">No</label><br /><br /><br>
-      
-      <a role="button" type="button" class="btn btn-success mt-2"
-        onclick="document.getElementById('equipo-popup').style.display='block'">
-        Inscribirse
-      </a>
-      <a href="segundaVistaJUGAR.html" role="button" type="button" class="btn btn-danger mt-2">Cancelar</a>
-
-
-    </fieldset>
-  </form>
-
-
-  <!----------------
-
-  popups
-
---------------->
-
-  <div id="equipo-popup" class="popup content" style="width:100%;">
-    <div class="popup-content" style="width: 50%;">
-      <!--      ESCOGER EQUIPO      -->
-      <div id="equipo1">
-        <table>
-          <tr><td>
-            <!--<button class="custom-link link-dark" onclick="document.getElementById('participacion-popup').style.display='none'">-->
-            <div style="text-align: center;">
-              <img class="img-fluid rounded" src="./assets/img/equipo1.png" style="align-items: center; width: 250px;">
-            </div></td><td>
-              <div class="card-body">
-              <h2 class="card-title " style="font-weight: bold; color:white">Inazuma Japón</h2>
-              <h4 class="card-text" style="font-style: italic; text-align: center;  color:white">Fútbol</h4>
-            </div>
-            <button class="btn btn-primary avanzar" type="button" onclick="ocultarEquipo()">INSCRIBIRSE</button>
-            <button class="btn btn-primary avanzar" type="button" onclick="ocultarPopUp()">VOLVER</button>  
-            <label >
-              <a class="nav-link link-dark" href="nuevoEquipo.html">
-                <button class="avanzar">Crear nuevo equipo</button>
-              </a>
-            </label>
-          </td>
-          </tr>
-          </table>
-      </div>
-    </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-
-
-  <!--     CONFIRMAR PARTICIPACION / VOLVER EQUIPOS -->
-  <div id="participacion-popup" class="popup">
-    <div class="popup-content">
-      <h2 style=" color:white">Participar con equipo: Inazuma Japón</h2>
-      <a href="./cuartaVistaJUGAR.html"><button class="avanzar">Confirmar</button></a>
-      <button class="cancelar" onclick="mostrarEquipo()">Volver</button>
-    </div>
-  </div>
-  </div>
-
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/loginOrRegister.js"></script>
   <script src="assets/js/sidebarCollapse.js"></script>
   <script src="assets/js/popupEquipos.js"></script>
 
 </body>
-
 </html>

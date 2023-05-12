@@ -35,6 +35,7 @@
 
 .abierta{
     background-color: rgb(47, 255, 85);
+    font-weight: bold;
 }
 
 .row{
@@ -46,6 +47,7 @@
     border-color: #0c254c8d;
     border-width: 1px;
     background-color: red;
+    font-weight: bold;
 }
 
 
@@ -90,6 +92,7 @@
   border-style: solid;
   border-color: #0c254c8d;
   border-width: 1px;
+  font-weight: bold;
 }
 
 .liga{

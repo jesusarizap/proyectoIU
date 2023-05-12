@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>TrabajoIU</title>
+  <title>TournaMaster - Inscribirse a un torneo</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   <link rel="stylesheet" href="assets/css/logged.css">
@@ -24,17 +24,150 @@
 </style>
 
 <body style="background: #0c254c;">
+  <!-- Buscador -->
+  <div class="content input-group" id="barraBusqueda" >
+    <input id="search-input" type="search" class="form-control" title="Barra de búsqueda" placeholder="Escribe el término de búsqueda aquí"/>
+    <label class="form-label" for="form1"></label>
+    <button id="search-button" type="button" class="btn btn-primary" title="Botón de búsqueda">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 18 18">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Juegos -->
+  <div class="content container-fluid">
+    <h1 id="headerDos" style="font-style: italic; color:white">Torneos disponibles</h1>
+    <p>Selecciona la tarjeta de un juego para inscribirte a un torneo </p>
+    
+    <div class="row">
+      <!--Primera fila-->
+      <div class="col-sm" id="smash" title="Tarjeta del videojuego Super Smash Bros. Ultimate">
+        <section id="game1" class="card" style="width: 16rem; height: 22rem;">
+          <a class="nav-link link-dark" href="./segundaVistaJUGAR.html">
+            <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Tarjeta del videojuego Super Smash Bros. Ultimate">
+            <div class="card-body">
+              <p id="headerCinco" class="card-title text-center">Super Smash Bros. Ultimate</p>
+            </div>
+          </a>
+        </section> 
+      </div>
+
+      <div class="col-sm" id="fortnite" title="Tarjeta del videojuego Fortnite">
+        <section id="game2" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game2.png" alt="Tarjeta del videojuego Fortnite">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">Fortnite</p>
+          </div>
+        </section>
+      </div>
+      
+      <div class="col-sm" id="valorant" title="Tarjeta del videojuego Valorant">
+        <section id="game3" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game3.png" alt="Tarjeta del videojuego Valorant">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">Valorant</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm" id="lol" title="Tarjeta del videojuego League of Legends">
+        <section id="game4" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game4.png" alt="Tarjeta del videojuego League of Legends">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">League of Legends</p>
+          </div>
+        </section>
+      </div>
+    
+      <!--Segunda fila-->
+      <div class="col-sm" id="futbol" title="Tarjeta del deporte Fútbol">
+        <section id="game1" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game5.png" alt="Tarjeta del deporte Fútbol">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">Fútbol</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm" id="baloncesto" title="Tarjeta del deporte Baloncesto">
+        <section id="game2" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game6.png" alt="Tarjeta del deporte Baloncesto">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">Baloncesto</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm" id="petanca" title="Tarjeta del deporte Petanca">
+        <section id="game3" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game7.png" alt="Tarjeta del deporte Petanca">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">Petanca</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm" id="bolos" title="Tarjeta del deporte Bolos">
+        <section id="game4" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game8.png" alt="Tarjeta del deporte Bolos">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">Bolos</p>
+          </div>
+        </section>
+      </div>
+    
+      <!--Tercera fila-->
+      <div class="col-sm" id="uno" title="Tarjeta del juego de mesa UNO">
+        <section id="game1" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game9.png" alt="Tarjeta del juego de mesa UNO">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">UNO</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm" id="magic" title="Tarjeta del juego de mesa MAGIC The Gathering">
+        <section id="game2" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game10.png" alt="Tarjeta del juego de mesa MAGIC The Gathering">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">MAGIC The Gathering</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm" id="ajedrez" title="Tarjeta del juego de mesa Ajedrez">
+        <section id="game3" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game11.png" alt="Tarjeta del juego de mesa Ajedrez">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">Ajedrez</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-sm" id="catan" title="Tarjeta del juego de mesa Catán">
+        <section id="game4" class="card" style="width: 16rem; height: 22rem;">
+          <img class="card-img-top img-fluid" src="./assets/img/game12.png" alt="Tarjeta del juego de mesa Catán">
+          <div class="card-body">
+            <p id="headerCinco" class="card-title text-center">Catán</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Barra lateral  -->
   <div class="topbar">
-    <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
+    <button class="expand-btn" aria-expanded="false" title="Expandir el menú lateral">
       ☰
     </button>
   </div>
 
   <nav class="sidebar">
     <div class="menu-wrapper">
-
       <div class="top-item">
-        <ul class="menu">
+        <ul class="menu" title="Home">
           <li>
             <a href="./home.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -45,18 +178,18 @@
           </li>
         </ul>
       </div>
-
+  
       <ul class="menu">
         <li>
-          <a id="selected" href="jugar.html">
+          <a id="selected" href="jugar.html" title="Participar">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
               <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
             </svg> 
-            JUGAR
+            PARTICIPAR
           </a>
         </li>
         <li>
-          <a href="organizar.html">
+          <a href="organizar.html" title="Organizar">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
               <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
@@ -65,9 +198,9 @@
           </a>
         </li>
       </ul>
-
+  
       <div class="bottom-item">
-        <ul class="menu">
+        <ul class="menu" title="Perfil">
           <li>
             <a href="perfil.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -81,138 +214,6 @@
     </div>
   </nav>
   
-  <!-- Buscador -->
-  <div class="content input-group" id="barraBusqueda">
-    <input id="search-input" type="search" class="form-control"/>
-    <label class="form-label" for="form1"></label>
-    <button id="search-button" type="button" class="btn btn-primary" >
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 18 18">
-        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-      </svg>
-    </button>
-  </div>
-
-  <!-- Juegos -->
-  <div class="content container-fluid">
-    <h2 style="font-style: italic; color:white">Torneos disponibles</h2>
-    <!--Primera fila-->
-    <div class="row">
-      <div class="col-sm">
-        <section id="game1" class="card" style="width: 16rem; height: 22rem;">
-          <a class="nav-link link-dark" href="./segundaVistaJUGAR.html">
-            <img class="card-img-top img-fluid" src="./assets/img/game1.png" alt="Image not found">
-            <div class="card-body">
-              <h5 class="card-title text-center">Super Smash Bros. Ultimate</h5>
-            </div>
-          </a>
-        </section> 
-      </div>
-
-      <div class="col-sm">
-        <section id="game2" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game2.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">Fortnite</h5>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-sm">
-        <section id="game3" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game3.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">Valorant</h5>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-sm">
-        <section id="game4" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game4.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">League of Legends</h5>
-          </div>
-        </section>
-      </div>
-    
-    <!--Segunda fila-->
-      <div class="col-sm">
-        <section id="game1" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game5.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">Fútbol</h5>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-sm">
-        <section id="game2" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game6.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">Baloncesto</h5>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-sm">
-        <section id="game3" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game7.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">Petanca</h5>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-sm">
-        <section id="game4" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game8.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">Bolos</h5>
-          </div>
-        </section>
-      </div>
-    
-
-    <!--Tercera fila-->
-    
-      <div class="col-sm">
-        <section id="game1" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game9.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">UNO</h5>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-sm">
-        <section id="game2" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game10.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">MAGIC The Gathering</h5>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-sm">
-        <section id="game3" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game11.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">Ajedrez</h5>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-sm">
-        <section id="game4" class="card" style="width: 16rem; height: 22rem;">
-          <img class="card-img-top img-fluid" src="./assets/img/game12.png" alt="Image not found">
-          <div class="card-body">
-            <h5 class="card-title text-center">Catán</h5>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/loginOrRegister.js"></script>
   <script src="assets/js/sidebarCollapse.js"></script>

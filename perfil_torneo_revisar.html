@@ -1,140 +1,129 @@
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>TrabajoIU</title>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-        <link rel="stylesheet" href="assets/css/logged.css">
-        <link rel="stylesheet" href="assets/css/loginRegisterWindow.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-    </head>
-
-    <style>
-      div, form {
-          color: #EEEEEE;
-      }
-    
-      a, a:hover {
-          text-decoration: none;
-          color: white;
-      }
-    </style>
-
-
-    <body style="background: #0c254c;">
-        <div class="topbar">
-        <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">
-            ☰
-        </button>
-        </div>
-        
-        <nav class="sidebar">
-            <div class="menu-wrapper">
-
-              <div class="top-item">
-                <ul class="menu">
-                  <li>
-                    <a href="./home.html">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-                      </svg>
-                      HOME
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              
-              <ul class="menu">
-                <li>
-                  <a href="jugar.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
-                      <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
-                    </svg> 
-                    JUGAR
-                  </a>
-                </li>
-                <li>
-                  <a href="organizar.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                    </svg>
-                    ORGANIZAR
-                  </a>
-                </li>
-              </ul>
-          
-              <div class="bottom-item">
-                <ul class="menu">
-                  <li>
-                    <a id="selected" href="perfil.html">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                      </svg>
-                      Perfil
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        
-          <div id="confirmation-popup" class="popup">
-            <div class="popup-content">
-                <h2>¿Estás seguro?</h2>
-                <a href="./perfil_torneo_desinscrito.html"><button class="avanzar">Sí</button></a>
-                <button class="cancelar" onclick="document.getElementById('confirmation-popup').style.display='none'">Volver</button>
-            </div>
-          </div>
-        
-           <!-- Banner del juego -->
-           <div class="content container-fluid">
-            <div class="col-sm">
-                <section id="game1" class="card" style="width: 100%; height: auto;">
-                  <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Image not found">
-                </section>
-            </div>    
-
-            <legend class="mt-2">Torneo 1</legend>
-            <br><br/>
-            
-            <label for="jugadoresForm">Número de equipos:</label><br>
-            <label size="1" maxlength="3" id="titleForm" type="text">32</label><br/><br>
-                        
-            <label for="fechaInicioForm">Fecha de inicio</label><br/>
-            <label size="1" maxlength="3" id="titleForm" type="text">20/03/2023</label><br/><br>
-            
-            <label for="fechaCierreForm">Fecha de cierre</label><br/>
-            <label size="1" maxlength="3" id="titleForm" type="text">30/04/2023</label><br/><br>
-            
-            <label for="modalidadForm" name="modalidad" class="mt-2">Modalidad</label><br/>
-            <label size="1" maxlength="3" id="titleForm" type="text">Individual</label><br/><br>
-          
-            <label for="nivelForm" name="nivel" class="mt-2">Dificultad</label><br/>
-            <label size="1" maxlength="3" id="titleForm" type="text">Amistoso</label><br/><br>
-            
-            <label for="localizacionForm" name="lugar" class="mt-2">Localización</label><br/>
-            <label for="online">Sala de estudiantes ETSI Informática</label><br/><br>
-            
-            <label for="estadoForm" name="estado" class="mt-2">Inscripción</label><br/>
-            <label for="abierta">Abierta</label><br/><br>
-            
-            <label for="premioForm" name="premio" class="mt-2">Premios</label><br/>
-                <label for="no">1º puesto - 50€</label><br/>
-                <label for="no">2º puesto - 25€</label><br/>
-                <label for="no">3º puesto - Vale KFC</label><br/><br>
-            
-            
-              <a role="button" type="button"  class="btn btn-danger mt-2 cancelar" onclick="switchOn()">Cancelar inscripción</a>
-            
-        </div>
-        
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/estasSeguro.js"></script>
-        <script src="assets/js/loginOrRegister.js"></script>
-        <script src="assets/js/sidebarCollapse.js"></script>
-    
-    </body>
+<!DOCTYPE html>
+<html lang="es">
   
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>TournaMaster - Revisar torneo</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="assets/css/logged.css">
+  <link rel="stylesheet" href="assets/css/loginRegisterWindow.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<style>
+  div, form {
+      color: #EEEEEE;
+  }
+
+  a, a:hover {
+      text-decoration: none;
+      color: white;
+  }
+</style>
+
+
+<body style="background: #0c254c;">
+    
+  <div id="confirmation-popup" class="popup">
+    <div class="popup-content">
+        <h2>¿Estás seguro?</h2>
+        <a href="./perfil_torneo_desinscrito.html"><button class="avanzar">Sí</button></a>
+        <button class="cancelar" onclick="document.getElementById('confirmation-popup').style.display='none'">Volver</button>
+    </div>
+  </div>
+    
+  
+  <!-- Banner del juego -->
+  <div class="content container-fluid">
+    <div class="col-sm" title="Banner del videojuego Super Smash Bros. Ultimate">
+        <section id="game1" class="card" style="width: 100%; height: 100%;">
+          <img class="card-img-top img-fluid" src="./assets/img/bannerGame1.png" alt="Banner del videojuego Super Smash Bros. Ultimate">
+        </section>
+    </div>    
+
+    <h1 id="headerDos" class="mt-4">Información del torneo: Peaches Peaches Peaches Tournament</h1><br/>
+    
+    <p>Número de equipos inscritos: 8</p>
+    <p>Fecha de inicio: 12/05/2023</p>
+    <p>Fecha de cierre: 02/05/2023</p>
+    <p>Modalidad: Individual</p>
+    <p>Dificultad: Amistoso</p>
+    <p>Localización: Presencial - Sala de Estudiantes de la ETSI Informática</p>
+    <p>Inscripción: Abierta</p>
+    <p>Premios: </p>
+      <ul>
+        <li>Primer puesto - 50€</li>
+        <li>Segundo puesto - 25€</li>
+        <li>Tercer puesto - Vale KFC</li>
+      </ul>
+    <p>Descripción: Torneo de celebración del estreno de Super Mario Bros.: La Película</p>
+    
+    <button class="btn btn-danger mt-2" type="button" onclick="switchOn()" title="Cancelar la inscripción del torneo">Cancelar inscripción</button>
+    <button class="btn btn-success mt-2" type="button" onclick="javascript:history.back(-1);" title="Volver atrás">Volver</button>
+  </div>
+  
+  <!-- Barra lateral  -->
+  <div class="topbar">
+    <button class="expand-btn" aria-expanded="false" title="Expandir el menú lateral">
+      ☰
+    </button>
+  </div>
+
+  <nav class="sidebar">
+    <div class="menu-wrapper">
+      <div class="top-item">
+        <ul class="menu" title="Home">
+          <li>
+            <a href="./home.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+              </svg>
+              HOME
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <ul class="menu">
+        <li>
+          <a href="jugar.html" title="Participar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+              <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg> 
+            PARTICIPAR
+          </a>
+        </li>
+        <li>
+          <a href="organizar.html" title="Organizar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+            ORGANIZAR
+          </a>
+        </li>
+      </ul>
+  
+      <div class="bottom-item">
+        <ul class="menu" title="Perfil">
+          <li>
+            <a id="selected" href="perfil.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+              Perfil
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/estasSeguro.js"></script>
+  <script src="assets/js/loginOrRegister.js"></script>
+  <script src="assets/js/sidebarCollapse.js"></script>
+</body>
 </html>

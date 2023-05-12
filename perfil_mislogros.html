@@ -1,25 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>TrabajoIU</title>
+    <title>TournaMaster - Mis logros</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link rel="stylesheet" href="assets/css/logged.css">
     <link rel="stylesheet" href="assets/css/perfil.css">
 </head>
 
-<body style="background: #0c254c;"><div class="topbar">
-  <button class="expand-btn" aria-expanded="false" aria-label="Expand sidebar menu">☰</button>
+<style>
+  #headerCinco{
+    display: block;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    color: black;
+  }
+</style>
+
+<!-- Banner del perfil -->
+<body style="background: #0c254c;">
+  <div class="content container-fluid">
+    <h1 style="font-style: italic; color:white" class="mb-3">Perfil</h1>
+    <div class="row d-flex align-items-center">
+      <div class="col-lg">
+        <div class="card" style="width: 100%; height: 100%;">
+          <div class="rounded-top d-flex flex-row" style="background-color: black; color: white; height:200px;">
+            <!-- Botón logout -->
+            <div id="logout" title="Cerrar sesión" class="position-absolute top-0 end-0 p-3" onclick="location.href='index.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg>
+            </div>
+            
+            <div class="ms-4 mt-5 d-flex flex-column">
+              <img src="./assets/img/profile_pic.jpg" alt="Foto de perfil" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 0" title="Foto de perfil">
+              <button type="button" onclick="location.href='./perfil_editar.html'" title="Editar el perfil" class="btn btn-outline-dark" data-mdb-ripple-color="dark" style="z-index: 0;">Editar perfil</button>
+            </div>
+            <div class="ms-3" style="margin-top: 130px;">
+              <h4 style="font-weight: bold;">Samus Aran</h4>
+              <p style="font-style: italic; color: gray;">Cazarrecompensas</p>
+            </div>
+          </div>
+          
+          <div class="p-4 text-black" style="background-color: white;">
+            <div class="d-flex justify-content-end text-center py-1">
+              <div>
+                <p class="mb-1 h5">17</p>
+                <p class="small text-muted mb-0">Nivel</p>
+              </div>
+              <div class="px-3">
+                <p class="mb-1 h5">1026</p>
+                <p class="small text-muted mb-0">Experiencia</p>
+              </div>
+              <div>
+                <p class="mb-1 h5">317</p>
+                <p class="small text-muted mb-0">Logros</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de navegación del perfil -->
+    <nav class="navbar navbar-perfil" style="background-color: #031634; margin: 0%;">
+      <ul class="mx-auto">
+        <li class="nav-item"><a class="nav-link" href="./perfil.html" title="Tus datos">MIS DATOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html" title="Tus torneos">MIS TORNEOS</a> </li>
+        <li class="nav-item"><a class="nav-link" href="./perfil_misequipos.html" title="Tus equipos">MIS EQUIPOS</a> </li>
+        <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_mislogros.html" title="Tus logros (estás aquí)">LOGROS</a> </li>
+      </ul>
+    </nav>
+  </div>
+
+<!-- Logros obtenidos -->
+<div class="content container-fluid">
+  <h2 class="mb-4" style="color:white">Logros: 4/16</h2>
+  <!-- Primera fila -->
+  <div class="row">
+    <div class="col-sm">
+      <section id="logro1" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;" title="Logro obtenido: 'Mi primerito día'">
+        <img class="card-img-top img-fluid" src="./assets/img/logro1.png" alt="Mi primerito día">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">Mi primerito día</div>
+          <p class="card-text" style="text-align:center;">Crea tu cuenta en Tournamaster</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro2" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;" title="Logro obtenido: 'Yo soy el TournaMaster'">
+        <img class="card-img-top img-fluid" src="./assets/img/logro3.png" alt="Yo soy el TournaMaster">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">Yo soy el TournaMaster</div>
+          <p class="card-text" style="text-align:center;">Organiza tu primer torneo</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro3" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;" title="Logro obtenido: 'De logros va la cosa'">
+        <img class="card-img-top img-fluid" src="./assets/img/logro4.png" alt="De logros va la cosa">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">De logros va la cosa</div>
+          <p class="card-text" style="text-align:center;">Consigue 3 logros</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro4" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;" title="Logro obtenido: 'SUPREME VICTORY'">
+        <img class="card-img-top img-fluid" src="./assets/img/logro2.png" alt="SUPREME VICTORY">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">SUPREME VICTORY</div>
+          <p class="card-text" style="text-align:center;">Obtén tu primera victoria en un torneo</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-sm">
+      <section id="logro5" class="card" style="width: 16rem; height: 23rem; margin-bottom: 2rem;filter: grayscale();" title="Logro bloqueado">
+        <img class="card-img-top img-fluid" src="./assets/img/logro0.png" alt="Logro bloqueado">
+        <div class="card-body">
+          <div id="headerCinco" class="card-title" style="font-style: italic; text-align:center;">???</div>
+          <p class="card-text" style="text-align:center;">Sin desbloquear</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- Barra lateral  -->
+<div class="topbar">
+  <button class="expand-btn" aria-expanded="false" title="Expandir el menú lateral">
+    ☰
+  </button>
 </div>
 
 <nav class="sidebar">
   <div class="menu-wrapper">
-
     <div class="top-item">
-      <ul class="menu">
+      <ul class="menu" title="Home">
         <li>
           <a href="./home.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
@@ -33,15 +273,15 @@
 
     <ul class="menu">
       <li>
-        <a href="jugar.html">
+        <a href="jugar.html" title="Participar">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
             <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
           </svg> 
-          JUGAR
+          PARTICIPAR
         </a>
       </li>
       <li>
-        <a href="organizar.html">
+        <a href="organizar.html" title="Organizar">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
@@ -52,7 +292,7 @@
     </ul>
 
     <div class="bottom-item">
-      <ul class="menu">
+      <ul class="menu" title="Perfil">
         <li>
           <a id="selected" href="perfil.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
@@ -65,227 +305,6 @@
     </div>
   </div>
 </nav>
-
-<div class="content container-fluid">
-  <div class="row d-flex align-items-center">
-    <div class="col-lg">
-      <div class="card" style="width: 100%; height: 100%;">
-        <div class="rounded-top d-flex flex-row" style="background-color: black; color: white; height:200px;">
-          <!-- Botón logout -->
-          <div class="position-absolute top-0 end-0 p-3">
-            <a href="index.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-              </svg>
-            </a>
-          </div>
-          
-          <div class="ms-4 mt-5 d-flex flex-column">
-            <img src="./assets/img/profile_pic.jpg" alt="Image not found" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 150px; z-index: 0">
-            <a href="perfil_editar.html" class="btn btn-outline-dark" role="button" data-mdb-ripple-color="dark" style="z-index: 0;">Editar perfil</a>
-          </div>
-          <div class="ms-3" style="margin-top: 130px;">
-            <h4 style="font-weight: bold;">Samus Aran</h4>
-            <p style="font-style: italic; color: gray;">Cazarrecompensas</p>
-          </div>
-        </div>
-        
-        <div class="p-4 text-black" style="background-color: white;">
-          <div class="d-flex justify-content-end text-center py-1">
-            <div>
-              <p class="mb-1 h5">17</p>
-              <p class="small text-muted mb-0">Nivel</p>
-            </div>
-            <div class="px-3">
-              <p class="mb-1 h5">1026</p>
-              <p class="small text-muted mb-0">Experiencia</p>
-            </div>
-            <div>
-              <p class="mb-1 h5">317</p>
-              <p class="small text-muted mb-0">Logros</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-perfil" style="background-color: #031634; margin: 0%;">
-    <ul class="mx-auto">
-      <li class="nav-item"><a class="nav-link" href="./perfil.html">MIS DATOS</a></li>
-      <li class="nav-item"><a class="nav-link" href="./perfil_mistorneos.html">MIS TORNEOS</a> </li>
-      <li class="nav-item"><a class="nav-link" href="./perfil_misequipos.html">MIS EQUIPOS</a> </li>
-      <li id="selected-profile" class="nav-item"><a class="nav-link" href="./perfil_mislogros.html">LOGROS</a> </li>
-    </ul>
-  </nav>
-</div>
-
-<!-- Logros obtenidos -->
-<div class="content container-fluid">
-  <h2 class="mb-4" style="color:white">Logros: 4/16</h2>
-  <!-- Primera fila -->
-  <div class="row">
-    <div class="col-sm">
-      <section id="logro1" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;">
-        <img class="card-img-top img-fluid" src="./assets/img/logro1.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">Mi primerito día</h5>
-          <h6 class="card-text" style="text-align:center;">Crea tu cuenta en Tournamaster</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro2" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;">
-        <img class="card-img-top img-fluid" src="./assets/img/logro3.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">Yo soy el TournaMaster</h5>
-          <h6 class="card-text" style="text-align:center;">Organiza tu primer torneo</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro3" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;">
-        <img class="card-img-top img-fluid" src="./assets/img/logro4.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">De logros va la cosa</h5>
-          <h6 class="card-text" style="text-align:center;">Consigue 3 logros</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro4" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;">
-        <img class="card-img-top img-fluid" src="./assets/img/logro2.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">SUPREME VICTORY</h5>
-          <h6 class="card-text" style="text-align:center;">Obtén tu primera victoria en un torneo</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro5" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro6" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro7" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro8" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro9" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro10" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro11" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro12" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro13" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro14" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro15" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-
-    <div class="col-sm">
-      <section id="logro16" class="card" style="width: 16rem; height: 22rem; margin-bottom: 2rem;filter: grayscale();">
-        <img class="card-img-top img-fluid" src="./assets/img/logro0.png">
-        <div class="card-body">
-          <h5 class="card-title" style="font-style: italic; text-align:center;">???</h5>
-          <h6 class="card-text" style="text-align:center;">Sin desbloquear</h6>
-        </div>
-      </section>
-    </div>
-  </div>
-</div>
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/loginOrRegister.js"></script>
