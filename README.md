@@ -1,6 +1,9 @@
 Acceso a la web:
 https://jesusarizap.github.io/proyectoIU/
 
+DESPLIEGUE DE LA WEB
+Para realizar el despliegue de la página web y el proyecto basta con descargarlo y abrir el index.html (que corresponde con la página principal). La página web es estática y no necesita de ningún otro tipo de paso a realizar para que esta funcione. Desde el propio index se puede llegar a cualquier otro "html" del proyecto además de todas sus funcionalidades.
+
 Miembros del grupo
 - Jesús Ariza Pomares
 - Pedro Ankersmit Carrión
